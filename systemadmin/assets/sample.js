@@ -19,7 +19,6 @@ var initSample = ( function() {
 
 	return function() {
 		var editorElement = CKEDITOR.document.getById( 'editor' );
-
 		// :(((
 		if ( isBBCodeBuiltIn ) {
 			editorElement.setHtml(

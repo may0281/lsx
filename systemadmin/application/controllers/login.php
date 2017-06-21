@@ -24,6 +24,8 @@ class login extends CI_Controller {
         {
 				$this->session->set_userdata('admin',$this->input->post('username'));
 				$this->session->set_userdata('role',$q[0]['role']);
+				$this->session->set_userdata('password',$q[0]['Password']);
+				$this->session->set_userdata('id',$q[0]['ID']);
 
 				echo "<script>window.location='".base_url()."dashboard';</script>";
 			}
@@ -34,21 +36,7 @@ class login extends CI_Controller {
 			
 
 	}
-	public function change()
-	{
-		$user = $this->session->userdata('admin');
-		$oldpass =  md5($this->input->post('oldpass'));
-		$q = $this->login_model->chck_login($user,$oldpass);
-		if($q){
-			$data = array('Password' => $pass,);
-			$this->db->where('username', $user);
-			$this->db->update('accountadmin', $data);
-			echo "<script>alert('Success!!! Your password has been changed');history.back();</script>";
-		}else{ echo "<script>alert('Username or Password is wrong');window.location.assign('".base_url()."dashboard');</script>"; }
-		
 
-		
-	}
 	public function Logout()
 	{		
 		$this->session->unset_userdata('admin');
