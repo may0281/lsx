@@ -133,7 +133,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label class="col-md-3 control-label">Description [TH] :</label>
-                                        <div class="col-md-9"><textarea  name="DescriptionTH" id="editor"><?php echo $value['DescriptionTH'] ?></textarea></div>
+                                        <div class="col-md-9"><textarea  name="DescriptionTH" id="editor1"><?php echo $value['DescriptionTH'] ?></textarea></div>
                                     </div>
 
                                     <div class="form-group">
@@ -148,7 +148,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label class="col-md-3 control-label">Description [EN] :</label>
-                                        <div class="col-md-9"><textarea rows="10" name="DescriptionEN" class="form-control wysiwyg"><?php echo $value['DescriptionEN'] ?></textarea></div>
+                                        <div class="col-md-9"><textarea rows="10" name="DescriptionEN" id="editor2"><?php echo $value['DescriptionEN'] ?></textarea></div>
                                     </div>
                                     <div class="form-group">
                                         <label class="col-md-3 control-label">Start Date</label>

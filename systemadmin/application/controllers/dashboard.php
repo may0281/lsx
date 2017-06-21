@@ -29,6 +29,5 @@ class dashboard extends CI_Controller {
 		$this->db->update('address', array('Address' => $address), array('ID' => '1'));
 		echo "<script>window.location.assign('".base_url()."dashboard');</script>";
 	}
-
-	
+    
 }
