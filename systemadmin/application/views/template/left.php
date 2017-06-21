@@ -73,7 +73,12 @@
 			<div id="sidebar-content">
 				<!--=== Navigation ===-->
 				<ul id="nav">
-
+                    <li class="<?php if($path[2]=='dashboard'){echo "current";} ?>">
+                        <a href="dashboard">
+                            <i class="icon-table"></i>
+                            Dashboard
+                        </a>
+                    </li>
                     <?php if($this->session->userdata('role') == 'admin' || $this->session->userdata('role') == 'product'){ ?>
                     <li class="<?php if($path[2]=='product'){echo "current open";} ?>">
 						<a href="javascript:void(0);">
@@ -154,6 +159,29 @@
                             </li>
 						</ul>
 					</li>
+                    <?php } ?>
+
+                    <?php if($this->session->userdata('role') == 'admin'){ ?>
+                        <li class="<?php if($path[2]=='landing'){echo "current open";} ?>">
+                            <a href="javascript:void(0);">
+                                <i class="icon-table"></i>
+                                Landing Page
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="<?php if($path[3]==''){echo "current";} ?>">
+                                    <a href="<?php echo base_url();?>landing">
+                                        <i class="icon-angle-right"></i>
+                                        Landing List
+                                    </a>
+                                </li>
+                                <li class="<?php if($path[3]=='add'){echo "current";} ?>">
+                                    <a href="<?php echo base_url();?>landing/add">
+                                        <i class="icon-angle-right"></i>
+                                        Create Landing
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
                     <?php } ?>
 
 				</ul>			
