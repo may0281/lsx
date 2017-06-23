@@ -108,17 +108,12 @@
 										<tr>
 											<th>ID</th>
 											<th>Enable</th>
-											<th>Cover Img</th>
-											<th>Name TH</th>
-											<th>Name EN</th>
+											<th>URL</th>
 											<th data-hide="phone,tablet">Edit</th>
 											<th data-hide="phone,tablet">Del</th>
 										</tr>
 									</thead>
-
-									
 									<tbody>
-										
 										<?php  $i=1;foreach ($q as $r) { ?>
 										
 										<tr>
@@ -128,10 +123,7 @@
 												</div>
 											</td>
 											
-											<td>
-											<img src='../images/landing/<?php echo $r['CoverImage'];?>' width="50"></td>
-											<td><?php echo $r['NameTH'];?></td>
-											<td><?php echo $r['NameEN'];?></td>
+											<td><?php echo $r['url'];?></td>
 
 											<td data-hide="phone,tablet"><a href="<?php echo base_url(); ?>landing/edit/<?php echo $r['ID']; ?>" title="Edit landing">Edit </a></td>
 											<td data-hide="phone,tablet"><a href="<?php echo base_url(); ?>landing/del/<?php echo $r['ID']; ?>" title="Edit landing">Del </a></td>

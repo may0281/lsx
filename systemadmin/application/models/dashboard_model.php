@@ -5,53 +5,37 @@ class dashboard_model extends ci_model
 	{
 		parent::__construct();
 	}
-	
 
-	public function ads($type)
-	{
-		$sql ="select * from ads where Type = '".$type."' order by ID DESC ";
-		$query = $this->db->query($sql);
-		return $query->result_array();
-	}
-	public function chooses($id)
-	{
-		$sql ="select * from ads where ID = '".$id."' ";
-		$query = $this->db->query($sql);
-		return $query->result_array();
-	}
 
-	public function insertads($Company,$Link,$StartDate,$EndDate,$Type,$Image,$Width,$Height)
-	{
-		
-		$data = array(
-		   'Company' => $Company,
-		   'Link' => $Link,
-		   'StartDate' => $StartDate,
-		   'EndDate' => $EndDate,
-		   'Type' => $Type,
-		   'Image' => $Image,
-		   'Width' => $Width,
-		   'Height' => $Height,
-		   'Enable' => '1'
-		);
+    public function selectUser($username)
+    {
+        $this->db->select('*');
+        $this->db->from('accountadmin');
+        $this->db->where('accountadmin.Username',$username);
+        $query = $this->db->get();
+        return  $query->result_array();
 
-		$this->db->insert('ads', $data); 
-	}
-	public function editads($Company,$Link,$StartDate,$EndDate,$id,$Image)
-	{
-		
-		$data = array(
-		   'Company' => $Company,
-		   'Link' => $Link,
-		   'StartDate' => $StartDate,
-		   'EndDate' => $EndDate,
-		   'Image' => $Image,
-		   
-		);
+    }
 
-		$this->db->where('ID', $id);
-		$this->db->update('ads', $data); 
-	}
-	
+    public function insertLanding($data)
+    {
+        $this->db->insert('accountadmin', $data);
+        $insert_id = $this->db->insert_id();
+        return $insert_id;
+    }
+    public function all()
+    {
+        $this->db->select('*');
+        $this->db->from('accountadmin');
+        $query = $this->db->get();
+        return  $query->result_array();
+    }
+
+    public function updatePassword($username,$data)
+    {
+
+        $this->db->where('Username', $username);
+        $this->db->update('accountadmin', $data);
+    }
 	
 }

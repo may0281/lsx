@@ -54,18 +54,20 @@
 			</a>
 			<!-- /Sidebar Toggler -->
 			<!-- Top Left Menu -->
-			<ul class="nav navbar-nav navbar-left hidden-xs hidden-sm">
+
+
+			<ul class="nav navbar-nav navbar-right hidden-xs hidden-sm">
+
 				<li>
-					<a href="<?php echo base_url();?>dashboard">
-						Dashboard
-					</a>
+					<a data-toggle="modal" href="#myModal0" ><i class="icon-plus"></i><span>เปลี่ยนรหัสผ่าน</span></a>
 				</li>
 				<li>
-							<a href="<?php echo base_url();?>login/Logout"><i class="icon-plus"></i><span>Logout</span></a>
+					<a href="<?php echo base_url();?>login/Logout"><i class="icon-plus"></i><span>Logout</span></a>
 				</li>
 			</ul>
 			<!-- /Top Left Menu -->
 		</div>
+
 	</header> <!-- /.header -->
     <?php $path = explode('/',$_SERVER["REQUEST_URI"]) ;?>
     <div id="container">
@@ -73,12 +75,14 @@
 			<div id="sidebar-content">
 				<!--=== Navigation ===-->
 				<ul id="nav">
-                    <li class="<?php if($path[2]=='dashboard'){echo "current";} ?>">
-                        <a href="dashboard">
+					<?php if($this->session->userdata('role') == 'admin'){ ?>
+					<li class="<?php if($path[2]=='dashboard'){echo "current";} ?>">
+                        <a href="<?php echo base_url();?>dashboard">
                             <i class="icon-table"></i>
                             Dashboard
                         </a>
                     </li>
+					<?php } ?>
                     <?php if($this->session->userdata('role') == 'admin' || $this->session->userdata('role') == 'product'){ ?>
                     <li class="<?php if($path[2]=='product'){echo "current open";} ?>">
 						<a href="javascript:void(0);">
@@ -182,6 +186,14 @@
                                 </li>
                             </ul>
                         </li>
+
+
+						<li class="<?php if($path[2]=='about'){echo "current";} ?>">
+							<a href="<?php echo base_url();?>about">
+								<i class="icon-table"></i>
+								About Lsx.
+							</a>
+						</li>
                     <?php } ?>
 
 				</ul>			
@@ -201,3 +213,39 @@
 			<div id="divider" class="resizeable"></div>
 		</div>
 		<!-- /Sidebar -->
+		<div class="modal fade" id="myModal0">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<form class="form-horizontal row-border" method="post" enctype="multipart/form-data" action="<?php echo base_url();?>dashboard/changPassword">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title">เปลี่ยนรหัสผ่าน</h4>
+						</div>
+						<div class="modal-body">
+							<div class="form-group">
+								<label class="col-md-3 control-label">Old Password :</label>
+								<div class="col-md-9">
+									<input type="text" name="oldpass" class="form-control required">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-3 control-label">Password <span class="required">*</span></label>
+								<div class="col-md-9">
+									<input type="password" name="pass1" class="form-control required" minlength="5">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-3 control-label">Confirm Password <span class="required">*</span></label>
+								<div class="col-md-9">
+									<input type="password" name="cpass1" class="form-control required" minlength="5" equalTo="[name='pass1']">
+								</div>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<button type="submit" class="btn btn-primary" >Save changes</button>
+						</div>
+					</form>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->

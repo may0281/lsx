@@ -27,7 +27,24 @@ class login extends CI_Controller {
 				$this->session->set_userdata('password',$q[0]['Password']);
 				$this->session->set_userdata('id',$q[0]['ID']);
 
-				echo "<script>window.location='".base_url()."dashboard';</script>";
+                if($q[0]['role'] == 'product')
+                {
+                    echo "<script>window.location='".base_url()."product';</script>";
+                    exit();
+                }
+
+                else if($q[0]['role'] == 'blog')
+                {
+                    echo "<script>window.location='".base_url()."blog';</script>";
+                    exit();
+                }
+
+                else
+                {
+                    echo "<script>window.location='".base_url()."dashboard';</script>";
+                    exit();
+                }
+
 			}
 		else
 			{
@@ -40,7 +57,10 @@ class login extends CI_Controller {
 	public function Logout()
 	{		
 		$this->session->unset_userdata('admin');
-		echo "<script>alert('Success');window.location.assign('".base_url()."login');</script>";
+		$this->session->unset_userdata('role');
+		$this->session->unset_userdata('password');
+		$this->session->unset_userdata('id');
+		echo "<script>window.location.assign('".base_url()."login');</script>";
 	}
 	
 }

@@ -106,36 +106,29 @@
 							</div>
 							<div class="widget-content">
 								<form class="form-horizontal row-border" method="post" enctype="multipart/form-data" id="validate-1" action="<?php echo base_url();?>landing/add_action">
-									<div class="form-group">
-										<label class="col-md-3 control-label">Cover Image <span class="required">*</span></label>
-										<div class="col-md-9">
-											<input type="file" name="coverimg" class="required" accept="image/*" data-style="fileinput" data-inputsize="medium">
-											<p class="help-block">Images only (image/*)</p>
-											<label for="coverimg" class="has-error help-block" generated="true" style="display:none;"></label>
-										</div>
-									</div>
+
 
 									<div class="form-group">
-										<label class="col-md-3 control-label">Landing Title [TH] <span class="required">*</span></label>
-										<div class="col-md-9">
-											<input type="text" name="NameTH" class="form-control required">
+										<label class="col-md-12">URL  (Full path : http://www.lsx.co.th/landing/landing-1)<span class="required"></span></label>
+									</div>
+									<div class="form-group">
+										<div class="col-md-12">
+											<input type="text" name="url" class="form-control required" placeholder="Example : landing-1">
 										</div>
 									</div>
 
                                     <div class="form-group">
-                                        <label class="col-md-3 control-label">Description [TH] :</label>
-                                        <div class="col-md-9"><textarea  name="DescriptionTH" id="editor"></textarea></div>
+                                        <label class="col-md-12 ">Description [TH] : <span class="required">*</span></label>
+                                    </div>
+									<div class="form-group">
+                                        <div class="col-md-12"><textarea  name="DescriptionTH" id="editor1"></textarea></div>
                                     </div>
 
                                     <div class="form-group">
-										<label class="col-md-3 control-label">Landing Title [EN] <span class="required">*</span></label>
-										<div class="col-md-9">
-											<input type="text" name="NameEN" class="form-control required">
-										</div>
+										<label class="col-md-12">Description [EN] : <span class="required">*</span></label>
 									</div>
                                     <div class="form-group">
-                                        <label class="col-md-3 control-label">Description [EN] :</label>
-                                        <div class="col-md-9"><textarea rows="10" name="DescriptionEN" class="form-control wysiwyg"></textarea></div>
+                                        <div class="col-md-12"><textarea rows="10" name="DescriptionEN" id="editor2"></textarea></div>
                                     </div>
 
 									<div class="form-actions">

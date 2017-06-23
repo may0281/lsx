@@ -105,71 +105,32 @@
 							<div class="widget-header">
 								<h4><i class="icon-reorder"></i></h4>
 							</div>
-                            <?php $value = $promotion[0] ?>
+                            <?php $value = $landing[0] ?>
 							<div class="widget-content">
-								<form class="form-horizontal row-border" method="post" enctype="multipart/form-data" id="validate-1" action="<?php echo base_url();?>promotion/edit_action">
+								<form class="form-horizontal row-border" method="post" enctype="multipart/form-data" id="validate-1" action="<?php echo base_url();?>landing/edit_action">
 									<div class="form-group">
-										<label class="col-md-3 control-label">Cover Image <span class="required">*</span></label>
-										<div class="col-md-9">
-                                            <img src="../../../images/promotion/<?php echo $value['CoverImage']?>" style="max-width: 300px">
-											<br><br>
-                                            <input type="file" name="coverimg" class="" accept="image/*" data-style="fileinput" data-inputsize="medium">
-											<p class="help-block">Images only (image/*)</p>
-											<label for="coverimg" class="has-error help-block" generated="true" style="display:none;"></label>
-                                            <input type="hidden" name="coverimg_old" value="<?php echo $value['CoverImage']?>">
-										</div>
+										<label class="col-md-12">URL  (Full path : http://www.lsx.co.th/landing/landing-1)<span class="required"></span></label>
 									</div>
-
-									
 									<div class="form-group">
-										<label class="col-md-3 control-label">Promotion Name [TH] <span class="required">*</span></label>
-										<div class="col-md-9">
-											<input type="text" name="NameTH" class="form-control required" value="<?php echo $value['NameTH'] ?>">
+										<div class="col-md-12">
+											<input type="text" name="url" class="form-control required" value="<?php echo $value['url'] ?>" placeholder="Example : landing-1">
 										</div>
 									</div>
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label">Short Description [TH] :</label>
-                                        <div class="col-md-9"><textarea rows="5"  name="ShortDescriptionTH" class="form-control"><?php echo $value['ShortDescriptionTH'] ?></textarea></div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label">Description [TH] :</label>
-                                        <div class="col-md-9"><textarea  name="DescriptionTH" id="editor"><?php echo $value['DescriptionTH'] ?></textarea></div>
-                                    </div>
 
-                                    <div class="form-group">
-										<label class="col-md-3 control-label">Promotion Name [EN] <span class="required">*</span></label>
-										<div class="col-md-9">
-											<input type="text" name="NameEN" class="form-control required" value="<?php echo $value['NameEN'] ?>">
-										</div>
+									<div class="form-group">
+										<label class="col-md-12 ">Description [TH] : <span class="required">*</span></label>
 									</div>
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label">Short Description [EN] :</label>
-                                        <div class="col-md-9"><textarea rows="5" name="ShortDescriptionEN" class="form-control"><?php echo $value['ShortDescriptionEN'] ?></textarea></div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label">Description [EN] :</label>
-                                        <div class="col-md-9"><textarea rows="10" name="DescriptionEN" class="form-control wysiwyg"><?php echo $value['DescriptionEN'] ?></textarea></div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label">Start Date</label>
-                                        <div class="col-md-9">
-                                            <input type="text" name="StartDate" class="form-control datepicker" value="<?php echo date('Y-m-d',strtotime($value['StartDate']))?>">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label">End Date</label>
-                                        <div class="col-md-9">
-                                            <input type="text" name="EndDate" class="form-control datepicker" value="<?php echo date('Y-m-d',strtotime($value['EndDate']))?>">
-                                        </div>
-                                    </div>
+									<div class="form-group">
+										<div class="col-md-12"><textarea  name="DescriptionTH" id="editor1"><?php echo $value['DescriptionTH'] ?></textarea></div>
+									</div>
 
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label">Video</label>
-                                        <div class="col-md-9">
-                                            <input type="text" name="Video" class="form-control" value="<?php echo $value['Video'] ?>">
-                                            <p class="help-block">Example (https://www.youtube.com/watch?v=ATzTsija1I4)</p>
-                                        </div>
-                                    </div>
+									<div class="form-group">
+										<label class="col-md-12">Description [EN] : <span class="required">*</span></label>
+									</div>
+									<div class="form-group">
+										<div class="col-md-12"><textarea rows="10" name="DescriptionEN" id="editor2"><?php echo $value['DescriptionEN'] ?></textarea></div>
+									</div>
+
 									<div class="form-actions">
                                         <input type="hidden" name="ID" value="<?php echo $value['ID']; ?>">
 										<input type="submit" value="INSERT" class="btn btn-primary pull-right">

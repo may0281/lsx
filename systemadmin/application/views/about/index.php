@@ -87,76 +87,20 @@
 					<ul id="breadcrumbs" class="breadcrumb">
 						<li>
 							<i class="icon-home"></i>
-							<a href="#">Dashboard</a>
+							<a href="<?php echo base_url();?>about">about</a>
 						</li>
-											
-					</ul>
-					<ul class="crumb-buttons">
 						<li>
-							<a data-toggle="modal" href="#myModal1" ><i class="icon-plus"></i><span>Create User</span></a>
+							<a href="<?php echo base_url();?>blog" title=""><?php echo strtoupper($menu); ?></a>
 						</li>
 
 					</ul>
-					<div class="modal fade" id="myModal1">
-						<div class="modal-dialog">
-							<div class="modal-content">
-								<form class="form-horizontal row-border" method="post" enctype="multipart/form-data" action="<?php echo base_url();?>dashboard/createUser">
-								<div class="modal-header">
-									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-									<h4 class="modal-title">เปลี่ยนรหัสผ่าน</h4>
-								</div>
-								<div class="modal-body">
-									<div class="form-group">
-										<label class="col-md-3 control-label">Username :</label>
-										<div class="col-md-9">
-											<input type="text" name="Username" class="form-control required" placeholder="Example : user@mail.com">
-										</div>
-									</div>
-									<div class="form-group">
-										<label class="col-md-3 control-label">Name :</label>
-										<div class="col-md-9">
-											<input type="text" name="Name" class="form-control required" placeholder="">
-										</div>
-									</div>
-									<div class="form-group">
-										<label class="col-md-3 control-label">Role :</label>
-										<div class="col-md-9">
-											<select name="role" class="form-control required">
-												<option value="admin">Admin</option>
-												<option value="blog">Blog</option>
-												<option value="product">Product</option>
-
-											</select>
-										</div>
-									</div>
-									<div class="form-group">
-										<label class="col-md-3 control-label">Password <span class="required">*</span></label>
-										<div class="col-md-9">
-											<input type="password" name="pass1" class="form-control required" minlength="5">
-										</div>
-									</div>
-									<div class="form-group">
-										<label class="col-md-3 control-label">Confirm Password <span class="required">*</span></label>
-										<div class="col-md-9">
-											<input type="password" name="cpass1" class="form-control required" minlength="5" equalTo="[name='pass1']">
-										</div>
-									</div>
-								</div>
-								<div class="modal-footer">
-									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-									<button type="submit" class="btn btn-primary" >Save changes</button>
-								</div>
-								</form>
-							</div><!-- /.modal-content -->
-						</div><!-- /.modal-dialog -->
-					</div><!-- /.modal -->
 				</div>
 				<!-- /Breadcrumbs line -->
 
 				<!--=== Page Header ===-->
 				<div class="page-header">
 					<div class="page-title">
-						<h3>Dashboard</h3>
+						<h3><?php echo strtoupper($menu); ?></h3>
 					
 					</div>
 				</div>
@@ -168,50 +112,41 @@
 						<div class="widget">
 							<div class="widget-content">
 								<div class="row">
-									<div class="col-md-12">
-										<div class="widget box">
-											<div class="widget-header">
-												<h4><i class="icon-reorder"></i> Managed User</h4>
-												<div class="toolbar no-padding">
-													<div class="btn-group">
-														<span class="btn btn-xs widget-collapse"><i class="icon-angle-down"></i></span>
-													</div>
-												</div>
-											</div>
-											<div class="widget-content">
-												<table class="table table-striped table-bordered table-hover table-checkable datatable" data-display-length="30">
-													<thead>
-													<tr>
-														<th>ID</th>
-														<th>Enable</th>
-														<th>Username</th>
-														<th>Name</th>
-														<th>Role</th>
-														<th>Del</th>
-													</tr>
-													</thead>
-													<tbody>
-													<?php  $i=1;foreach ($q as $r) { ?>
+                                    <form method="post" action='<?php echo base_url();?>about/insertAddress'>
+                                        <div class="form-group">
+                                            <label class="col-md-1 control-label">Address</label>
+                                            <?php
+                                            $sql ="select * from address where ID = '1' ";
+                                            $query = $this->db->query($sql);
+                                            $result = $query->result_array();
+                                            foreach($result as $value){ ?>
+                                                <div class="col-md-8">
+                                                    <textarea rows="10" name="address" class="form-control wysiwyg"><?php echo $value['Address'];?></textarea>
+                                                    <input type="submit" value="UPDATE" class="btn btn-primary pull-right">
+                                                </div>
+                                                <div class="col-md-2"></div>
+                                            <?php } ?>
+                                        </div>
+                                    </form>
+                                </div>
 
-													<tr>
-														<td><?php echo $i;?></td>
-														<td class="checkbox-column">
-															<input type="checkbox" class="uniform" onchange="OnChangeCheckbox (this)" id="myCheckbox" <?php if($r['Enable']==1){ echo "checked";}?>   value="<?php echo $r['ID'];?>" />
-														</td>
-														<td><?php echo $r['Username'];?></td>
-														<td><?php echo $r['Name'];?></td>
-														<td><?php echo $r['role'];?></td>
-														<td><a href="<?php echo base_url(); ?>dashboard/del/<?php echo $r['ID']; ?>" title="Del">Del </a></td>
-											</tr>
-											<?php $i++; }?>
-											</tbody>
-											</table>
-										</div>
-									</div>
-								</div>
-							</div>
-
-
+                                <div class="row">
+                                    <form method="post" action='<?php echo base_url();?>about/UpdateAboutUs'>
+                                        <div class="form-group">
+                                            <label class="col-md-1 control-label">About Us</label>
+                                            <?php
+                                            $sql ="select * from about_us where 1 ";
+                                            $query = $this->db->query($sql);
+                                            $result = $query->result_array();
+                                            foreach($result as $r){ } ?>
+                                            <div class="col-md-8">
+                                                <textarea rows="10" name="data" class="form-control wysiwyg"><?php echo $r['data'];?></textarea>
+                                                <input type="submit" value="UPDATE" class="btn btn-primary pull-right">
+                                            </div>
+                                            <div class="col-md-2"></div>
+                                        </div>
+                                    </form>
+                                </div>
 							</div>
 						</div> <!-- /.widget .box -->
 					</div> <!-- /.col-md-6 -->
@@ -223,18 +158,9 @@
 
 		</div>
 	</div>
+
+
+
+
 </body>
 </html>
-
-<script type="text/javascript">
-	function OnChangeCheckbox (checkbox) {
-		var id = checkbox.value;
-		var base_url = "<?php echo base_url();?>";
-		if (checkbox.checked) {
-			window.location.href = base_url + "dashboard/enable/1/" + id;
-		}
-		else {
-			window.location.href = base_url + "dashboard/enable/0/" + id;
-		}
-	}
-</script>
