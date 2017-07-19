@@ -9,8 +9,9 @@ class dashboard extends CI_Controller {
 		if($this->session->userdata('admin') == ''){
 			echo "<script> window.location.assign('".base_url()."login?ReturnUrl=".$_SERVER['REQUEST_URI']."');</script>";
 		}
-		$lang = $this->session->userdata("lang")==null?"thailand":$this->session->userdata("lang");
+		$lang = $this->session->userdata("lang")==null?"th":$this->session->userdata("lang");
 		$this->lang->load($lang,$lang);
+        $this->load->library('resize');
         $this->load->model('dashboard_model');
 
 	}
@@ -18,94 +19,127 @@ class dashboard extends CI_Controller {
 	
 	public function index()
 	{
-        $data['q'] = $this->dashboard_model->all();
+        $data = array(
+            'q' => $this->dashboard_model->all(),
+            'subMenu' => 'Content Slide'
+        );
         $this->load->view('template/left');
         $this->load->view('dashboard',$data);
 
 	}
 
-	public function changPassword()
+	public function create()
     {
-
-        $pass_session = $this->session->userdata('password');
-        if($pass_session != md5($this->input->post('oldpass')))
-        {
-            echo "<script>alert('Your old password is wrong, Please ty again');history.back();</script>";
-        }
-        else if($this->input->post('cpass1') != $this->input->post('pass1'))
-        {
-            echo "<script>alert('Confirm password is not match, Please ty again');history.back();</script>";
-        }
-        else {
-
-            $this->dashboard_model->updatePassword($this->session->userdata('admin'),array('Password' => md5($this->input->post('pass1'))));
-           echo "<script>alert('Success. Please login again');window.location.assign('" . base_url() . "login/Logout');</script>";
-        }
-
+        $data = array('menu' => 'Create','action' => 'create_action');
+        $this->load->view('template/left');
+        $this->load->view('manage-slide',$data);
     }
 
-    public function createUser()
+    public function create_action()
     {
-        $inputData = $this->input->post();
-
-        if($inputData['Username'] == '')
+        $coverImage = null;
+        if($_FILES['coverimg']['name'])
         {
-            echo "<script>alert('Please fill username.');window.location.assign('" . base_url() . "dashboard');</script>";
-            exit();
+            $destination = "../images/content/";
+            $coverImage = strtotime(date("Y-m-d H:i:s")).'.'.$this->resize->filetype($_FILES['coverimg']['type']);
+            $this->upload($destination,$coverImage,'coverimg');
         }
-
-        if($inputData['pass1'] == '' ||  $inputData['cpass1'] == '' && $inputData['role'] == '')
-        {
-            echo "<script>alert('Please fill password.');window.location.assign('" . base_url() . "dashboard');</script>";
-            exit();
-        }
-
-        if($inputData['role'] == '')
-        {
-            echo "<script>alert('Please select role.');window.location.assign('" . base_url() . "dashboard');</script>";
-            exit();
-        }
-
-        if ($inputData['cpass1'] !=  $inputData['pass1'])
-        {
-            echo "<script>alert('Your confirm password is not match.');window.location.assign('" . base_url() . "dashboard');</script>";
-            exit();
-        }
-
+        $dataPost =  $this->input->post();
         $data = array(
-            'Username' => $inputData['Username'],
-            'Name' => $inputData['Name'],
-            'role' => $inputData['role'],
-            'Password' => md5($inputData['pass1']) ,
-            'Enable' => 1,
+            'img' => $coverImage,
+            'create_date' => date('Y-m-d H:i:s'),
+            'create_by' => $this->session->userdata('admin')
         );
 
-        $check_user = $this->dashboard_model->selectUser($data['Username']);
-
-        if($check_user)
+        $data = array_merge($data,$dataPost);
+        $createData = $this->dashboard_model->createContentSlide($data);
+        if($createData)
         {
-            echo "<script>alert('This username is already in the system.');window.location.assign('" . base_url() . "dashboard');</script>";
-            exit();
+            echo "<script>alert('Success!!');window.location.assign('".base_url()."dashboard');</script>";
         }
+        else
+        {
+            echo "<script>alert('Opp!!. Something went wrong. Please try again.');window.history.back();</script>";
+        }
+    }
 
-        $this->dashboard_model->insertLanding($data);
-
-        echo "<script>alert('Success');window.location.assign('" . base_url() . "dashboard');</script>";
+    public function edit($id)
+    {
+        $data = array(
+            'q' => $this->dashboard_model->getContentById($id),
+            'menu' => 'Update Content',
+            'action' => 'edit_action'
+        );
+        $this->load->view('template/left');
+        $this->load->view('manage-slide',$data);
 
     }
 
-    public function del($id)
+    public function edit_action()
     {
-        $this->db->delete('accountadmin', array('ID' => $id));
-        echo "<script>alert('Success');window.location.assign('" . base_url() . "dashboard');</script>";
+        $coverImage = $this->input->post('coverimg_old');
+        if($_FILES['coverimg']['name']) //check file upload
+        {
+            $destination = "../images/content/";
+            $coverImage = strtotime(date("Y-m-d H:i:s")).'.'.$this->resize->filetype($_FILES['coverimg']['type']);
+            $this->upload($destination,$coverImage,'coverimg');
+            unlink("../images/content/".$this->input->post('coverimg_old'));
+        }
+
+
+        $dataPost = $this->input->post();
+        $data = array(
+            'img' => $coverImage,
+            'update_date' => date('Y-m-d H:i:s'),
+            'update_by' => $this->session->userdata('admin')
+        );
+        $data = array_merge($data,$dataPost);
+        unset($data["id"]);
+        unset($data["coverimg_old"]);
+
+        $this->dashboard_model->updateContentSlide($this->input->post('id'),$data);
+        echo "<script>alert('Success!!');window.location.assign('".base_url()."dashboard');</script>";
+
+    }
+
+    protected function upload($dest,$filename,$field)
+    {
+        $config['upload_path'] = $dest;
+        $config['allowed_types'] = 'gif|jpg|png|jpeg';
+        $config['max_size']	= '100000';
+        $config['max_width']  = '3000';
+        $config['max_height']  = '3000';
+        $config['file_name']  = $filename;
+        $this->load->library('upload', $config);
+        if ( ! $this->upload->do_upload($field))
+        {
+            return array('error' => $this->upload->display_errors());
+        }
+        else
+        {
+            return  array('upload_data' => $this->upload->data());
+        }
+        $this->image_lib->clear();
     }
 
     public function enable($checked,$id)
     {
-        $this->db->where('ID', $id);
-        $this->db->update('accountadmin', array( 'Enable' => $checked));
+        $this->db->where('id', $id);
+        $this->db->update('dashboard_slide', array( 'enable' => $checked));
         echo "<script>window.location.assign('".base_url()."dashboard');</script>";
     }
+
+    public function del($id)
+    {
+        $sql ="select * from dashboard_slide where id = '".$id."' ";
+        $query = $this->db->query($sql);
+        foreach($query->result_array() as $arr){
+            unlink("../images/content/".$arr['img']);
+        }
+        $this->db->delete('dashboard_slide', array('id' => $id));
+        echo "<script> window.location.assign('".base_url()."dashboard'); </script>";
+    }
+
 
 
 }

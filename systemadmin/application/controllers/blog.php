@@ -118,7 +118,7 @@ class blog extends CI_Controller {
         unset($data["_wysihtml5_mode"]);
 		$id = $this->blog_model->insertBlog($data);
 
-		if (isset($_FILES['my_file'])) {
+		if ($_FILES['my_file']) {
                 $myFile = $_FILES['my_file'];
                 $fileCount = count($myFile["name"]);
                 for ($j = 0; $j < $fileCount; $j++) {

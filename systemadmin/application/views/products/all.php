@@ -80,6 +80,12 @@
                             <a href="#" title=""><?php echo strtoupper($subMenu) ?></a>
                         </li>
                     </ul>
+					<ul class="crumb-buttons">
+						<li>
+							<a href="<?php echo base_url();?>product/add"><i class="icon-plus"></i><span>Create Product</span></a>
+						</li>
+
+					</ul>
 				</div>
 
 				<!--=== Page Header ===-->
@@ -88,6 +94,7 @@
 						<h3><?php echo strtoupper($subMenu) ?></h3>
 						<span></span>
 					</div>
+
 				</div>
 
 				<!--=== Page Content ===-->

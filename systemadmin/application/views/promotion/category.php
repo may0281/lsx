@@ -116,8 +116,7 @@
 								</div>
 							</div>
 							<div class="widget-content">
-								<form class="form-horizontal row-border" method="post" action="<?php echo base_url();?>dara/catdel">
-								<table class="table table-hover" data-display-length="30"> 
+								<table class="table table-hover" data-display-length="30">
 									<thead>
 										<tr>
 											<th>#</th>
@@ -155,8 +154,6 @@
 
 									
 								</table>
-								
-								</form>
 							</div>
 						</div>
 						<!-- /Simple Table -->
@@ -191,7 +188,7 @@
 									
 									
 									<div class="form-actions">
-										<input type="submit" value="Insert" class="btn btn-primary pull-right">
+										<input type="submit" value="SUBMIT" class="btn btn-primary pull-right">
 									</div>
 								</form>
 							</div>

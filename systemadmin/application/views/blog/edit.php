@@ -50,6 +50,7 @@
 
 	<script type="text/javascript" src="<?php echo base_url(); ?>plugins/bootstrap-wysihtml5/wysihtml5.min.js"></script>
 	<script type="text/javascript" src="<?php echo base_url(); ?>plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.min.js"></script>
+	<script type="text/javascript" src="<?php echo base_url(); ?>plugins/tagsinput/jquery.tagsinput.min.js"></script>
 	
 	<script src="<?php echo base_url();?>assets/ckeditor/ckeditor.js"></script>
 	<script src="<?php echo base_url();?>assets/sample.js"></script>
@@ -109,8 +110,8 @@
 							<div class="widget-content">
 								<form class="form-horizontal row-border" method="post" enctype="multipart/form-data" id="validate-1" action="<?php echo base_url();?>blog/edit_action">
 									<div class="form-group">
-										<label class="col-md-3 control-label">Category <span class="required">*</span></label>
-										<div class="col-md-9">
+										<label class="col-md-2 control-label">Category <span class="required">*</span></label>
+										<div class="col-md-10">
 											<select name="CatID" class="form-control required">
 												<option value=""></option>
 												<?php foreach ($category as $r) {?>
@@ -120,69 +121,79 @@
 										</div>
 									</div>
 									<div class="form-group">
-										<label class="col-md-3 control-label">Cover Image <span class="required">*</span></label>
-										<div class="col-md-9">
+										<label class="col-md-2 control-label">Cover Image <span class="required">*</span></label>
+										<div class="col-md-10">
                                             <img src="../../../images/blog/<?php echo $value['CoverImage']?>" style="max-width: 300px">
 											<br><br>
                                             <input type="file" name="coverimg" class="" accept="image/*" data-style="fileinput" data-inputsize="medium">
-											<p class="help-block">Images only (image/*)</p>
+											<p class="help-block">Images only (image/*) <br>  Size : [990X715] px</p>
 											<label for="coverimg" class="has-error help-block" generated="true" style="display:none;"></label>
                                             <input type="hidden" name="coverimg_old" value="<?php echo $value['CoverImage']?>">
 										</div>
 									</div>
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label">Gallery </label>
-                                        <div class="col-md-9">
-                                            <?php $i=1;foreach ($gallery as $g) { ?>
-                                                <div class="col-md-3">
-                                                    <img src="../../../images/blog/<?php echo $g['Image'];?>" width='200'>
-                                                    <label class="checkbox"><input type="checkbox" name="del[]" value="<?php echo $g['ID']."&".$g['Image'];?>" class=""> Delete </label>
-                                                </div>
-                                                <?php if($i==4 or $i==8 or $i==12 or $i==16){?><div style="clear:both"></div><?php } ?>
-                                                <?php $i++; } ?>
-                                        </div>
-                                        <div style="clear:both;height:20px;"></div>
-                                        <label class="col-md-3 control-label">Add more </label>
-                                        <!-- ..........1.......... -->
-                                        <div class="col-md-9">
-                                            <input type="file" name="my_file[]" multiple  class="form-control" accept="image/*" data-inputsize="medium">
-                                            <p class="help-block">Images only (image/*)</p>
-                                            <label for="gal1" class="has-error help-block" generated="true" style="display:none;"></label>
-                                        </div>
-                                    </div>
-									
+<!--                                    <div class="form-group">-->
+<!--                                        <label class="col-md-2 control-label">Gallery </label>-->
+<!--                                        <div class="col-md-10">-->
+<!--                                            --><?php //$i=1;foreach ($gallery as $g) { ?>
+<!--                                                <div class="col-md-3">-->
+<!--                                                    <img src="../../../images/blog/--><?php //echo $g['Image'];?><!--" width='200'>-->
+<!--                                                    <label class="checkbox"><input type="checkbox" name="del[]" value="--><?php //echo $g['ID']."&".$g['Image'];?><!--" class=""> Delete </label>-->
+<!--                                                </div>-->
+<!--                                                --><?php //if($i==4 or $i==8 or $i==12 or $i==16){?><!--<div style="clear:both"></div>--><?php //} ?>
+<!--                                                --><?php //$i++; } ?>
+<!--                                        </div>-->
+<!--                                        <div style="clear:both;height:20px;"></div>-->
+<!--                                        <label class="col-md-2 control-label">Add more </label>-->
+<!--                                        <div class="col-md-10">-->
+<!--                                            <input type="file" name="my_file[]" multiple  class="form-control" accept="image/*" data-inputsize="medium">-->
+<!--                                            <p class="help-block">Images only (image/*)</p>-->
+<!--                                            <label for="gal1" class="has-error help-block" generated="true" style="display:none;"></label>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
 									<div class="form-group">
-										<label class="col-md-3 control-label">Blog Name [TH] <span class="required">*</span></label>
-										<div class="col-md-9">
+										<label class="col-md-2 control-label">Tags:</label>
+										<div class="col-md-10"><input type="text" id="tags2"  name="tags" class="tags" value="<?php echo $value['tags'] ?>"></div>
+									</div>
+									<div class="form-group">
+										<label class="col-md-2 control-label">Blog Name [TH] <span class="required">*</span></label>
+										<div class="col-md-10">
 											<input type="text" name="NameTH" class="form-control required" value="<?php echo $value['NameTH'] ?>">
 										</div>
 									</div>
+									<div class="form-group">
+										<label class="col-md-2 control-label">Short Description [TH] :</label>
+										<div class="col-md-10"><textarea rows="5" name="shortDescTH" class="form-control"><?php echo $value['shortDescTH'] ?></textarea></div>
+									</div>
                                     <div class="form-group">
-                                        <label class="col-md-3 control-label">Description [TH] :</label>
-                                        <div class="col-md-9"><textarea  name="DescriptionTH" id="editor1"><?php echo $value['DescriptionTH'] ?></textarea></div>
+                                        <label class="col-md-2 control-label">Description [TH] :</label>
+                                        <div class="col-md-10"><textarea  name="DescriptionTH" id="editor1"><?php echo $value['DescriptionTH'] ?></textarea></div>
                                     </div>
 
                                     <div class="form-group">
-										<label class="col-md-3 control-label">Blog Name [EN] <span class="required">*</span></label>
-										<div class="col-md-9">
+										<label class="col-md-2 control-label">Blog Name [EN] <span class="required">*</span></label>
+										<div class="col-md-10">
 											<input type="text" name="NameEN" class="form-control required" value="<?php echo $value['NameEN'] ?>">
 										</div>
 									</div>
+									<div class="form-group">
+										<label class="col-md-2 control-label">Short Description [EN] :</label>
+										<div class="col-md-10"><textarea rows="5" name="shortDescEN" class="form-control"><?php echo $value['shortDescEN'] ?></textarea></div>
+									</div>
                                     <div class="form-group">
-                                        <label class="col-md-3 control-label">Description [EN] :</label>
-                                        <div class="col-md-9"><textarea rows="10" name="DescriptionEN" id="editor2" class="form-control wysiwyg"><?php echo $value['DescriptionEN'] ?></textarea></div>
+                                        <label class="col-md-2 control-label">Description [EN] :</label>
+                                        <div class="col-md-10"><textarea rows="10" name="DescriptionEN" id="editor2" class="form-control"><?php echo $value['DescriptionEN'] ?></textarea></div>
                                     </div>
 
                                     <div class="form-group">
-                                        <label class="col-md-3 control-label">Video</label>
-                                        <div class="col-md-9">
+                                        <label class="col-md-2 control-label">Video</label>
+                                        <div class="col-md-10">
                                             <input type="text" name="Video" class="form-control" value="<?php echo $value['Video'] ?>">
                                             <p class="help-block">Example (https://www.youtube.com/watch?v=ATzTsija1I4)</p>
                                         </div>
                                     </div>
 									<div class="form-actions">
                                         <input type="hidden" name="ID" value="<?php echo $value['ID']; ?>">
-										<input type="submit" value="INSERT" class="btn btn-primary pull-right">
+										<input type="submit" value="SUBMIT" class="btn btn-primary pull-right">
 									</div>
 								</form>
 							</div>

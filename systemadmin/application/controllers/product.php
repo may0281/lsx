@@ -35,20 +35,60 @@ class product extends CI_Controller {
 		echo "<script>window.location.assign('".base_url()."product/category');</script>";
 	}
 
-	public function catAdd()
-	{		
+	public function createCategory()
+	{
+
+        $coverImage = null;
+        if($_FILES['coverimg']['name']) //check file upload
+        {
+            $destination = "../images/product/";
+            $coverImage = date("His").'-'.$_FILES['coverimg']['name'];
+            $this->upload($destination,$coverImage,'coverimg');
+        }
 		$this->db->insert('product_category', array(
 		    'catTH' => $this->input->post('cat_th') ,
             'catEN' => $this->input->post('cat_en') ,
+            'descriptionTH' => $this->input->post('description_th') ,
+            'descriptionEN' => $this->input->post('description_en') ,
             'url' => $this->input->post('url') ,
+            'img' => $coverImage ,
             'updateDate' => date("Y-m-d H:i:s"),
             'Enable' => '1')
         );
 		echo "<script>window.location.assign('".base_url()."product/category');</script>";
 	}
 
+	public function updateCategory()
+	{
+        $coverImage = $this->input->post('oldCoverImg');
+        if($_FILES['coverimg']['name']) //check file upload
+        {
+            $destination = "../images/product/";
+            $coverImage = date("His").'-'.$_FILES['coverimg']['name'];
+            $this->upload($destination,$coverImage,'coverimg');
+            unlink("../images/product/".$this->input->post('oldCoverImg'));
+        }
+        $data = array(
+            'catTH' => $this->input->post('cat_th') ,
+            'catEN' => $this->input->post('cat_en') ,
+            'descriptionTH' => $this->input->post('description_th') ,
+            'descriptionEN' => $this->input->post('description_en') ,
+            'url' => $this->input->post('url') ,
+            'img' => $coverImage ,
+            'updateDate' => date("Y-m-d H:i:s"),
+        );
+		$this->db->where('id', $this->input->post('id'));
+		$this->db->update('product_category', $data);
+		echo "<script>window.location.assign('".base_url()."product/category');</script>";
+	}
+
 	public function catDel($checked,$id)
-	{		
+	{
+        $sql ="select * from product_category where id = '".$id."' ";
+        $query = $this->db->query($sql);
+        foreach($query->result_array() as $arr){
+            unlink("../images/product/".$arr['img']);
+        }
 		$this->db->delete('product_category', array('id' => $id));
 		echo "<script>window.location.assign('".base_url()."product/category');</script>";
 	}

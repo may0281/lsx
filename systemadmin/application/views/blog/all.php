@@ -77,6 +77,12 @@
                             <a href="#" title=""><?php echo strtoupper($subMenu) ?></a>
                         </li>
                     </ul>
+					<ul class="crumb-buttons">
+						<li>
+							<a href="<?php echo base_url();?>blog/add"><i class="icon-plus"></i><span>Create Blog</span></a>
+						</li>
+
+					</ul>
 				</div>
 
 				<!--=== Page Header ===-->

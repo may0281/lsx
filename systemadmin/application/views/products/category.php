@@ -87,17 +87,23 @@
 						</li>
 					</ul>
 
+					<ul class="crumb-buttons">
+						<li>
+							<a data-toggle="modal" href="#createProductCategory" ><i class="icon-plus"></i><span>Create a new category</span></a>
+						</li>
+
+					</ul>
 				</div>
 				<!-- /Breadcrumbs line -->
 
 				<!--=== Page Header ===-->
 				<div class="page-header">
 					<div class="page-title">
-						<h3><?php echo strtoupper($subMenu) ?>
-
-
+						<h3>
+							<?php echo strtoupper($subMenu) ?>
                         </h3>
 					</div>
+
 					
 					
 				</div>
@@ -105,7 +111,7 @@
 
 				<div class="row">
 					<!--=== Simple Table ===-->
-					<div class="col-md-7">
+					<div class="col-md-12">
 						<div class="widget box">
 							<div class="widget-header">
 								<h4><i class="icon-reorder"></i> LIST</h4>
@@ -116,17 +122,16 @@
 								</div>
 							</div>
 							<div class="widget-content">
-								<form class="form-horizontal row-border" method="post" action="<?php echo base_url();?>dara/catdel">
-								<table class="table table-hover" data-display-length="30"> 
+								<table class="table table-hover" data-display-length="30">
 									<thead>
 										<tr>
 											<th>#</th>
-											
 											<th>Category TH</th>
 											<th>Category EN</th>
 											<th>URL</th>
-
+											<th>Image</th>
 											<th>Enable</th>
+											<th>Edit</th>
 											<th>Delete</th>
 										</tr>
 									</thead>
@@ -134,16 +139,78 @@
 										<?php $i=1;foreach($q as $r){ ?>
 										<tr>
 											<td><?php echo $i;?></td>
-											
 											<td><?php echo $r['catTH'];?></td>
 											<td><?php echo $r['catEN'];?></td>
 											<td><?php echo $r['url'];?></td>
-
-											<td><div class="make-switch switch-mini" data-on="success" data-off="danger">
+											<td><img src="../../images/product/<?php echo $r['img'];?>" width="200px" ></td>
+											<td>
+												<div class="make-switch switch-mini" data-on="success" data-off="danger">
 												<input type="checkbox" onchange="OnChangeCheckbox (this)" id="myCheckbox" <?php if($r['Enable']==1){ echo "checked";}?>   value="<?php echo $r['id'];?>" />
 												</div>
 											</td>
-											<td><div class="make-switch switch-mini" data-on="success" data-off="danger">
+											<td>
+												<a data-toggle="modal" href="#editCat<?php echo $i;?>" ><i class="icon-edit" style="font-size: 20px"></i><span></span></a>
+												<div class="modal fade" id="editCat<?php echo $i;?>">
+													<div class="modal-dialog modal-lg">
+														<div class="modal-content">
+															<form class="form-horizontal row-border" id="validate-1" method="post" enctype="multipart/form-data" action="<?php echo base_url();?>product/updateCategory">
+																<div class="modal-header">
+																	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+																	<h4 class="modal-title">Update category.</h4>
+																</div>
+																<div class="modal-body">
+																	<div class="form-group">
+																		<label class="col-md-3 control-label">Name EN<span class="required">*</span></label>
+																		<div class="col-md-9">
+																			<input type="text" name="cat_en" class="form-control required" value="<?php echo $r['catEN'];?>">
+																		</div>
+																	</div>
+																	<div class="form-group">
+																		<label class="col-md-3 control-label">Description EN<span class="required">*</span></label>
+																		<div class="col-md-9">
+																			<textarea class="form-control required" name="description_en"><?php echo $r['descriptionEN'];?></textarea>
+																		</div>
+																	</div>
+																	<div class="form-group">
+																		<label class="col-md-3 control-label">Name TH<span class="required">*</span></label>
+																		<div class="col-md-9">
+																			<input type="text" name="cat_th" class="form-control required" value="<?php echo $r['catTH'];?>">
+																		</div>
+																	</div>
+																	<div class="form-group">
+																		<label class="col-md-3 control-label">Description TH<span class="required">*</span></label>
+																		<div class="col-md-9">
+																			<textarea class="form-control required" name="description_th"><?php echo $r['descriptionTH'];?></textarea>
+																		</div>
+																	</div>
+																	<div class="form-group">
+																		<label class="col-md-3 control-label">URL<span class="required">*</span></label>
+																		<div class="col-md-9">
+																			<input type="text" name="url" class="form-control required" value="<?php echo $r['url'];?>">
+																		</div>
+																	</div>
+																	<div class="form-group">
+																		<label class="col-md-3 control-label">Change Image:</label>
+																		<div class="col-md-9">
+																			<input type="hidden" name="oldCoverImg" value="<?php echo $r['img'];?>">
+																			<input type="file" name="coverimg" class="form-control"  data-style="fileinput">
+																			<p class="help-block">Images only (image/jpg,png) <br> Size (350x370) px.</p>
+																		</div>
+																	</div>
+																</div>
+																<div class="modal-footer">
+																	<input type="hidden" name="id" value="<?php echo $r['id'];?>">
+																	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+																	<button type="submit" class="btn btn-primary" >Save changes</button>
+																</div>
+															</form>
+														</div><!-- /.modal-content -->
+													</div><!-- /.modal-dialog -->
+												</div><!-- /.modal -->
+
+											</td>
+											<td>
+												<div class="make-switch switch-mini" data-on="success" data-off="danger">
 												<input type="checkbox" onchange="OnChangeCheckboxDel (this)" id="myCheckbox"  value="<?php echo $r['id'];?>" />
 												</div>
 											</td>
@@ -155,54 +222,73 @@
 
 									
 								</table>
-								
-								</form>
 							</div>
 						</div>
 						<!-- /Simple Table -->
 					</div>
 
-					<div class="col-md-5">
-						<div class="widget box">
-							<div class="widget-header">
-								<h4><i class="icon-reorder"></i> ADD Category</h4>
-							</div>
-							<div class="widget-content">
-								<form class="form-horizontal row-border" method="post" id="validate-1" action="<?php echo base_url(); ?>product/catAdd">
-									
-									<div class="form-group">
-										<label class="col-md-3 control-label">Category Name EN<span class="required">*</span></label>
-										<div class="col-md-9">
-											<input type="text" name="cat_en" class="form-control required">
-										</div>
-									</div>
-                                    <div class="form-group">
-										<label class="col-md-3 control-label">Category Name TH<span class="required">*</span></label>
-										<div class="col-md-9">
-											<input type="text" name="cat_th" class="form-control required">
-										</div>
-									</div>
-                                    <div class="form-group">
-										<label class="col-md-3 control-label">URL<span class="required">*</span></label>
-										<div class="col-md-9">
-											<input type="text" name="url" class="form-control required">
-										</div>
-									</div>
-									
-									
-									<div class="form-actions">
-										<input type="submit" value="Insert" class="btn btn-primary pull-right">
-									</div>
-								</form>
-							</div>
-						</div>
-						<!-- /Validation Example 1 -->
-					</div>
 				</div>
 			</div>
 			<!-- /.container -->
-
 		</div>
+
+		<div class="modal fade" id="createProductCategory">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<form class="form-horizontal row-border" id="validate-1" method="post" enctype="multipart/form-data" action="<?php echo base_url();?>product/createCategory">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title">Create a new category.</h4>
+						</div>
+						<div class="modal-body">
+							<div class="form-group">
+								<label class="col-md-3 control-label">Name EN<span class="required">*</span></label>
+								<div class="col-md-9">
+									<input type="text" name="cat_en" class="form-control required">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-3 control-label">Description EN<span class="required">*</span></label>
+								<div class="col-md-9">
+									<textarea class="form-control required" name="description_en"></textarea>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-3 control-label">Name TH<span class="required">*</span></label>
+								<div class="col-md-9">
+									<input type="text" name="cat_th" class="form-control required">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-3 control-label">Description TH<span class="required">*</span></label>
+								<div class="col-md-9">
+									<textarea class="form-control required" name="description_th"></textarea>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-3 control-label">URL<span class="required">*</span></label>
+								<div class="col-md-9">
+									<input type="text" name="url" class="form-control required">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-3 control-label">File Upload:</label>
+								<div class="col-md-9">
+									<input type="file" name="coverimg" class="form-control required"  data-style="fileinput">
+									<p class="help-block">Images only (image/jpg,png) <br> Size (350x370) px.</p>
+								</div>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<button type="submit" class="btn btn-primary" >Save changes</button>
+						</div>
+					</form>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+
+
 <script type="text/javascript">
 	function OnChangeCheckbox (checkbox) {
 		var slid = checkbox.value;

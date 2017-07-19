@@ -112,23 +112,40 @@
 						<div class="widget">
 							<div class="widget-content">
 								<div class="row">
-                                    <form method="post" action='<?php echo base_url();?>about/insertAddress'>
-                                        <div class="form-group">
-                                            <label class="col-md-1 control-label">Address</label>
-                                            <?php
-                                            $sql ="select * from address where ID = '1' ";
-                                            $query = $this->db->query($sql);
-                                            $result = $query->result_array();
-                                            foreach($result as $value){ ?>
-                                                <div class="col-md-8">
-                                                    <textarea rows="10" name="address" class="form-control wysiwyg"><?php echo $value['Address'];?></textarea>
-                                                    <input type="submit" value="UPDATE" class="btn btn-primary pull-right">
-                                                </div>
-                                                <div class="col-md-2"></div>
-                                            <?php } ?>
-                                        </div>
-                                    </form>
-                                </div>
+									<!--=== Validation Example 1 ===-->
+									<div class="col-md-12">
+										<div class="widget box">
+											<div class="widget-header">
+												<h4><i class="icon-reorder"></i> Address</h4>
+											</div>
+											<div class="widget-content">
+												<form class="form-horizontal row-border"  method="post" action='<?php echo base_url();?>about/updateAddress'>
+													<div class="form-group">
+														<?php
+														$sql ="select * from company_description where types = 'address'  limit 1";
+														$query = $this->db->query($sql);
+														$result = $query->result_array();
+														foreach($result as $value){ ?>
+															<label class="col-md-1 control-label">Address <br>[ TH ]</label>
+															<div class="col-md-5">
+																<textarea rows="10" name="content_th" class="form-control wysiwyg"><?php echo $value['content_th'];?></textarea>
+															</div>
+															<label class="col-md-1 control-label">Address <br>[ EN ]</label>
+															<div class="col-md-5">
+																<textarea rows="10" name="content_en" class="form-control wysiwyg"><?php echo $value['content_en'];?></textarea>
+															</div>
+														<?php } ?>
+													</div>
+
+													<div class="form-actions">
+														<input type="submit" value="UPDATE" class="btn btn-primary pull-right">
+													</div>
+												</form>
+											</div>
+										</div>
+										<!-- /Validation Example 1 -->
+									</div>
+								</div>
 
                                 <div class="row">
                                     <form method="post" action='<?php echo base_url();?>about/UpdateAboutUs'>
@@ -147,6 +164,51 @@
                                         </div>
                                     </form>
                                 </div>
+								<div class="row">
+									<!--=== Validation Example 1 ===-->
+									<div class="col-md-12">
+										<div class="widget box">
+											<div class="widget-header">
+												<h4><i class="icon-reorder"></i> Our Promise</h4>
+											</div>
+											<div class="widget-content">
+												<form class="form-horizontal row-border"  method="post" action='<?php echo base_url();?>about/updatePromise'>
+													<?php
+													$sql ="select * from company_description where types = 'our_promise'  limit 1";
+													$query = $this->db->query($sql);
+													$result = $query->result_array();
+													foreach($result as $value){ ?>
+													<div class="form-group">
+														<label class="col-md-1 control-label">Content <br>[ TH ]</label>
+														<div class="col-md-5">
+															<textarea rows="10" name="content_th" class="form-control wysiwyg"><?php echo $value['content_th'];?></textarea>
+														</div>
+														<label class="col-md-1 control-label">Address <br>[ EN ]</label>
+														<div class="col-md-5">
+															<textarea rows="10" name="content_en" class="form-control wysiwyg"><?php echo $value['content_en'];?></textarea>
+														</div>
+													</div>
+														<div class="form-group">
+														<label class="col-md-1 control-label">Content </label>
+														<div class="col-md-5">
+															<input type="text"  name="author" class="form-control" value="<?php echo $value['author'];?>">
+														</div>
+														<label class="col-md-1 control-label">position</label>
+														<div class="col-md-5">
+															<input type="text"  name="position" class="form-control" value="<?php echo $value['position'];?>">
+														</div>
+													</div>
+													<?php } ?>
+
+													<div class="form-actions">
+														<input type="submit" value="UPDATE" class="btn btn-primary pull-right">
+													</div>
+												</form>
+											</div>
+										</div>
+										<!-- /Validation Example 1 -->
+									</div>
+								</div>
 							</div>
 						</div> <!-- /.widget .box -->
 					</div> <!-- /.col-md-6 -->

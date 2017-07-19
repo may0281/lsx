@@ -2,17 +2,426 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67ed6d2d-d5c5-48eb-a739-c0d7af8788c4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/systemadmin/application/controllers/landing.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/systemadmin/application/models/landing_model.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/systemadmin/application/views/dashboard.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/systemadmin/application/views/landing/add.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/systemadmin/application/views/landing/all.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/systemadmin/application/views/landing/edit.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/et-lineicons/fonts/icomoon.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/et-lineicons/fonts/icomoon.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/et-lineicons/fonts/icomoon.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/fontawesome/fonts/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/fontawesome/fonts/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/fontawesome/fonts/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/fontawesome/fonts/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/fontawesome/fonts/fontawesome-webfont.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/linea-font/fonts/linea-icon-font.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/linea-font/fonts/linea-icon-font.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/linea-font/fonts/linea-icon-font.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/app-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/app-store.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/avatar-placeholder.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/client-logo-placeholder.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/favicon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/google-play.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/hero/ag2-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/logo-large-dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/logo-light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/lsx-logo-0.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/map-pin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/pat-diagonal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/shattered.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/shop/baner-shop-dark.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/shop/baner-shop-white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/shop/p-thumb-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/shop/p-thumb-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/fonts/texb.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.htaccess" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/.htaccess" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/cache/.htaccess" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/config/autoload.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/config/config.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/config/constants.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/config/database.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/config/doctypes.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/config/email.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/config/foreign_chars.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/config/hooks.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/config/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/config/migration.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/config/mimes.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/config/profiler.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/config/routes.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/config/smileys.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/config/user_agents.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/blog.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/car.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/changeLang.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/checkcontent.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/contact.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/corporate.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/errors.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/home.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/lang.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/news.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/portfolio.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/services.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/slide.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/underconstruction.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/core/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/errors/error_404.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/errors/error_db.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/errors/error_general.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/errors/error_php.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/errors/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/helpers/asset_helper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/helpers/fn_helper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/helpers/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/hooks/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/language/chaina/chaina_lang.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/language/en/en_lang.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/language/en/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/language/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/language/th/th_lang.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/Curl.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/Facebook.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/base_facebook.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/fb_ca_chain_bundle.crt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/libraries/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/logs/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/models/blog_model.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/models/home_model.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/models/portfolio_model.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/third_party/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/blog/blog-sidebar.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/blog/detail.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/blog/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/blog/page-title.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/dashboard.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/example/ex_1.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/example/ex_2.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/example/ex_3.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/example/ex_4.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/example/ex_5.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/portfolio/detail.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/portfolio/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/portfolio/page-title.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/template/404.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/template/content-blog.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/template/content-parallax.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/template/content-portfolio.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/template/content-product-list.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/template/content-product.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/template/content-promotion.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/template/content-slide.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/template/content-testimonials.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/template/footer-2.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/template/footer.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/template/header.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/contact-form/contact-form.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/et-lineicons/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/et-lineicons/fonts/icomoon.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/fontawesome/css/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/fontawesome/fonts/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/linea-font/css/linea-font.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/fonts/linea-font/fonts/linea-icon-font.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/loader.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/gmap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/vendor/animDots.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/vendor/animated-heading.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/vendor/bootstrap-hover-dropdown.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/vendor/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/vendor/countup.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/vendor/google-fonts.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/vendor/isotope.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/vendor/jquery-2.1.4.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/vendor/jquery-ui.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/vendor/jquery.ajaxchimp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/vendor/jquery.countdown.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/vendor/jquery.easing.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/vendor/jquery.easypiechart.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/vendor/jquery.localScroll.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/vendor/jquery.magnific-popup.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/vendor/jquery.mb.YTPlayer.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/vendor/jquery.parallax.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/vendor/jquery.scrollTo.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/vendor/jquery.stellar.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/vendor/jquery.waypoints.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/vendor/kenburns.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/vendor/modernizr-2.8.3.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/vendor/packery-mode.pkgd.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/vendor/slick.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/vendor/smoothscroll.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/vendor/wow.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/main.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/main.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/responsive.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/responsive.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/scss/_404-page.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/scss/_alerts.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/scss/_blog.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/scss/_buttons.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/scss/_clients.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/scss/_comingsoon.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/scss/_contact.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/scss/_counters.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/scss/_cta.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/scss/_faq.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/scss/_features.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/scss/_footers.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/scss/_forms.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/scss/_headers.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/scss/_hero.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/scss/_hover-effects.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/scss/_labels.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/scss/_line-icons-page.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/scss/_login.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/scss/_maintenance-page.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/scss/_navigation.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/scss/_portfolio.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/scss/_pricing.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/scss/_progress.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/scss/_settings.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/scss/_shop.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/scss/_sliders.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/scss/_tables.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/scss/_team.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/scss/_testimonials.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/scss/_typography.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/scss/_utility.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/scss/main.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/scss/responsive.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/scss/template-picker.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/template-picker.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/template-picker.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/vendor/animate.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/vendor/animated-heading.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/vendor/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/vendor/bootstrap.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/vendor/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/vendor/jquery-ui.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/vendor/jquery-ui.structure.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/vendor/jquery.mb.YTPlayer.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/vendor/legacy-bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/vendor/magnific-popup.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/styles/vendor/slick.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/license.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/.htaccess" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/core/Benchmark.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/core/CodeIgniter.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/core/Common.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/core/Common.php.bak" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/core/Config.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/core/Controller.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/core/Exceptions.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/core/Hooks.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/core/Input.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/core/Lang.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/core/Loader.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/core/Model.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/core/Output.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/core/Router.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/core/Security.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/core/URI.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/core/Utf8.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/core/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/DB.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/DB_active_rec.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/DB_cache.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/DB_driver.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/DB_forge.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/DB_result.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/DB_utility.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/drivers/cubrid/cubrid_driver.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/drivers/cubrid/cubrid_forge.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/drivers/cubrid/cubrid_result.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/drivers/cubrid/cubrid_utility.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/drivers/cubrid/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/drivers/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/drivers/mssql/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/drivers/mssql/mssql_driver.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/drivers/mssql/mssql_forge.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/drivers/mssql/mssql_result.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/drivers/mssql/mssql_utility.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/drivers/mysql/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/drivers/mysql/mysql_driver.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/drivers/mysql/mysql_forge.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/drivers/mysql/mysql_result.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/drivers/mysql/mysql_utility.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/drivers/mysqli/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/drivers/mysqli/mysqli_driver.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/drivers/mysqli/mysqli_forge.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/drivers/mysqli/mysqli_result.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/drivers/mysqli/mysqli_utility.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/drivers/oci8/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/drivers/oci8/oci8_driver.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/drivers/oci8/oci8_forge.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/drivers/oci8/oci8_result.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/drivers/oci8/oci8_utility.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/drivers/odbc/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/drivers/odbc/odbc_driver.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/drivers/odbc/odbc_forge.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/drivers/odbc/odbc_result.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/drivers/odbc/odbc_utility.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/drivers/pdo/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/drivers/pdo/pdo_driver.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/drivers/pdo/pdo_forge.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/drivers/pdo/pdo_result.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/drivers/pdo/pdo_utility.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/drivers/postgre/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/drivers/postgre/postgre_driver.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/drivers/postgre/postgre_forge.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/drivers/postgre/postgre_result.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/drivers/postgre/postgre_utility.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/drivers/sqlite/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/drivers/sqlite/sqlite_driver.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/drivers/sqlite/sqlite_forge.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/drivers/sqlite/sqlite_result.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/drivers/sqlite/sqlite_utility.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/drivers/sqlsrv/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/drivers/sqlsrv/sqlsrv_driver.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/drivers/sqlsrv/sqlsrv_forge.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/drivers/sqlsrv/sqlsrv_result.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/drivers/sqlsrv/sqlsrv_utility.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/database/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/fonts/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/helpers/array_helper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/helpers/captcha_helper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/helpers/cookie_helper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/helpers/date_helper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/helpers/directory_helper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/helpers/download_helper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/helpers/email_helper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/helpers/file_helper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/helpers/form_helper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/helpers/html_helper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/helpers/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/helpers/inflector_helper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/helpers/language_helper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/helpers/number_helper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/helpers/path_helper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/helpers/security_helper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/helpers/smiley_helper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/helpers/string_helper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/helpers/text_helper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/helpers/typography_helper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/helpers/url_helper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/helpers/xml_helper.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/language/english/calendar_lang.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/language/english/date_lang.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/language/english/db_lang.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/language/english/email_lang.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/language/english/form_validation_lang.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/language/english/ftp_lang.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/language/english/imglib_lang.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/language/english/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/language/english/migration_lang.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/language/english/number_lang.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/language/english/profiler_lang.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/language/english/unit_test_lang.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/language/english/upload_lang.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/language/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/libraries/Cache/Cache.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/libraries/Cache/drivers/Cache_apc.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/libraries/Cache/drivers/Cache_dummy.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/libraries/Cache/drivers/Cache_file.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/libraries/Cache/drivers/Cache_memcached.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/libraries/Cache/drivers/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/libraries/Cache/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/libraries/Calendar.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/libraries/Cart.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/libraries/Driver.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/libraries/Email.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/libraries/Encrypt.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/libraries/Form_validation.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/libraries/Ftp.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/libraries/Image_lib.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/libraries/Javascript.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/libraries/Log.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/libraries/Migration.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/libraries/Pagination.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/libraries/Parser.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/libraries/Profiler.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/libraries/Session.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/libraries/Sha1.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/libraries/Table.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/libraries/Trackback.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/libraries/Typography.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/libraries/Unit_test.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/libraries/Upload.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/libraries/User_agent.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/libraries/Xmlrpc.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/libraries/Xmlrpcs.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/libraries/Zip.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/libraries/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/libraries/javascript/Jquery.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/libraries/javascript/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/systemadmin/application/controllers/client.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/systemadmin/application/controllers/portfolio.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/systemadmin/application/controllers/report.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/systemadmin/application/controllers/user.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/systemadmin/application/language/en/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/systemadmin/application/models/client_model.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/systemadmin/application/models/portfolio_model.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/systemadmin/application/models/user_model.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/systemadmin/application/views/client.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/systemadmin/application/views/manage-slide.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/systemadmin/application/views/portfolio/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/systemadmin/application/views/portfolio/manage.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/systemadmin/application/views/user.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/blog/1497416076.png" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/systemadmin/application/language/english/english_lang.php" afterPath="$PROJECT_DIR$/systemadmin/application/language/en/en_lang.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/systemadmin/application/language/english/index.html" afterPath="$PROJECT_DIR$/application/cache/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/systemadmin/application/language/thailand/thailand_lang.php" afterPath="$PROJECT_DIR$/systemadmin/application/language/th/th_lang.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/blog/01497377992.jpg" afterPath="$PROJECT_DIR$/images/blog/01497377992.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/blog/11497377992.jpg" afterPath="$PROJECT_DIR$/images/blog/11497377992.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/blog/1497377168.jpg" afterPath="$PROJECT_DIR$/images/blog/1497377168.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/blog/1497377335.jpg" afterPath="$PROJECT_DIR$/images/blog/1497377335.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/blog/1497377976.jpg" afterPath="$PROJECT_DIR$/images/blog/1497377976.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/product/01497373526.jpg" afterPath="$PROJECT_DIR$/images/product/01497373526.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/product/01497377013.jpg" afterPath="$PROJECT_DIR$/images/product/01497377013.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/product/11497373526.jpg" afterPath="$PROJECT_DIR$/images/product/11497373526.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/product/11497377013.jpg" afterPath="$PROJECT_DIR$/images/product/11497377013.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/product/1497125732.jpg" afterPath="$PROJECT_DIR$/images/product/1497125732.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/product/14971257321.jpg" afterPath="$PROJECT_DIR$/images/product/14971257321.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/product/1497372058.png" afterPath="$PROJECT_DIR$/images/product/1497372058.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/product/1497372138.png" afterPath="$PROJECT_DIR$/images/product/1497372138.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/product/1497372182.png" afterPath="$PROJECT_DIR$/images/product/1497372182.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/product/1497372881.jpg" afterPath="$PROJECT_DIR$/images/product/1497372881.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/product/1497377013.jpg" afterPath="$PROJECT_DIR$/images/product/1497377013.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/product/21497373526.jpg" afterPath="$PROJECT_DIR$/images/product/21497373526.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/product/31497373526.jpg" afterPath="$PROJECT_DIR$/images/product/31497373526.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/promotion/1497425714.png" afterPath="$PROJECT_DIR$/images/promotion/1497425714.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/lsx.iml" afterPath="$PROJECT_DIR$/.idea/lsx.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/systemadmin/application/controllers/about.php" afterPath="$PROJECT_DIR$/systemadmin/application/controllers/about.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/systemadmin/application/controllers/blog.php" afterPath="$PROJECT_DIR$/systemadmin/application/controllers/blog.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/systemadmin/application/controllers/dashboard.php" afterPath="$PROJECT_DIR$/systemadmin/application/controllers/dashboard.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/systemadmin/application/controllers/login.php" afterPath="$PROJECT_DIR$/systemadmin/application/controllers/login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/systemadmin/application/controllers/product.php" afterPath="$PROJECT_DIR$/systemadmin/application/controllers/product.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/systemadmin/application/models/blog_model.php" afterPath="$PROJECT_DIR$/systemadmin/application/models/blog_model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/systemadmin/application/models/dashboard_model.php" afterPath="$PROJECT_DIR$/systemadmin/application/models/dashboard_model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/systemadmin/application/views/about/index.php" afterPath="$PROJECT_DIR$/systemadmin/application/views/about/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/systemadmin/application/views/blog/add.php" afterPath="$PROJECT_DIR$/systemadmin/application/views/blog/add.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/systemadmin/application/views/blog/all.php" afterPath="$PROJECT_DIR$/systemadmin/application/views/blog/all.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/systemadmin/application/views/blog/category.php" afterPath="$PROJECT_DIR$/systemadmin/application/views/blog/category.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/systemadmin/application/views/blog/edit.php" afterPath="$PROJECT_DIR$/systemadmin/application/views/blog/edit.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/systemadmin/application/views/dashboard.php" afterPath="$PROJECT_DIR$/systemadmin/application/views/dashboard.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/systemadmin/application/views/landing/add.php" afterPath="$PROJECT_DIR$/systemadmin/application/views/landing/add.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/systemadmin/application/views/landing/all.php" afterPath="$PROJECT_DIR$/systemadmin/application/views/landing/all.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/systemadmin/application/views/landing/edit.php" afterPath="$PROJECT_DIR$/systemadmin/application/views/landing/edit.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/systemadmin/application/views/products/add.php" afterPath="$PROJECT_DIR$/systemadmin/application/views/products/add.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/systemadmin/application/views/products/all.php" afterPath="$PROJECT_DIR$/systemadmin/application/views/products/all.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/systemadmin/application/views/products/category.php" afterPath="$PROJECT_DIR$/systemadmin/application/views/products/category.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/systemadmin/application/views/products/edit.php" afterPath="$PROJECT_DIR$/systemadmin/application/views/products/edit.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/systemadmin/application/views/promotion/add.php" afterPath="$PROJECT_DIR$/systemadmin/application/views/promotion/add.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/systemadmin/application/views/promotion/all.php" afterPath="$PROJECT_DIR$/systemadmin/application/views/promotion/all.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/systemadmin/application/views/promotion/category.php" afterPath="$PROJECT_DIR$/systemadmin/application/views/promotion/category.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/systemadmin/application/views/promotion/edit.php" afterPath="$PROJECT_DIR$/systemadmin/application/views/promotion/edit.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/systemadmin/application/views/template/left.php" afterPath="$PROJECT_DIR$/systemadmin/application/views/template/left.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/systemadmin/assets/sample.js" afterPath="$PROJECT_DIR$/systemadmin/assets/sample.js" />
     </list>
+    <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,93 +433,116 @@
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="lsx" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="landing.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/systemadmin/application/controllers/landing.php">
+      <file leaf-file-name="portfolio.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/portfolio.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
-              <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+            <state relative-caret-position="422">
+              <caret line="39" column="42" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/portfolio/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="810">
+              <caret line="63" column="63" selection-start-line="63" selection-start-column="63" selection-end-line="63" selection-end-column="63" />
+              <caret line="54" column="59" selection-start-line="54" selection-start-column="59" selection-end-line="54" selection-end-column="59" />
               <folding>
-                <marker date="1497548639794" expanded="true" signature="1072:1114" ph="select * fro... landing" />
-                <marker date="1497548639794" expanded="true" signature="1302:1356" ph="select * fro... landing_gallery" />
+                <element signature="n#style#0;n#nav#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/systemadmin/application/views/landing/add.php">
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/views/template/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
-              <caret line="158" column="13" lean-forward="true" selection-start-line="158" selection-start-column="13" selection-end-line="158" selection-end-column="13" />
+            <state relative-caret-position="307">
+              <caret line="159" column="197" selection-start-line="159" selection-start-column="197" selection-end-line="159" selection-end-column="197" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sample.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/systemadmin/assets/sample.js">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/blog/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="all.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/systemadmin/application/views/landing/all.php">
+      <file leaf-file-name="content-portfolio.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/template/content-portfolio.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="523">
-              <caret line="168" column="9" lean-forward="true" selection-start-line="168" selection-start-column="9" selection-end-line="168" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/systemadmin/application/views/landing/edit.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="landing_model.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/systemadmin/application/models/landing_model.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
-              <caret line="37" column="44" lean-forward="false" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dashboard.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/systemadmin/application/views/dashboard.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2091">
-              <caret line="123" column="79" lean-forward="false" selection-start-line="123" selection-start-column="73" selection-end-line="123" selection-end-column="79" />
+            <state relative-caret-position="180">
+              <caret line="12" column="79" selection-start-line="10" selection-start-column="16" selection-end-line="12" selection-end-column="79" />
               <folding>
-                <marker date="1497465717889" expanded="true" signature="8574:8610" ph="select * fro... address" />
-                <marker date="1497465717889" expanded="true" signature="9945:9975" ph="select * fro... about_us" />
+                <marker date="1500481525000" expanded="true" signature="213:238" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="left.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/systemadmin/application/views/template/left.php">
+      <file leaf-file-name="portfolio_model.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/portfolio_model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="171" column="76" lean-forward="false" selection-start-line="171" selection-start-column="76" selection-end-line="171" selection-end-column="76" />
-              <caret line="177" column="76" lean-forward="false" selection-start-line="177" selection-start-column="76" selection-end-line="177" selection-end-column="76" />
+            <state relative-caret-position="660">
+              <caret line="44" column="19" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="en_lang.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/language/en/en_lang.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="27" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="th_lang.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/language/th/th_lang.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="30" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="page-title.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/portfolio/page-title.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="74" selection-start-line="6" selection-start-column="69" selection-end-line="6" selection-end-column="74" />
               <folding>
-                <element signature="n#li#2;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="e#5154#6049#0#PHP" expanded="false" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#header#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="portfolio-boxed-1col.html" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Source/Definity_Multipurpose One-Multi Page Template/Definity/pages/portfolio/portfolio-boxed-1col.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="456" column="39" selection-start-line="394" selection-start-column="8" selection-end-line="456" selection-end-column="39" />
+              <folding>
+                <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -144,41 +576,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/systemadmin/application/config/database.php" />
-        <option value="$PROJECT_DIR$/systemadmin/application/views/authen/login.php" />
-        <option value="$PROJECT_DIR$/systemadmin/application/models/login_model.php" />
-        <option value="$USER_HOME$/Desktop/lifestyle_category.sql" />
-        <option value="$PROJECT_DIR$/systemadmin/application/views/products/category.php" />
-        <option value="$USER_HOME$/Desktop/lifestyle.sql" />
-        <option value="$USER_HOME$/Desktop/gallerylifestyle.sql" />
-        <option value="$USER_HOME$/Desktop/lifestyle_hotnew.sql" />
-        <option value="$PROJECT_DIR$/systemadmin/application/views/products/all.php" />
-        <option value="$PROJECT_DIR$/systemadmin/application/models/product_model.php" />
+        <option value="$PROJECT_DIR$/systemadmin/application/views/about/index.php" />
+        <option value="$PROJECT_DIR$/application/views/template/content-testimonials.php" />
+        <option value="$PROJECT_DIR$/application/views/dashboard.php" />
+        <option value="$PROJECT_DIR$/systemadmin/application/controllers/blog.php" />
+        <option value="$PROJECT_DIR$/application/views/template/footer.php" />
+        <option value="$PROJECT_DIR$/application/views/template/footer-2.php" />
+        <option value="$PROJECT_DIR$/assets/styles/scss/_headers.scss" />
+        <option value="$PROJECT_DIR$/assets/styles/scss/_navigation.scss" />
+        <option value="$PROJECT_DIR$/application/views/template/blog-sidebar.php" />
+        <option value="$PROJECT_DIR$/assets/styles/vendor/bootstrap.min.css" />
+        <option value="$PROJECT_DIR$/application/models/blog_model.php" />
+        <option value="$PROJECT_DIR$/application/views/template/404.php" />
+        <option value="$PROJECT_DIR$/application/views/blog/page-title.php" />
+        <option value="$PROJECT_DIR$/application/controllers/blog.php" />
+        <option value="$PROJECT_DIR$/application/views/blog/blog-sidebar.php" />
+        <option value="$PROJECT_DIR$/application/views/blog/detail.php" />
+        <option value="$PROJECT_DIR$/application/views/blog/index.php" />
+        <option value="$PROJECT_DIR$/systemadmin/application/views/template/left.php" />
+        <option value="$PROJECT_DIR$/systemadmin/application/models/portfoilo_model.php" />
+        <option value="$PROJECT_DIR$/systemadmin/application/views/portfolio/add.php" />
+        <option value="$PROJECT_DIR$/systemadmin/application/views/portfolio/index.php" />
+        <option value="$PROJECT_DIR$/systemadmin/application/views/blog/add.php" />
+        <option value="$PROJECT_DIR$/systemadmin/application/views/blog/category.php" />
+        <option value="$PROJECT_DIR$/systemadmin/application/views/blog/edit.php" />
+        <option value="$PROJECT_DIR$/systemadmin/application/views/landing/add.php" />
+        <option value="$PROJECT_DIR$/systemadmin/application/views/landing/edit.php" />
+        <option value="$PROJECT_DIR$/systemadmin/application/views/manage-slide.php" />
         <option value="$PROJECT_DIR$/systemadmin/application/views/products/add.php" />
         <option value="$PROJECT_DIR$/systemadmin/application/views/products/edit.php" />
-        <option value="$PROJECT_DIR$/systemadmin/application/models/blog_model.php" />
-        <option value="$PROJECT_DIR$/systemadmin/application/views/blog/category.php" />
-        <option value="$PROJECT_DIR$/systemadmin/application/views/blog/all.php" />
-        <option value="$PROJECT_DIR$/systemadmin/application/views/blog/add.php" />
-        <option value="$PROJECT_DIR$/systemadmin/application/views/blog/edit.php" />
-        <option value="$PROJECT_DIR$/systemadmin/application/controllers/blog.php" />
-        <option value="$PROJECT_DIR$/systemadmin/application/controllers/product.php" />
-        <option value="$PROJECT_DIR$/systemadmin/application/config/autoload.php" />
-        <option value="$PROJECT_DIR$/systemadmin/application/models/promotion_model.php" />
         <option value="$PROJECT_DIR$/systemadmin/application/views/promotion/add.php" />
-        <option value="$PROJECT_DIR$/systemadmin/application/views/promotion/all.php" />
+        <option value="$PROJECT_DIR$/systemadmin/application/views/promotion/category.php" />
         <option value="$PROJECT_DIR$/systemadmin/application/views/promotion/edit.php" />
-        <option value="$PROJECT_DIR$/systemadmin/application/controllers/promotion.php" />
-        <option value="$PROJECT_DIR$/systemadmin/application/views/dashboard.php" />
-        <option value="$PROJECT_DIR$/systemadmin/application/controllers/login.php" />
-        <option value="$PROJECT_DIR$/systemadmin/application/controllers/dashboard.php" />
-        <option value="$PROJECT_DIR$/systemadmin/application/models/landing_model.php" />
-        <option value="$USER_HOME$/Desktop/blog.sql" />
-        <option value="$PROJECT_DIR$/systemadmin/application/views/template/left.php" />
-        <option value="$PROJECT_DIR$/systemadmin/application/views/landing/all.php" />
-        <option value="$PROJECT_DIR$/systemadmin/application/controllers/landing.php" />
-        <option value="$PROJECT_DIR$/systemadmin/application/views/landing/add.php" />
-        <option value="$PROJECT_DIR$/systemadmin/assets/sample.js" />
+        <option value="$PROJECT_DIR$/systemadmin/application/models/portfolio_model.php" />
+        <option value="$PROJECT_DIR$/systemadmin/application/controllers/portfolio.php" />
+        <option value="$PROJECT_DIR$/systemadmin/application/models/blog_model.php" />
+        <option value="$PROJECT_DIR$/lsx.wordpress.xml" />
+        <option value="$PROJECT_DIR$/application/controllers/underconstruction.php" />
+        <option value="$PROJECT_DIR$/application/controllers/home.php" />
+        <option value="$PROJECT_DIR$/application/models/home_model.php" />
+        <option value="$PROJECT_DIR$/application/views/template/content-portfolio.php" />
+        <option value="$PROJECT_DIR$/application/views/template/content-blog.php" />
+        <option value="$PROJECT_DIR$/application/config/routes.php" />
+        <option value="$PROJECT_DIR$/application/views/portfolio/page-title.php" />
+        <option value="$PROJECT_DIR$/systemadmin/application/views/portfolio/manage.php" />
+        <option value="$PROJECT_DIR$/application/language/en/en_lang.php" />
+        <option value="$PROJECT_DIR$/application/language/th/th_lang.php" />
+        <option value="$PROJECT_DIR$/application/models/portfolio_model.php" />
+        <option value="$PROJECT_DIR$/application/controllers/portfolio.php" />
+        <option value="$PROJECT_DIR$/application/views/portfolio/detail.php" />
+        <option value="$PROJECT_DIR$/application/views/portfolio/index.php" />
+        <option value="$PROJECT_DIR$/application/views/template/header.php" />
       </list>
     </option>
   </component>
@@ -190,10 +638,19 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="873" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -217,6 +674,12 @@
               <option name="myItemId" value="lsx" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lsx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="lsx" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
@@ -229,24 +692,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="lsx" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="systemadmin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lsx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lsx" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="systemadmin" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -261,10 +706,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="lsx" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="systemadmin" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -286,7 +727,25 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="systemadmin" />
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lsx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lsx" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -298,129 +757,37 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="promotion" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lsx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lsx" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="systemadmin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="products" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lsx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lsx" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="systemadmin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="landing" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lsx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lsx" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="systemadmin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lsx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lsx" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
+              <option name="myItemId" value="blog" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../aeon" />
     <property name="js.eslint.eslintPackage" value="" />
-    <property name="SearchEverywhereHistoryKey" value="lef&#9;FILE&#9;file://C:/xampp/htdocs/lsx/systemadmin/application/views/template/left.php&#10;left&#9;FILE&#9;file://C:/xampp/htdocs/lsx/systemadmin/application/views/template/left.php&#10;ckeditor.js&#9;FILE&#9;file://C:/xampp/htdocs/lsx/systemadmin/assets/ckeditor/ckeditor.js" />
+    <property name="SearchEverywhereHistoryKey" value="port&#9;FILE&#9;file:///Applications/XAMPP/xamppfiles/htdocs/lsx/application/models/portfolio_model.php&#10;th_l&#9;FILE&#9;file:///Applications/XAMPP/xamppfiles/htdocs/lsx/application/language/th/th_lang.php&#10;en_&#9;FILE&#9;file:///Applications/XAMPP/xamppfiles/htdocs/lsx/application/language/en/en_lang.php&#10;po&#9;FILE&#9;file:///Applications/XAMPP/xamppfiles/htdocs/lsx/systemadmin/application/controllers/portfolio.php&#10;route&#9;FILE&#9;file:///Applications/XAMPP/xamppfiles/htdocs/lsx/application/config/routes.php&#10;en.p&#9;FILE&#9;file:///Applications/XAMPP/xamppfiles/htdocs/lsx/application/language/en/en_lang.php&#10;home_&#9;FILE&#9;file:///Applications/XAMPP/xamppfiles/htdocs/lsx/application/models/home_model.php&#10;blog&#9;FILE&#9;file:///Applications/XAMPP/xamppfiles/htdocs/lsx/application/models/blog_model.php&#10;b&#9;FILE&#9;file:///Applications/XAMPP/xamppfiles/htdocs/lsx/systemadmin/application/models/blog_model.php&#10;blog_mod&#9;FILE&#9;file:///Applications/XAMPP/xamppfiles/htdocs/lsx/systemadmin/application/models/blog_model.php&#10;left&#9;FILE&#9;file:///Applications/XAMPP/xamppfiles/htdocs/lsx/systemadmin/application/views/template/left.php&#10;rout&#9;FILE&#9;file:///Applications/XAMPP/xamppfiles/htdocs/lsx/application/config/routes.php&#10;blog/i&#9;FILE&#9;file:///Applications/XAMPP/xamppfiles/htdocs/lsx/application/views/blog/index.php&#10;_fea&#9;FILE&#9;file:///Applications/XAMPP/xamppfiles/htdocs/lsx/assets/styles/scss/_features.scss&#10;header&#9;FILE&#9;file:///Applications/XAMPP/xamppfiles/htdocs/lsx/application/views/template/header.php&#10;_foot&#9;FILE&#9;file:///Applications/XAMPP/xamppfiles/htdocs/lsx/assets/styles/scss/_footers.scss&#10;hom&#9;FILE&#9;file:///Applications/XAMPP/xamppfiles/htdocs/lsx/application/models/home_model.php&#10;home&#9;FILE&#9;file:///Applications/XAMPP/xamppfiles/htdocs/lsx/application/models/home_model.php&#10;blog_m&#9;null&#9;null&#10;gmap.js&#9;FILE&#9;file:///Applications/XAMPP/xamppfiles/htdocs/lsx/assets/js/gmap.js&#10;main&#9;FILE&#9;file:///Applications/XAMPP/xamppfiles/htdocs/lsx/assets/styles/scss/main.scss&#10;lef&#9;FILE&#9;file:///Applications/XAMPP/xamppfiles/htdocs/lsx/systemadmin/application/views/template/left.php&#10;_tes&#9;FILE&#9;file:///Applications/XAMPP/xamppfiles/htdocs/lsx/assets/styles/scss/_testimonials.scss&#10;cta&#9;FILE&#9;file:///Applications/XAMPP/xamppfiles/htdocs/lsx/assets/styles/scss/_cta.scss&#10;conte&#9;FILE&#9;file:///Applications/XAMPP/xamppfiles/htdocs/lsx/application/views/template/content-slide.php&#10;mai&#9;FILE&#9;file:///Applications/XAMPP/xamppfiles/htdocs/lsx/assets/styles/main.css&#10;head&#9;FILE&#9;file:///Applications/XAMPP/xamppfiles/htdocs/lsx/application/views/template/header.php&#10;_u&#9;FILE&#9;file:///Applications/XAMPP/xamppfiles/htdocs/lsx/assets/styles/scss/_utility.scss&#10;con&#9;FILE&#9;file:///Applications/XAMPP/xamppfiles/htdocs/lsx/application/views/template/content-product.php&#10;content-sli&#9;FILE&#9;file:///Applications/XAMPP/xamppfiles/htdocs/lsx/application/views/template/content-slide.php&#10;da&#9;FILE&#9;file:///Applications/XAMPP/xamppfiles/htdocs/lsx/systemadmin/application/views/dashboard.php&#10;product_m&#9;FILE&#9;file:///Applications/XAMPP/xamppfiles/htdocs/lsx/systemadmin/application/models/product_model.php&#10;utility.&#9;FILE&#9;file:///Applications/XAMPP/xamppfiles/htdocs/lsx/assets/styles/scss/_utility.scss&#10;foot&#9;FILE&#9;file:///Applications/XAMPP/xamppfiles/htdocs/lsx/application/views/template/footer.php&#10;hea&#9;FILE&#9;file:///Applications/XAMPP/xamppfiles/htdocs/lsx/application/views/template/header.php&#10;home_mod&#9;FILE&#9;file:///Applications/XAMPP/xamppfiles/htdocs/lsx/application/models/home_model.php&#10;form_validation.js&#9;FILE&#9;file:///Applications/XAMPP/xamppfiles/htdocs/lsx/systemadmin/assets/js/demo/form_validation.js&#10;main.js&#9;FILE&#9;file:///Applications/XAMPP/xamppfiles/htdocs/lsx/assets/js/main.js&#10;ckeditor.js&#9;FILE&#9;file://C:/xampp/htdocs/lsx/systemadmin/assets/ckeditor/ckeditor.js" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\lsx\systemadmin\application\views\landing" />
-      <recent name="C:\xampp\htdocs\lsx\systemadmin\application\models" />
-      <recent name="C:\xampp\htdocs\lsx\systemadmin\application\controllers" />
-      <recent name="C:\xampp\htdocs\lsx\systemadmin\application\views" />
-      <recent name="C:\xampp\htdocs\lsx\systemadmin\application\views\products" />
+      <recent name="$PROJECT_DIR$/application/views/portfolio" />
+      <recent name="$PROJECT_DIR$/application/models" />
+      <recent name="$PROJECT_DIR$/application/controllers" />
+      <recent name="$PROJECT_DIR$/systemadmin/application/views/portfolio" />
+      <recent name="$PROJECT_DIR$/systemadmin/application/models" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/application/views/blog" />
       <recent name="C:\xampp\htdocs\lsx\systemadmin\application\views\authen" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
-      <config-file value="" />
-      <node-interpreter value="project" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
@@ -438,10 +805,6 @@
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
       <method />
     </configuration>
-    <configuration default="true" type="PhpSpecConfigurationType" factoryName="PHPSpec">
-      <PhpTestRunnerSettings />
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -452,7 +815,7 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run" />
+      <command value="run-script" />
       <scripts />
       <node-interpreter value="project" />
       <envs />
@@ -495,400 +858,502 @@
       <workItem from="1497424082679" duration="1653000" />
       <workItem from="1497464144387" duration="2606000" />
       <workItem from="1497545882025" duration="3839000" />
+      <workItem from="1498052806878" duration="156000" />
+      <workItem from="1498146551624" duration="10491000" />
+      <workItem from="1498189494135" duration="305000" />
+      <workItem from="1498301274350" duration="6713000" />
+      <workItem from="1498802289296" duration="255000" />
+      <workItem from="1498895480435" duration="963000" />
+      <workItem from="1499266809710" duration="815000" />
+      <workItem from="1499316174216" duration="86000" />
+      <workItem from="1499920884080" duration="65954000" />
+      <workItem from="1500215620263" duration="28917000" />
+      <workItem from="1500362505851" duration="148000" />
+      <workItem from="1500365299159" duration="4794000" />
+      <workItem from="1500387416503" duration="2080000" />
+      <workItem from="1500457382347" duration="10909000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46497000" />
+    <option name="totallyTimeSpent" value="179083000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="873" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28517398" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22638889" sideWeight="0.4950249" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22638889" sideWeight="0.50497514" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22638889" sideWeight="0.4950249" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22638889" sideWeight="0.50497514" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <option name="time" value="9" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/systemadmin/application/views/authen/login.php">
+    <entry file="file://$USER_HOME$/Source/Definity_Multipurpose One-Multi Page Template/Definity/pages/blog/blog-2col.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="66" column="21" lean-forward="false" selection-start-line="66" selection-start-column="21" selection-end-line="66" selection-end-column="21" />
+        <state relative-caret-position="-420">
+          <caret line="740" column="20" selection-start-line="740" selection-start-column="20" selection-end-line="740" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/_types.php">
+    <entry file="file://$USER_HOME$/Source/Definity_Multipurpose One-Multi Page Template/Definity/404.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-61">
-          <caret line="63" column="13" lean-forward="false" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
+        <state relative-caret-position="257">
+          <caret line="326" column="37" selection-start-line="309" selection-start-column="8" selection-end-line="326" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/systemadmin/application/models/dara_model.php">
+    <entry file="file://$PROJECT_DIR$/application/views/template/404.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/blog/page-title.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="74" selection-start-line="6" selection-start-column="74" selection-end-line="6" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Source/Definity_Multipurpose One-Multi Page Template/Definity/pages/blog/blog-post.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="681" column="35" selection-start-line="398" selection-start-column="8" selection-end-line="681" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/blog/blog-sidebar.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="48" selection-start-line="0" selection-start-column="48" selection-end-line="0" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/lifestyle_category.sql" />
-    <entry file="file://$USER_HOME$/Desktop/lifestyle.sql" />
-    <entry file="file://$PROJECT_DIR$/systemadmin/application/views/products/category.php">
+    <entry file="file://$PROJECT_DIR$/application/views/blog/detail.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1479">
-          <caret line="87" column="25" lean-forward="false" selection-start-line="76" selection-start-column="20" selection-end-line="87" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/gallerylifestyle.sql" />
-    <entry file="file://$USER_HOME$/Desktop/lifestyle_hotnew.sql" />
-    <entry file="file://$PROJECT_DIR$/systemadmin/assets/ckeditor/ckeditor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/themeforest-5495486-melon-flat-responsive-admin-template/Template/form_components.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18343">
-          <caret line="1079" column="42" lean-forward="false" selection-start-line="1076" selection-start-column="36" selection-end-line="1079" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/systemadmin/application/models/exclusive_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1275">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/systemadmin/application/models/lifestyle_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-765">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/systemadmin/application/models/login_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/systemadmin/application/models/variety_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/systemadmin/application/models/dashboard_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-497">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/systemadmin/application/config/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="51" column="39" lean-forward="false" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/systemadmin/application/views/variety_edit.php" />
-    <entry file="file://$PROJECT_DIR$/systemadmin/application/views/products/edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="676">
-          <caret line="174" column="0" lean-forward="false" selection-start-line="174" selection-start-column="0" selection-end-line="174" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/systemadmin/application/views/products/all.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="135" column="103" lean-forward="false" selection-start-line="135" selection-start-column="49" selection-end-line="135" selection-end-column="103" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/systemadmin/application/views/blog/category.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3825">
-          <caret line="170" column="140" lean-forward="false" selection-start-line="170" selection-start-column="140" selection-end-line="170" selection-end-column="140" />
-          <caret line="210" column="51" lean-forward="false" selection-start-line="210" selection-start-column="51" selection-end-line="210" selection-end-column="51" />
-          <caret line="213" column="51" lean-forward="false" selection-start-line="213" selection-start-column="51" selection-end-line="213" selection-end-column="51" />
-          <caret line="222" column="51" lean-forward="false" selection-start-line="222" selection-start-column="51" selection-end-line="222" selection-end-column="51" />
-          <caret line="225" column="51" lean-forward="false" selection-start-line="225" selection-start-column="51" selection-end-line="225" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/systemadmin/application/views/blog/add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2873">
-          <caret line="169" column="42" lean-forward="false" selection-start-line="163" selection-start-column="36" selection-end-line="169" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/systemadmin/application/views/blog/edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2805">
-          <caret line="93" column="37" lean-forward="false" selection-start-line="93" selection-start-column="37" selection-end-line="93" selection-end-column="37" />
-          <caret line="154" column="82" lean-forward="false" selection-start-line="154" selection-start-column="82" selection-end-line="154" selection-end-column="82" />
-          <caret line="165" column="82" lean-forward="false" selection-start-line="165" selection-start-column="82" selection-end-line="165" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/systemadmin/application/views/blog/all.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1411">
-          <caret line="83" column="44" lean-forward="false" selection-start-line="83" selection-start-column="44" selection-end-line="83" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/systemadmin/application/models/product_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="35" column="33" lean-forward="false" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/systemadmin/application/config/autoload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="111" column="39" lean-forward="false" selection-start-line="111" selection-start-column="28" selection-end-line="111" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/systemadmin/application/views/up.php" />
-    <entry file="file://$PROJECT_DIR$/systemadmin/application/views/upload.php" />
-    <entry file="file://$PROJECT_DIR$/systemadmin/application/controllers/up.php" />
-    <entry file="file://$PROJECT_DIR$/systemadmin/application/controllers/product.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="224" column="45" lean-forward="true" selection-start-line="224" selection-start-column="45" selection-end-line="224" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/themeforest-5495486-melon-flat-responsive-admin-template/Template/ui_general.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-19155">
-          <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/systemadmin/assets/js/demo/ui_general.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="17" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/systemadmin/application/views/promotion/edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1853">
-          <caret line="109" column="183" lean-forward="false" selection-start-line="109" selection-start-column="141" selection-end-line="109" selection-end-column="183" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/systemadmin/application/views/promotion/add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3332">
-          <caret line="196" column="11" lean-forward="false" selection-start-line="185" selection-start-column="8" selection-end-line="196" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/systemadmin/application/views/promotion/all.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2822">
-          <caret line="166" column="56" lean-forward="false" selection-start-line="166" selection-start-column="47" selection-end-line="166" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/systemadmin/application/models/promotion_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="35" lean-forward="false" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/systemadmin/application/controllers/promotion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="43" column="9" lean-forward="false" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
-          <folding>
-            <element signature="n#index#0;n#promotion#0;n#!!top" expanded="false" />
-            <element signature="n#enable#0;n#promotion#0;n#!!top" expanded="false" />
-            <element signature="n#add#0;n#promotion#0;n#!!top" expanded="false" />
-            <element signature="n#add_action#0;n#promotion#0;n#!!top" expanded="false" />
-            <element signature="n#edit#0;n#promotion#0;n#!!top" expanded="false" />
-            <element signature="n#edit_action#0;n#promotion#0;n#!!top" expanded="false" />
-            <marker date="1497425103263" expanded="true" signature="1098:1142" ph="select * fro... blog" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/systemadmin/application/controllers/browse.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/systemadmin/application/views/dashboard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2091">
-          <caret line="123" column="79" lean-forward="false" selection-start-line="123" selection-start-column="73" selection-end-line="123" selection-end-column="79" />
-          <folding>
-            <marker date="1497465717889" expanded="true" signature="8574:8610" ph="select * fro... address" />
-            <marker date="1497465717889" expanded="true" signature="9945:9975" ph="select * fro... about_us" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/systemadmin/application/controllers/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="38" column="4" lean-forward="false" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
+        <state relative-caret-position="540">
+          <caret line="36" column="14" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/systemadmin/application/controllers/dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="51" column="12" lean-forward="false" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/systemadmin/application/controllers/blog.php">
+    <entry file="file://$PROJECT_DIR$/systemadmin/application/views/dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="110" column="37" lean-forward="false" selection-start-line="110" selection-start-column="16" selection-end-line="110" selection-end-column="37" />
-          <folding>
-            <marker date="1497378722125" expanded="true" signature="2134:2173" ph="select * fro... blog" />
-            <marker date="1497378722125" expanded="true" signature="2358:2409" ph="select * fro... blog_gallery" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/systemadmin/application/models/blog_model.php">
+    <entry file="file://$PROJECT_DIR$/systemadmin/application/models/dashboard_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="48" column="34" lean-forward="true" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
-          <folding>
-            <marker date="1497375749116" expanded="true" signature="418:519" ph="select a.*,b... blog" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/systemadmin/application/models/landing_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="37" column="44" lean-forward="false" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/blog.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="29" column="34" lean-forward="false" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/systemadmin/application/views/template/left.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="171" column="76" lean-forward="false" selection-start-line="171" selection-start-column="76" selection-end-line="171" selection-end-column="76" />
-          <caret line="177" column="76" lean-forward="false" selection-start-line="177" selection-start-column="76" selection-end-line="177" selection-end-column="76" />
+        <state relative-caret-position="722">
+          <caret line="175" column="70" selection-start-line="175" selection-start-column="70" selection-end-line="175" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/systemadmin/application/controllers/blog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="137" column="97" selection-start-line="102" selection-start-column="8" selection-end-line="137" selection-end-column="97" />
           <folding>
-            <element signature="n#li#2;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#5154#6049#0#PHP" expanded="false" />
+            <marker date="1500192786000" expanded="true" signature="2134:2173" ph="select * fro... blog" />
+            <marker date="1500192786000" expanded="true" signature="2358:2409" ph="select * fro... blog_gallery" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/systemadmin/application/views/landing/edit.php">
+    <entry file="file://$PROJECT_DIR$/systemadmin/application/views/portfolio/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="287">
+          <caret line="91" column="18" selection-start-line="91" selection-start-column="18" selection-end-line="91" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/systemadmin/application/views/landing/all.php">
+    <entry file="file://$PROJECT_DIR$/systemadmin/application/views/blog/add.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="168" column="9" lean-forward="true" selection-start-line="168" selection-start-column="9" selection-end-line="168" selection-end-column="9" />
-          <folding />
+        <state relative-caret-position="170">
+          <caret line="184" column="61" selection-start-line="184" selection-start-column="61" selection-end-line="184" selection-end-column="61" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/systemadmin/application/controllers/landing.php">
+    <entry file="file://$PROJECT_DIR$/systemadmin/application/views/blog/category.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding>
-            <marker date="1497548639794" expanded="true" signature="1072:1114" ph="select * fro... landing" />
-            <marker date="1497548639794" expanded="true" signature="1302:1356" ph="select * fro... landing_gallery" />
-          </folding>
+        <state relative-caret-position="162">
+          <caret line="190" column="61" selection-start-line="190" selection-start-column="61" selection-end-line="190" selection-end-column="61" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/systemadmin/application/views/products/add.php">
+    <entry file="file://$PROJECT_DIR$/systemadmin/application/views/blog/edit.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="189" column="21" lean-forward="false" selection-start-line="189" selection-start-column="8" selection-end-line="189" selection-end-column="21" />
-          <folding />
+        <state relative-caret-position="458">
+          <caret line="195" column="61" selection-start-line="195" selection-start-column="61" selection-end-line="195" selection-end-column="61" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/systemadmin/application/views/landing/add.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="158" column="13" lean-forward="true" selection-start-line="158" selection-start-column="13" selection-end-line="158" selection-end-column="13" />
+        <state relative-caret-position="162">
+          <caret line="134" column="61" selection-start-line="134" selection-start-column="61" selection-end-line="134" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/systemadmin/application/views/landing/edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="135" column="61" selection-start-line="135" selection-start-column="61" selection-end-line="135" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/systemadmin/application/views/manage-slide.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="197" column="61" selection-start-line="197" selection-start-column="61" selection-end-line="197" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/systemadmin/application/views/promotion/edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="587">
+          <caret line="201" column="62" selection-start-line="201" selection-start-column="62" selection-end-line="201" selection-end-column="62" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/systemadmin/assets/sample.js">
+    <entry file="file://$PROJECT_DIR$/systemadmin/application/views/promotion/category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="190" column="61" selection-start-line="190" selection-start-column="61" selection-end-line="190" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/systemadmin/application/views/promotion/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="168" column="61" selection-start-line="168" selection-start-column="61" selection-end-line="168" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/systemadmin/application/views/products/edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="187" column="61" selection-start-line="187" selection-start-column="61" selection-end-line="187" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/systemadmin/application/views/products/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="172" column="61" selection-start-line="172" selection-start-column="61" selection-end-line="172" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/systemadmin/application/models/portfolio_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="49" column="35" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/systemadmin/application/controllers/product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3480">
+          <caret line="232" column="8" selection-start-line="232" selection-start-column="8" selection-end-line="260" selection-end-column="100" />
+          <folding>
+            <marker date="1500008005000" expanded="true" signature="3076:3127" ph="select * fro... product_category" />
+            <marker date="1500008005000" expanded="true" signature="3930:3972" ph="select * fro... product" />
+            <marker date="1500008005000" expanded="true" signature="4160:4217" ph="select * fro... product_gallery" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/systemadmin/application/models/blog_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+          <folding>
+            <marker date="1500389332000" expanded="true" signature="418:519" ph="select a.*,b... blog" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/blog_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="38" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/underconstruction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/blog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="701">
+          <caret line="68" column="19" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lsx.wordpress.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/dashboard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="45" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/home_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="602">
+          <caret line="95" column="26" selection-start-line="95" selection-start-column="26" selection-end-line="95" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/template/content-promotion.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/template/content-blog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="79" selection-start-line="5" selection-start-column="79" selection-end-line="5" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Source/Definity_Multipurpose One-Multi Page Template/Definity/pages/portfolio/portfolio-single-1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="564">
+          <caret line="392" column="0" selection-start-line="392" selection-start-column="0" selection-end-line="455" selection-end-column="0" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/systemadmin/application/views/portfolio/manage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="168" column="100" selection-start-line="168" selection-start-column="88" selection-end-line="168" selection-end-column="100" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/systemadmin/application/controllers/portfolio.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1586">
+          <caret line="133" column="13" selection-start-line="133" selection-start-column="13" selection-end-line="133" selection-end-column="13" />
+          <folding>
+            <element signature="e#626#729#0#PHP" expanded="false" />
+            <element signature="n#create#0;n#portfolio#0;n#!!top" expanded="false" />
+            <marker date="1500388680000" expanded="true" signature="6166:6210" ph="select * fro... portfolio_slide" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/language/th/th_lang.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/portfolio/detail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Source/Definity_Multipurpose One-Multi Page Template/Definity/pages/portfolio/portfolio-boxed-1col.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="456" column="39" selection-start-line="394" selection-start-column="8" selection-end-line="456" selection-end-column="39" />
+          <folding>
+            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/language/en/en_lang.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="27" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/portfolio_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="44" column="19" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/portfolio.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="39" column="42" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/portfolio/page-title.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="74" selection-start-line="6" selection-start-column="69" selection-end-line="6" selection-end-column="74" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#header#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/template/content-portfolio.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="79" selection-start-line="10" selection-start-column="16" selection-end-line="12" selection-end-column="79" />
+          <folding>
+            <marker date="1500481525000" expanded="true" signature="213:238" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/blog/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/portfolio/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="63" column="63" selection-start-line="63" selection-start-column="63" selection-end-line="63" selection-end-column="63" />
+          <caret line="54" column="59" selection-start-line="54" selection-start-column="59" selection-end-line="54" selection-end-column="59" />
+          <folding>
+            <element signature="n#style#0;n#nav#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/template/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="159" column="197" selection-start-line="159" selection-start-column="197" selection-end-line="159" selection-end-column="197" />
           <folding />
         </state>
       </provider>

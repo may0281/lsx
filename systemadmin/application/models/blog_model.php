@@ -35,7 +35,6 @@ class blog_model extends ci_model
 
 	public function insertGallery($id,$img)
 	{
-		
 		$data = array('BlogID' => $id ,'Image' => $img );
 		$this->db->insert('blog_gallery', $data);
 	}

@@ -9,7 +9,7 @@ class about extends CI_Controller {
 		if($this->session->userdata('admin') == ''){
 			echo "<script> window.location.assign('".base_url()."login?ReturnUrl=".$_SERVER['REQUEST_URI']."');</script>";
 		}
-		$lang = $this->session->userdata("lang")==null?"thailand":$this->session->userdata("lang");
+		$lang = $this->session->userdata("lang")==null?"th":$this->session->userdata("lang");
 		$this->lang->load($lang,$lang);
 
 	}
@@ -24,10 +24,25 @@ class about extends CI_Controller {
 
 	}
 
-	public function insertAddress()
+	public function updateAddress()
 	{
-		$address = $this->input->post('address');
-		$this->db->update('address', array('Address' => $address), array('ID' => '1'));
+        $data = array(
+            'content_th' => $this->input->post('content_th'),
+            'content_en' => $this->input->post('content_en'),
+        );
+		$this->db->update('company_description', $data, array('types'=>'address'));
+		echo "<script>window.location.assign('".base_url()."about');</script>";
+	}
+
+	public function updatePromise()
+	{
+        $data = array(
+            'content_th' => $this->input->post('content_th'),
+            'content_en' => $this->input->post('content_en'),
+            'author' => $this->input->post('author'),
+            'position' => $this->input->post('position'),
+        );
+		$this->db->update('company_description', $data, array('types'=>'our_promise'));
 		echo "<script>window.location.assign('".base_url()."about');</script>";
 	}
 

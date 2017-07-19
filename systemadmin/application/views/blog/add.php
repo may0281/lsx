@@ -50,7 +50,9 @@
 
 	<script type="text/javascript" src="<?php echo base_url(); ?>plugins/bootstrap-wysihtml5/wysihtml5.min.js"></script>
 	<script type="text/javascript" src="<?php echo base_url(); ?>plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.min.js"></script>
-	
+
+	<script type="text/javascript" src="<?php echo base_url(); ?>plugins/tagsinput/jquery.tagsinput.min.js"></script>
+
 	<script src="<?php echo base_url();?>assets/ckeditor/ckeditor.js"></script>
 	<script src="<?php echo base_url();?>assets/sample.js"></script>
 	<link rel="stylesheet" href="<?php echo base_url();?>assets/ckeditor/toolbarconfigurator/lib/codemirror/neo.css">
@@ -69,6 +71,7 @@
 	<!-- Demo JS -->
 	<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/custom.js"></script>
 	<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/demo/form_validation.js"></script>
+
 	<div id="content">
 			<div class="container">
 				<!-- Breadcrumbs line -->
@@ -91,7 +94,7 @@
 				<!--=== Page Header ===-->
 				<div class="page-header">
 					<div class="page-title">
-						<h3>Insert New Product</h3>
+						<h3>Insert New Blog</h3>
 						<span></span>
 					</div>
 				</div>
@@ -109,8 +112,8 @@
 							<div class="widget-content">
 								<form class="form-horizontal row-border" method="post" enctype="multipart/form-data" id="validate-1" action="<?php echo base_url();?>blog/add_action">
 									<div class="form-group">
-										<label class="col-md-3 control-label">Category <span class="required">*</span></label>
-										<div class="col-md-9">
+										<label class="col-md-2 control-label">Category <span class="required">*</span></label>
+										<div class="col-md-10">
 											<select name="CatID" class="form-control required">
 												<option value=""></option>
 												<?php foreach ($category as $r) {?>
@@ -120,56 +123,66 @@
 										</div>
 									</div>
 									<div class="form-group">
-										<label class="col-md-3 control-label">Cover Image <span class="required">*</span></label>
-										<div class="col-md-9">
+										<label class="col-md-2 control-label">Cover Image <span class="required">*</span></label>
+										<div class="col-md-10">
 											<input type="file" name="coverimg" class="required" accept="image/*" data-style="fileinput" data-inputsize="medium">
-											<p class="help-block">Images only (image/*)</p>
+											<p class="help-block">Images only (image/*) <br> Size : [990X715] px</p>
 											<label for="coverimg" class="has-error help-block" generated="true" style="display:none;"></label>
 										</div>
 									</div>
+<!--									<div class="form-group">-->
+<!--										-->
+<!--										<label class="col-md-2 control-label">Gallery <span class="required">*</span></label>-->
+<!--										<div class="col-md-4">-->
+<!--											 <input type="file" name="my_file[]" multiple  class="form-control" accept="image/*" data-inputsize="medium">-->
+<!--											<p class="help-block">Images only (image/*)</p>-->
+<!--											<label for="gal1" class="has-error help-block" generated="true" style="display:none;"></label>-->
+<!--										</div>-->
+<!--										-->
+<!--									</div>-->
 									<div class="form-group">
-										
-										<label class="col-md-3 control-label">Gallery <span class="required">*</span></label>
-										<!-- ..........1.......... -->
-										<div class="col-md-4">
-											 <input type="file" name="my_file[]" multiple  class="form-control" accept="image/*" data-inputsize="medium">
-											<p class="help-block">Images only (image/*)</p>
-											<label for="gal1" class="has-error help-block" generated="true" style="display:none;"></label>
-										</div>
-										
+										<label class="col-md-2 control-label">Tags:</label>
+										<div class="col-md-10"><input type="text" id="tags2"  name="tags" class="tags" value=""></div>
 									</div>
-									
 									<div class="form-group">
-										<label class="col-md-3 control-label">Product Name [TH] <span class="required">*</span></label>
-										<div class="col-md-9">
+										<label class="col-md-2 control-label">Product Name [TH] <span class="required">*</span></label>
+										<div class="col-md-10">
 											<input type="text" name="NameTH" class="form-control required">
 										</div>
 									</div>
+									<div class="form-group">
+										<label class="col-md-2 control-label">Short Description [TH] :</label>
+										<div class="col-md-10"><textarea rows="5" name="shortDescTH" class="form-control"></textarea></div>
+									</div>
                                     <div class="form-group">
-                                        <label class="col-md-3 control-label">Description [TH] :</label>
-                                        <div class="col-md-9"><textarea  name="DescriptionTH" id="editor1"></textarea></div>
+                                        <label class="col-md-2 control-label">Description [TH] :</label>
+                                        <div class="col-md-10"><textarea  name="DescriptionTH" id="editor1"></textarea></div>
                                     </div>
 
                                     <div class="form-group">
-										<label class="col-md-3 control-label">Product Name [EN] <span class="required">*</span></label>
-										<div class="col-md-9">
+										<label class="col-md-2 control-label">Product Name [EN] <span class="required">*</span></label>
+										<div class="col-md-10">
 											<input type="text" name="NameEN" class="form-control required">
 										</div>
 									</div>
+									<div class="form-group">
+										<label class="col-md-2 control-label">Short Description [EN] :</label>
+										<div class="col-md-10"><textarea rows="5" name="shortDescEN" class="form-control"></textarea></div>
+									</div>
                                     <div class="form-group">
-                                        <label class="col-md-3 control-label">Description [EN] :</label>
-                                        <div class="col-md-9"><textarea rows="10" name="DescriptionEN" id="editor2"></textarea></div>
+                                        <label class="col-md-2 control-label">Description [EN] :</label>
+                                        <div class="col-md-10"><textarea rows="10" name="DescriptionEN" id="editor2"></textarea></div>
                                     </div>
 
                                     <div class="form-group">
-                                        <label class="col-md-3 control-label">Video</label>
-                                        <div class="col-md-9">
+                                        <label class="col-md-2 control-label">Video</label>
+                                        <div class="col-md-10">
                                             <input type="text" name="Video" class="form-control">
                                             <p class="help-block">Example (https://www.youtube.com/watch?v=ATzTsija1I4)</p>
                                         </div>
                                     </div>
 									<div class="form-actions">
-										<input type="submit" value="INSERT" class="btn btn-primary pull-right">
+										<input type="submit" value="SUBMIT" class="btn btn-primary pull-right">
 									</div>
 								</form>
 							</div>

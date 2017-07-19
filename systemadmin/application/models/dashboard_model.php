@@ -7,35 +7,34 @@ class dashboard_model extends ci_model
 	}
 
 
-    public function selectUser($username)
+    public function createContentSlide($data)
     {
-        $this->db->select('*');
-        $this->db->from('accountadmin');
-        $this->db->where('accountadmin.Username',$username);
-        $query = $this->db->get();
-        return  $query->result_array();
-
-    }
-
-    public function insertLanding($data)
-    {
-        $this->db->insert('accountadmin', $data);
+        $this->db->insert('dashboard_slide', $data);
         $insert_id = $this->db->insert_id();
         return $insert_id;
     }
     public function all()
     {
         $this->db->select('*');
-        $this->db->from('accountadmin');
+        $this->db->from('dashboard_slide');
+        $this->db->order_by('id', 'desc');
         $query = $this->db->get();
         return  $query->result_array();
     }
 
-    public function updatePassword($username,$data)
+    public function getContentByID($id)
     {
+        $this->db->select('*');
+        $this->db->from('dashboard_slide');
+        $this->db->where('id', $id);
+        $query = $this->db->get();
+        return  $query->result_array();
+    }
 
-        $this->db->where('Username', $username);
-        $this->db->update('accountadmin', $data);
+    public function updateContentSlide($id,$data)
+    {
+        $this->db->where('id', $id);
+        $this->db->update('dashboard_slide', $data);
     }
 	
 }

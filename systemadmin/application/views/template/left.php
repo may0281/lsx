@@ -69,7 +69,15 @@
 		</div>
 
 	</header> <!-- /.header -->
-    <?php $path = explode('/',$_SERVER["REQUEST_URI"]) ;?>
+    <?php
+	$path = array(
+		0=> null,
+		1=>null,
+		2=>null,
+		3=>null
+	);
+
+	$path = explode('/',$_SERVER["REQUEST_URI"]); ?>
     <div id="container">
 		<div id="sidebar" class="sidebar-fixed">
 			<div id="sidebar-content">
@@ -78,7 +86,7 @@
 					<?php if($this->session->userdata('role') == 'admin'){ ?>
 					<li class="<?php if($path[2]=='dashboard'){echo "current";} ?>">
                         <a href="<?php echo base_url();?>dashboard">
-                            <i class="icon-table"></i>
+                            <i class="icon-dashboard"></i>
                             Dashboard
                         </a>
                     </li>
@@ -86,11 +94,11 @@
                     <?php if($this->session->userdata('role') == 'admin' || $this->session->userdata('role') == 'product'){ ?>
                     <li class="<?php if($path[2]=='product'){echo "current open";} ?>">
 						<a href="javascript:void(0);">
-							<i class="icon-table"></i>
+							<i class="icon-rocket"></i>
 							 Products Management
 						</a>
 						<ul class="sub-menu">							
-							<li class="<?php if($path[3]=='category'){echo "current";} ?>">
+							<li class="<?php if(  $path[3]=='category'){echo "current";} ?>">
 								<a href="<?php echo base_url();?>product/category">
 								<i class="icon-angle-right"></i>
 								Category
@@ -99,23 +107,18 @@
 							<li class="<?php if($path[3]==''){echo "current";} ?>">
 								<a href="<?php echo base_url();?>product">
 								<i class="icon-angle-right"></i>
-								All Product
+								Product List
 
 								</a>
 							</li>
-                            <li class="<?php if($path[3]=='add'){echo "current";} ?>">
-                                <a href="<?php echo base_url();?>product/add">
-                                    <i class="icon-angle-right"></i>
-                                    Add Product
-                                </a>
-                            </li>
+
 						</ul>
 					</li>
                     <?php } ?>
                     <?php if($this->session->userdata('role') == 'admin' || $this->session->userdata('role') == 'blog'){ ?>
                     <li class="<?php if($path[2]=='blog'){echo "current open";} ?>">
 						<a href="javascript:void(0);">
-							<i class="icon-table"></i>
+							<i class="icon-th-list"></i>
 							 Blog Management
 						</a>
 						<ul class="sub-menu">
@@ -132,12 +135,6 @@
 
 								</a>
 							</li>
-                            <li class="<?php if($path[3]=='add'){echo "current";} ?>">
-                                <a href="<?php echo base_url();?>blog/add">
-                                    <i class="icon-angle-right"></i>
-                                    Add Blog
-                                </a>
-                            </li>
 						</ul>
 					</li>
                     <?php } ?>
@@ -145,7 +142,7 @@
                     <?php if($this->session->userdata('role') == 'admin'){ ?>
                     <li class="<?php if($path[2]=='promotion'){echo "current open";} ?>">
 						<a href="javascript:void(0);">
-							<i class="icon-table"></i>
+							<i class="icon-money"></i>
 							 Promotion Management
 						</a>
 						<ul class="sub-menu">
@@ -155,12 +152,6 @@
 								Promotion List
 								</a>
 							</li>
-                            <li class="<?php if($path[3]=='add'){echo "current";} ?>">
-                                <a href="<?php echo base_url();?>promotion/add">
-                                    <i class="icon-angle-right"></i>
-                                    Add Promotion
-                                </a>
-                            </li>
 						</ul>
 					</li>
                     <?php } ?>
@@ -168,7 +159,7 @@
                     <?php if($this->session->userdata('role') == 'admin'){ ?>
                         <li class="<?php if($path[2]=='landing'){echo "current open";} ?>">
                             <a href="javascript:void(0);">
-                                <i class="icon-table"></i>
+                                <i class="icon-desktop"></i>
                                 Landing Page
                             </a>
                             <ul class="sub-menu">
@@ -178,20 +169,33 @@
                                         Landing List
                                     </a>
                                 </li>
-                                <li class="<?php if($path[3]=='add'){echo "current";} ?>">
-                                    <a href="<?php echo base_url();?>landing/add">
-                                        <i class="icon-angle-right"></i>
-                                        Create Landing
-                                    </a>
-                                </li>
                             </ul>
+                        </li>
+
+						<li class="<?php if($path[2]=='portfolio'){echo "current";} ?>">
+							<a href="<?php echo base_url();?>portfolio">
+                                <i class="icon-star"></i>
+                                Portfolio
+                            </a>
                         </li>
 
 
 						<li class="<?php if($path[2]=='about'){echo "current";} ?>">
 							<a href="<?php echo base_url();?>about">
-								<i class="icon-table"></i>
+								<i class="icon-fighter-jet"></i>
 								About Lsx.
+							</a>
+						</li>
+						<li class="<?php if($path[2]=='user'){echo "current";} ?>">
+							<a href="<?php echo base_url();?>user">
+								<i class="icon-user"></i>
+								User.
+							</a>
+						</li>
+						<li class="<?php if($path[2]=='client'){echo "current";} ?>">
+							<a href="<?php echo base_url();?>client">
+								<i class="icon-user-md"></i>
+								Client Logo.
 							</a>
 						</li>
                     <?php } ?>

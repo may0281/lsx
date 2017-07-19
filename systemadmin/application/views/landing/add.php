@@ -132,7 +132,7 @@
                                     </div>
 
 									<div class="form-actions">
-										<input type="submit" value="INSERT" class="btn btn-primary pull-right">
+										<input type="submit" value="SUBMIT" class="btn btn-primary pull-right">
 									</div>
 								</form>
 							</div>
