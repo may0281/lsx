@@ -5,7 +5,31 @@ class product_model extends ci_model
 	{
 		parent::__construct();
 	}
-	
+
+	public function getProductType()
+    {
+        $query = $this->db->get_where('product_type');
+        return $query->result_array();
+    }
+
+    public function getProductTypeByTypeCode($typeCode)
+    {
+        $query = $this->db->get_where('product_type',array('type_code'=> $typeCode));
+        return $query->result_array();
+    }
+
+    public function getCategory()
+    {
+        $query = $this->db->get_where('product_categories');
+        return $query->result_array();
+    }
+
+    public function getSubCategory($typeCode,$catCode)
+    {
+        $query = $this->db->get_where('product_sub_categories',array('cat_code'=>$catCode,'type_code'=>$typeCode));
+        return $query->result_array();
+    }
+
 	public function loadAllProductCategory()
 	{
 		$query = $this->db->get_where('product_category');
@@ -13,15 +37,27 @@ class product_model extends ci_model
 		return $query->result_array();
 	}
 
-	public function LoadCatEnable()
+	public function getEnableType()
 	{
-		$query = $this->db->get_where('product_category', array('Enable' => '1'));
+		$query = $this->db->get_where('product_type', array('enable' => '1'));
 		return $query->result_array();
 	}
 
-	public function all()
+	public function getEnableCategory($typeCode)
 	{
-		$sql ="select a.*,b.catEN from product a left join product_category b on a.CatID = b.id order by ID DESC LIMIT 500";
+		$query = $this->db->get_where('product_categories', array('type_code'=>$typeCode,'enable' => '1'));
+		return $query->result_array();
+	}
+
+	public function getEnableSubCategory($typeCode,$catCode)
+	{
+		$query = $this->db->get_where('product_sub_categories', array('type_code'=>$typeCode,'cat_code'=> $catCode,'enable' => '1'));
+		return $query->result_array();
+	}
+
+	public function getAllProduct()
+	{
+		$sql ="select a.* from product a order by ID DESC";
 		$query = $this->db->query($sql);
 		return $query->result_array();
 	}
@@ -33,29 +69,28 @@ class product_model extends ci_model
         return $insert_id;
 	}
 
-	public function insertGallery($id,$img)
+	public function insertGallery($product_code,$img)
 	{
 		
-		$data = array('ProductID' => $id ,'Image' => $img );
+		$data = array('product_Code' => $product_code ,'Image' => $img );
 		$this->db->insert('product_gallery', $data);
 	}
 
-	public function selectProduct($id)
+	public function getProduct($productCode)
 	{
 	    $this->db->select('*');
 	    $this->db->from('product');
-	    $this->db->join('product_category','product.CatID = product_category.id');
-	    $this->db->where('product.ID',$id);
+	    $this->db->where('product_code',$productCode);
 		$query = $this->db->get();
 		return  $query->result_array();
 	
 	}
 
-	public function selectGallery($id)
+	public function getGallery($productCode)
 	{
 	    $this->db->select('*');
 	    $this->db->from('product_gallery');
-	    $this->db->where('ProductID',$id);
+	    $this->db->where('product_code',$productCode);
 		$query = $this->db->get();
 		return  $query->result_array();
 

@@ -98,17 +98,22 @@
 							 Products Management
 						</a>
 						<ul class="sub-menu">							
+							<li class="<?php if(  $path[3]=='type'){echo "current";} ?>">
+								<a href="<?php echo base_url();?>product/type">
+								<i class="icon-angle-right"></i>
+								Product Type
+								</a>
+							</li>
 							<li class="<?php if(  $path[3]=='category'){echo "current";} ?>">
 								<a href="<?php echo base_url();?>product/category">
 								<i class="icon-angle-right"></i>
-								Category
+								Product Category
 								</a>
 							</li>
 							<li class="<?php if($path[3]==''){echo "current";} ?>">
 								<a href="<?php echo base_url();?>product">
 								<i class="icon-angle-right"></i>
 								Product List
-
 								</a>
 							</li>
 
@@ -197,6 +202,20 @@
 								<i class="icon-user-md"></i>
 								Client Logo.
 							</a>
+						</li>
+						<li class="<?php if($path[2]=='reports'){echo "current open";} ?>">
+							<a href="javascript:void(0);">
+								<i class="icon-list-alt"></i>
+								Report
+							</a>
+							<ul class="sub-menu">
+								<li class="<?php if($path[3]==''){echo "current";} ?>">
+									<a href="<?php echo base_url();?>reports/contact">
+										<i class="icon-angle-right"></i>
+										Contact
+									</a>
+								</li>
+							</ul>
 						</li>
                     <?php } ?>
 

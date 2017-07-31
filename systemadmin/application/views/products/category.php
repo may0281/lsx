@@ -1,61 +1,51 @@
-<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/libs/jquery-1.10.2.min.js"></script>
-	<script type="text/javascript" src="<?php echo base_url(); ?>plugins/jquery-ui/jquery-ui-1.10.2.custom.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>assets/js/libs/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>plugins/jquery-ui/jquery-ui-1.10.2.custom.min.js"></script>
 
-	<script type="text/javascript" src="<?php echo base_url(); ?>bootstrap/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/libs/lodash.compat.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>assets/js/libs/lodash.compat.min.js"></script>
 
-	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-	<!--[if lt IE 9]>
-		<script src="<?php echo base_url(); ?>assets/js/libs/html5shiv.js"></script>
-	<![endif]-->
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+<script src="assets/js/libs/html5shiv.js"></script>
+<![endif]-->
 
-	<!-- Smartphone Touch Events -->
-	<script type="text/javascript" src="<?php echo base_url(); ?>plugins/touchpunch/jquery.ui.touch-punch.min.js"></script>
-	<script type="text/javascript" src="<?php echo base_url(); ?>plugins/event.swipe/jquery.event.move.js"></script>
-	<script type="text/javascript" src="<?php echo base_url(); ?>plugins/event.swipe/jquery.event.swipe.js"></script>
+<!-- Smartphone Touch Events -->
+<script type="text/javascript" src="<?php echo base_url();?>plugins/touchpunch/jquery.ui.touch-punch.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>plugins/event.swipe/jquery.event.move.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>plugins/event.swipe/jquery.event.swipe.js"></script>
 
-	<!-- General -->
-	<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/libs/breakpoints.js"></script>
-	<script type="text/javascript" src="<?php echo base_url(); ?>plugins/respond/respond.min.js"></script> <!-- Polyfill for min/max-width CSS3 Media Queries (only for IE8) -->
-	<script type="text/javascript" src="<?php echo base_url(); ?>plugins/cookie/jquery.cookie.min.js"></script>
-	<script type="text/javascript" src="<?php echo base_url(); ?>plugins/slimscroll/jquery.slimscroll.min.js"></script>
-	<script type="text/javascript" src="<?php echo base_url(); ?>plugins/slimscroll/jquery.slimscroll.horizontal.min.js"></script>
+<!-- General -->
+<script type="text/javascript" src="<?php echo base_url();?>assets/js/libs/breakpoints.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>plugins/respond/respond.min.js"></script> <!-- Polyfill for min/max-width CSS3 Media Queries (only for IE8) -->
+<script type="text/javascript" src="<?php echo base_url();?>plugins/cookie/jquery.cookie.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>plugins/slimscroll/jquery.slimscroll.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>plugins/slimscroll/jquery.slimscroll.horizontal.min.js"></script>
 
-	<!-- Page specific plugins -->
-	<!-- Charts -->
-	<script type="text/javascript" src="<?php echo base_url(); ?>plugins/sparkline/jquery.sparkline.min.js"></script>
+<!-- Page specific plugins -->
+<!-- Charts -->
+<script type="text/javascript" src="<?php echo base_url();?>plugins/sparkline/jquery.sparkline.min.js"></script>
 
-	<script type="text/javascript" src="<?php echo base_url(); ?>plugins/daterangepicker/moment.min.js"></script>
-	<script type="text/javascript" src="<?php echo base_url(); ?>plugins/daterangepicker/daterangepicker.js"></script>
-	<script type="text/javascript" src="<?php echo base_url(); ?>plugins/blockui/jquery.blockUI.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>plugins/daterangepicker/moment.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>plugins/daterangepicker/daterangepicker.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>plugins/blockui/jquery.blockUI.min.js"></script>
 
-	<!-- Forms -->
-	<script type="text/javascript" src="<?php echo base_url(); ?>plugins/uniform/jquery.uniform.min.js"></script> <!-- Styled radio and checkboxes -->
-	<script type="text/javascript" src="<?php echo base_url(); ?>plugins/select2/select2.min.js"></script> <!-- Styled select boxes -->
-	<script type="text/javascript" src="<?php echo base_url(); ?>plugins/fileinput/fileinput.js"></script>
+<!-- Forms -->
+<script type="text/javascript" src="<?php echo base_url();?>plugins/uniform/jquery.uniform.min.js"></script> <!-- Styled radio and checkboxes -->
+<script type="text/javascript" src="<?php echo base_url();?>plugins/select2/select2.min.js"></script> <!-- Styled select boxes -->
 
-	<!-- Form Validation -->
-	<script type="text/javascript" src="<?php echo base_url(); ?>plugins/validation/jquery.validate.min.js"></script>
-	<script type="text/javascript" src="<?php echo base_url(); ?>plugins/validation/additional-methods.min.js"></script>
+<!-- DataTables -->
+<script type="text/javascript" src="<?php echo base_url();?>plugins/datatables/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>plugins/datatables/tabletools/TableTools.min.js"></script> <!-- optional -->
+<script type="text/javascript" src="<?php echo base_url();?>plugins/datatables/colvis/ColVis.min.js"></script> <!-- optional -->
+<script type="text/javascript" src="<?php echo base_url();?>plugins/datatables/columnfilter/jquery.dataTables.columnFilter.js"></script> <!-- optional -->
+<script type="text/javascript" src="<?php echo base_url();?>plugins/datatables/DT_bootstrap.js"></script>
 
-	<!-- Noty -->
-	<script type="text/javascript" src="<?php echo base_url(); ?>plugins/noty/jquery.noty.js"></script>
-	<script type="text/javascript" src="<?php echo base_url(); ?>plugins/noty/layouts/top.js"></script>
-	<script type="text/javascript" src="<?php echo base_url(); ?>plugins/noty/themes/default.js"></script>
+<!-- App -->
+<script type="text/javascript" src="<?php echo base_url();?>assets/js/app.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>assets/js/plugins.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>assets/js/plugins.form-components.js"></script>
 
-	<!-- App -->
-	<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/app.js"></script>
-	<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/plugins.js"></script>
-	<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/plugins.form-components.js"></script>
-
-	<script type="text/javascript" src="<?php echo base_url(); ?>plugins/pickadate/picker.js"></script>
-	<script type="text/javascript" src="<?php echo base_url(); ?>plugins/pickadate/picker.date.js"></script>
-	<script type="text/javascript" src="<?php echo base_url(); ?>plugins/pickadate/picker.time.js"></script>
-	<script type="text/javascript" src="<?php echo base_url(); ?>plugins/bootstrap-colorpicker/bootstrap-colorpicker.min.js"></script>
-
-
-
-	<script>
+<script>
 	$(document).ready(function(){
 		"use strict";
 
@@ -63,12 +53,10 @@
 		Plugins.init(); // Init all plugins
 		FormComponents.init(); // Init all form-specific plugins
 	});
-	</script>
+</script>
 
-	<!-- Demo JS -->
-	<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/custom.js"></script>
-	<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/demo/form_validation.js"></script>
-	<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/demo/ui_general.js"></script>
+<!-- Demo JS -->
+<script type="text/javascript" src="<?php echo base_url();?>assets/js/custom.js"></script>
 
 <div id="content">
 			<div class="container">
@@ -89,7 +77,7 @@
 
 					<ul class="crumb-buttons">
 						<li>
-							<a data-toggle="modal" href="#createProductCategory" ><i class="icon-plus"></i><span>Create a new category</span></a>
+							<a data-toggle="modal" href="#createProductType" ><i class="icon-plus"></i><span>Create Category</span></a>
 						</li>
 
 					</ul>
@@ -122,14 +110,14 @@
 								</div>
 							</div>
 							<div class="widget-content">
-								<table class="table table-hover" data-display-length="30">
+								<table class="table table-striped table-bordered table-hover table-checkable datatable" data-display-length="30">
 									<thead>
 										<tr>
 											<th>#</th>
+											<th>Type Code</th>
 											<th>Category TH</th>
 											<th>Category EN</th>
-											<th>URL</th>
-											<th>Image</th>
+											<th>Sub Category</th>
 											<th>Enable</th>
 											<th>Edit</th>
 											<th>Delete</th>
@@ -139,16 +127,18 @@
 										<?php $i=1;foreach($q as $r){ ?>
 										<tr>
 											<td><?php echo $i;?></td>
-											<td><?php echo $r['catTH'];?></td>
-											<td><?php echo $r['catEN'];?></td>
-											<td><?php echo $r['url'];?></td>
-											<td><img src="../../images/product/<?php echo $r['img'];?>" width="200px" ></td>
-											<td>
+											<td><?php echo $r['type_code'];?></td>
+											<td><?php echo $r['cat_th'];?></td>
+											<td><?php echo $r['cat_en'];?></td>
+											<td style="text-align: center">
+												<a href="<?php echo base_url('product/category/'.$r['type_code'].'/'.$r['cat_code']) ?>"><i class="icon-search" style="font-size: 20px"></i></a>
+											</td>
+											<td style="text-align: center">
 												<div class="make-switch switch-mini" data-on="success" data-off="danger">
-												<input type="checkbox" onchange="OnChangeCheckbox (this)" id="myCheckbox" <?php if($r['Enable']==1){ echo "checked";}?>   value="<?php echo $r['id'];?>" />
+												<input type="checkbox" onchange="OnChangeCheckbox (this)" id="myCheckbox" <?php if($r['enable']==1){ echo "checked";}?>   value="<?php echo $r['id'];?>" />
 												</div>
 											</td>
-											<td>
+											<td style="text-align: center">
 												<a data-toggle="modal" href="#editCat<?php echo $i;?>" ><i class="icon-edit" style="font-size: 20px"></i><span></span></a>
 												<div class="modal fade" id="editCat<?php echo $i;?>">
 													<div class="modal-dialog modal-lg">
@@ -160,43 +150,18 @@
 																</div>
 																<div class="modal-body">
 																	<div class="form-group">
-																		<label class="col-md-3 control-label">Name EN<span class="required">*</span></label>
+																		<label class="col-md-3 control-label">Category EN<span class="required">*</span></label>
 																		<div class="col-md-9">
-																			<input type="text" name="cat_en" class="form-control required" value="<?php echo $r['catEN'];?>">
+																			<input type="text" name="cat_en" value="<?php echo $r['cat_en'];?>" class="form-control required">
 																		</div>
 																	</div>
 																	<div class="form-group">
-																		<label class="col-md-3 control-label">Description EN<span class="required">*</span></label>
+																		<label class="col-md-3 control-label">Category TH<span class="required">*</span></label>
 																		<div class="col-md-9">
-																			<textarea class="form-control required" name="description_en"><?php echo $r['descriptionEN'];?></textarea>
+																			<input type="text" name="cat_th" value="<?php echo $r['cat_th'];?>" class="form-control required">
 																		</div>
 																	</div>
-																	<div class="form-group">
-																		<label class="col-md-3 control-label">Name TH<span class="required">*</span></label>
-																		<div class="col-md-9">
-																			<input type="text" name="cat_th" class="form-control required" value="<?php echo $r['catTH'];?>">
-																		</div>
-																	</div>
-																	<div class="form-group">
-																		<label class="col-md-3 control-label">Description TH<span class="required">*</span></label>
-																		<div class="col-md-9">
-																			<textarea class="form-control required" name="description_th"><?php echo $r['descriptionTH'];?></textarea>
-																		</div>
-																	</div>
-																	<div class="form-group">
-																		<label class="col-md-3 control-label">URL<span class="required">*</span></label>
-																		<div class="col-md-9">
-																			<input type="text" name="url" class="form-control required" value="<?php echo $r['url'];?>">
-																		</div>
-																	</div>
-																	<div class="form-group">
-																		<label class="col-md-3 control-label">Change Image:</label>
-																		<div class="col-md-9">
-																			<input type="hidden" name="oldCoverImg" value="<?php echo $r['img'];?>">
-																			<input type="file" name="coverimg" class="form-control"  data-style="fileinput">
-																			<p class="help-block">Images only (image/jpg,png) <br> Size (350x370) px.</p>
-																		</div>
-																	</div>
+
 																</div>
 																<div class="modal-footer">
 																	<input type="hidden" name="id" value="<?php echo $r['id'];?>">
@@ -209,12 +174,11 @@
 												</div><!-- /.modal -->
 
 											</td>
-											<td>
+											<td style="text-align: center">
 												<div class="make-switch switch-mini" data-on="success" data-off="danger">
 												<input type="checkbox" onchange="OnChangeCheckboxDel (this)" id="myCheckbox"  value="<?php echo $r['id'];?>" />
 												</div>
 											</td>
-										
 										</tr>
 										<?php $i++;} ?>
 										
@@ -232,50 +196,44 @@
 			<!-- /.container -->
 		</div>
 
-		<div class="modal fade" id="createProductCategory">
+		<div class="modal fade" id="createProductType">
 			<div class="modal-dialog modal-lg">
 				<div class="modal-content">
 					<form class="form-horizontal row-border" id="validate-1" method="post" enctype="multipart/form-data" action="<?php echo base_url();?>product/createCategory">
 						<div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-							<h4 class="modal-title">Create a new category.</h4>
+							<h4 class="modal-title">Create Category.</h4>
 						</div>
 						<div class="modal-body">
 							<div class="form-group">
-								<label class="col-md-3 control-label">Name EN<span class="required">*</span></label>
+								<label class="col-md-3 control-label">Product Type <span class="required">*</span></label>
+								<div class="col-md-9">
+									<select name="type_code" class="form-control required">
+										<option value=""></option>
+										<?php foreach ($type as $t) {?>
+											<option value="<?php echo $t['type_code']; ?>"><?php echo $t['type_en']; ?></option>
+										<?php } ?>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-3 control-label">Category Code<span class="required">*</span></label>
+								<div class="col-md-9">
+									<input type="text" name="cat_code" class="form-control required">
+									<p class="help-block">Do not put a space.</p>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-3 control-label">Category EN<span class="required">*</span></label>
 								<div class="col-md-9">
 									<input type="text" name="cat_en" class="form-control required">
 								</div>
 							</div>
+
 							<div class="form-group">
-								<label class="col-md-3 control-label">Description EN<span class="required">*</span></label>
-								<div class="col-md-9">
-									<textarea class="form-control required" name="description_en"></textarea>
-								</div>
-							</div>
-							<div class="form-group">
-								<label class="col-md-3 control-label">Name TH<span class="required">*</span></label>
+								<label class="col-md-3 control-label">Category TH<span class="required">*</span></label>
 								<div class="col-md-9">
 									<input type="text" name="cat_th" class="form-control required">
-								</div>
-							</div>
-							<div class="form-group">
-								<label class="col-md-3 control-label">Description TH<span class="required">*</span></label>
-								<div class="col-md-9">
-									<textarea class="form-control required" name="description_th"></textarea>
-								</div>
-							</div>
-							<div class="form-group">
-								<label class="col-md-3 control-label">URL<span class="required">*</span></label>
-								<div class="col-md-9">
-									<input type="text" name="url" class="form-control required">
-								</div>
-							</div>
-							<div class="form-group">
-								<label class="col-md-3 control-label">File Upload:</label>
-								<div class="col-md-9">
-									<input type="file" name="coverimg" class="form-control required"  data-style="fileinput">
-									<p class="help-block">Images only (image/jpg,png) <br> Size (350x370) px.</p>
 								</div>
 							</div>
 						</div>
@@ -294,10 +252,10 @@
 		var slid = checkbox.value;
 		var base_url = "<?php echo base_url();?>";
 		if (checkbox.checked) {
-			window.location.href = base_url + "product/catEnable/1/" + slid;
+			window.location.href = base_url + "product/enable/product_categories/1/" + slid;
 		}
 		else {
-			window.location.href = base_url + "product/catEnable/0/" + slid;
+			window.location.href = base_url + "product/enable/product_categories/0/" + slid;
 		}
 	}
 </script>
@@ -306,10 +264,10 @@
 		var slid = checkbox.value;
 		var base_url = "<?php echo base_url();?>";
 		if (checkbox.checked) {
-			window.location.href = base_url + "product/catDel/1/" + slid;
+			window.location.href = base_url + "product/delCategory/1/" + slid;
 		}
 		else {
-			window.location.href = base_url + "product/catDel/0/" + slid;
+			window.location.href = base_url + "product/delCategory/0/" + slid;
 		}
 	}
 </script>

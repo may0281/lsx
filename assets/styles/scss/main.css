@@ -2868,7 +2868,7 @@ fieldset[disabled] .form-control {
   border-radius: 0;
   background: #fff; }
   .navbar .navbar-header {
-    width: 27%;
+    width: 25%;
     margin-top: 6px; }
     .navbar .navbar-header .navbar-brand {
       padding: 15px 0;
@@ -3162,7 +3162,7 @@ fieldset[disabled] .form-control {
   .navbar-trans .navbar-logo {
     content: url(../images/lsx-logo-0.png); }
   .navbar-trans .navbar-logo-dark {
-    content: url(../images/logo.png); }
+    content: url(../images/lsx-logo-0.png); }
 
 .navbar-trans:not(.navbar-inverse) .navbar-nav li a:focus, .navbar-trans:not(.navbar-inverse) .navbar-nav li a:hover {
   color: #ececec; }

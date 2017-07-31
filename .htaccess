@@ -1,4 +1,4 @@
 RewriteEngine on
 
-RewriteCond $1 !^(index\.php|contact-form\.php|images|admin|assets|bootstrap|plugins|robots\.txt|styles|js|uploads)
+RewriteCond $1 !^(index\.php|contact-form\.php|product\.html|images|image|admin|assets|bootstrap|plugins|robots\.txt|styles|js|uploads)
 RewriteRule ^(.*)$ index.php/$1 [L]

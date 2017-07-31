@@ -38,7 +38,7 @@ class blog extends CI_Controller {
 		$this->load->view("template/header",array('lang'=>$this->session->userdata("lang")));
         $this->load->view('blog/page-title',array('menu'=>'Blog','header'=>'LATEST BLOG POSTS'));
 		$this->load->view("blog/index", $data);
-		$this->load->view("template/footer-2",array('productCategories' => $this->home_model->getProductCategories()));
+		$this->load->view("template/footer-2");
 
 	}
 

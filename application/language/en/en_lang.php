@@ -20,6 +20,8 @@ $lang['portfolio_about_heading'] = "ABOUT THIS PROJECT";
 $lang['blog_subheading'] = "We serve  the data for you in R&D, design, technical, inspiration ";
 $lang['blog_heading'] = "LATEST FROM OUR BLOG";
 
+$lang['search_result'] = "Search Result.";
+
 
 
 

@@ -55,6 +55,8 @@
 	<script src="<?php echo base_url();?>assets/sample.js"></script>
 	<link rel="stylesheet" href="<?php echo base_url();?>assets/ckeditor/toolbarconfigurator/lib/codemirror/neo.css">
 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="<?php echo base_url(); ?>plugins/tagsinput/jquery.tagsinput.min.js"></script>
 
 	<script>
 	$(document).ready(function(){
@@ -109,66 +111,99 @@
 							<div class="widget-content">
 								<form class="form-horizontal row-border" method="post" enctype="multipart/form-data" id="validate-1" action="<?php echo base_url();?>product/add_action">
 									<div class="form-group">
-										<label class="col-md-3 control-label">Category <span class="required">*</span></label>
+										<label class="col-md-3 control-label">Product Type <span class="required">*</span></label>
 										<div class="col-md-9">
-											<select name="CatID" class="form-control required">
-												<option value=""></option>
-												<?php foreach ($category as $r) {?>
-												<option value="<?php echo $r['id']; ?>"><?php echo $r['catEN']; ?></option>
+											<select name="type_code" id="type_code" class="form-control required">
+												<option value="">Please select one.</option>
+												<?php foreach ($type as $t) {?>
+												<option value="<?php echo $t['type_code']; ?>"><?php echo $t['type_en']; ?></option>
 												<?php } ?>
 											</select>
 										</div>
 									</div>
 									<div class="form-group">
-										<label class="col-md-3 control-label">Cover Image <span class="required">*</span></label>
+										<label class="col-md-3 control-label">Category
+											<i id="cat_spin" class="fa fa-spinner fa-spin hide"  style="font-size:24px"></i>
+										</label>
 										<div class="col-md-9">
+											<select name="cat_code" id="cat_code" class="form-control" cat-values=""></select>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-md-3 control-label">Sub Category
+											<i id="sub_cat_spin" class="fa fa-spinner fa-spin hide"  style="font-size:24px"></i>
+										</label>
+										<div class="col-md-9">
+											<select name="sub_cat_code" id="sub_cat_code" class="form-control" sub-cat-values=""></select>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-md-3 control-label">SKU <span class="required">*</span></label>
+										<div class="col-md-9">
+											<input type="text" name="sku" class="form-control required" placeholder="AS11111AA22">
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-3 control-label">Product Name [TH] <span class="required">*</span></label>
+										<div class="col-md-9">
+											<input type="text" name="name_th" class="form-control required">
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-md-3 control-label">Description [TH] :</label>
+										<div class="col-md-9"><textarea  name="desc_th" id="editor1"></textarea></div>
+									</div>
+									<div class="form-group">
+										<label class="col-md-3 control-label">Product Name [EN] <span class="required">*</span></label>
+										<div class="col-md-9">
+											<input type="text" name="name_en" class="form-control required">
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-md-3 control-label">Description [EN] :</label>
+										<div class="col-md-9"><textarea  name="desc_en" id="editor2"></textarea></div>
+									</div>
+
+                                    <div class="form-group">
+										<label class="col-md-3 control-label">Price <span class="required">*</span></label>
+										<div class="col-md-4">
+											<input type="text" name="price" class="form-control required" placeholder="Price">
+										</div>
+										<div class="col-md-4">
+											<input type="text" name="sale_price" class="form-control required" placeholder="Sale Price">
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-md-3 control-label">Tags:</label>
+										<div class="col-md-9"><input type="text" id="tags2"  name="tags" class="tags" value=""></div>
+									</div>
+									<div class="form-group">
+										<label class="col-md-3 control-label">Cover Image <span class="required">*</span></label>
+										<div class="col-md-4">
 											<input type="file" name="coverimg" class="required" accept="image/*" data-style="fileinput" data-inputsize="medium">
 											<p class="help-block">Images only (image/*)</p>
 											<label for="coverimg" class="has-error help-block" generated="true" style="display:none;"></label>
 										</div>
 									</div>
 									<div class="form-group">
-										
-										<label class="col-md-3 control-label">Gallery <span class="required">*</span></label>
+
+										<label class="col-md-3 control-label">Original Size <span class="required">*</span></label>
 										<!-- ..........1.......... -->
 										<div class="col-md-4">
-											 <input type="file" name="my_file[]" multiple  class="form-control" accept="image/*" data-inputsize="medium">
+											<input type="file" name="my_file[]" multiple  class="form-control" accept="image/*" data-inputsize="medium">
 											<p class="help-block">Images only (image/*)</p>
 											<label for="gal1" class="has-error help-block" generated="true" style="display:none;"></label>
 										</div>
-										
 									</div>
-									
 									<div class="form-group">
-										<label class="col-md-3 control-label">Product Name [TH] <span class="required">*</span></label>
-										<div class="col-md-9">
-											<input type="text" name="NameTH" class="form-control required">
+										<label class="col-md-3 control-label">PDF <span class="required">*</span></label>
+										<div class="col-md-4">
+											<input type="file" name="pdf" class="required"  data-style="fileinput" data-inputsize="medium">
+											<p class="help-block">Images only (image/*)</p>
+											<label for="pdf" class="has-error help-block" generated="true" style="display:none;"></label>
 										</div>
 									</div>
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label">Description [TH] :</label>
-                                        <div class="col-md-9"><textarea  name="DescriptionTH" id="editor1"></textarea></div>
-                                    </div>
-
-                                    <div class="form-group">
-										<label class="col-md-3 control-label">Product Name [EN] <span class="required">*</span></label>
-										<div class="col-md-9">
-											<input type="text" name="NameEN" class="form-control required">
-										</div>
-									</div>
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label">Description [EN] :</label>
-                                        <div class="col-md-9"><textarea rows="10" name="DescriptionEN" id="editor2" ></textarea></div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label">PDF <span class="required">*</span></label>
-                                        <div class="col-md-9">
-                                            <input type="file" name="pdf" class="required"  data-style="fileinput" data-inputsize="medium">
-                                            <p class="help-block">Images only (image/*)</p>
-                                            <label for="pdf" class="has-error help-block" generated="true" style="display:none;"></label>
-                                        </div>
-                                    </div>
 									<div class="form-actions">
 										<input type="submit" value="SUBMIT" class="btn btn-primary pull-right">
 									</div>
@@ -188,4 +223,89 @@
 </html>
     <script>
 		initSample();
+
+		$('#type_code').change(function () {
+			$('#warning-context').html('');
+			var typeCode = $('#type_code option:selected').val();
+			getCategory(typeCode)
+		});
+
+		$('#cat_code').change(function () {
+			$('#warning-context').html('');
+			var type_code = document.forms["validate-1"]["type_code"].value;
+			var category = $('#cat_code option:selected').val();
+			getSubCategory(type_code,category);
+		});
+
+		function getCategory(value) {
+			var base_url = window.location.origin;
+			var i = 0;
+			$.ajax({
+				url: base_url + "/systemadmin/product/api-category/" + value,
+				dataType: "json",
+				beforeSend: function () {
+					$('#cat_spin').removeClass('hide');
+					i++;
+				},
+				success: function (result) {
+					console.log(result);
+						var select = $('#cat_code');
+						var cat_values = $("#cat_code").attr("cat-values");
+						select.empty().append('<option value="" > Select All </option>');
+						for (var j = 0; j < result.length; j++) {
+							var data_obj = result[j];
+							var selected = null;
+							if(data_obj['cat_code'] == cat_values)
+							{
+								selected = 'selected';
+							}
+							select.append("<option value='" + data_obj['cat_code'] + "' " + selected + " >" +
+								data_obj['cat_en'] + "</option>");
+						}
+				},
+				complete: function () {
+					i--;
+					if (i <= 0) {
+						$('#cat_spin').addClass('hide');
+					}
+				}
+
+			});
+		}
+
+		function getSubCategory(typeCode,catCode) {
+			var base_url = window.location.origin;
+			var i = 0;
+			$.ajax({
+				url: base_url + "/systemadmin/product/api-sub-category/" + typeCode + '/' + catCode,
+				dataType: "json",
+				beforeSend: function () {
+					$('#sub-cat_spin').removeClass('hide');
+					i++;
+				},
+				success: function (result) {
+					console.log(result);
+					var select = $('#sub_cat_code');
+					var sub_cat_values = $("#sub_cat_code").attr("sub-cat-values");
+					select.empty().append('<option value="" > Select All </option>');
+					for (var j = 0; j < result.length; j++) {
+						var data_obj = result[j];
+						var selected = null;
+						if(data_obj['sub_cat_code'] == sub_cat_values)
+						{
+							selected = 'selected';
+						}
+						select.append("<option value='" + data_obj['sub_cat_code'] + "' " + selected + " >" +
+							data_obj['sub_en'] + "</option>");
+					}
+				},
+				complete: function () {
+					i--;
+					if (i <= 0) {
+						$('#sub-cat_spin').addClass('hide');
+					}
+				}
+
+			});
+		}
 	</script>

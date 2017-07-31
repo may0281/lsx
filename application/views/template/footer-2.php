@@ -5,8 +5,10 @@
 				<div class="widget about-widget">
 					<h5 class="header-widget"><?php echo $this->lang->line('product_type') ?></h5>
 					<p>
-						<?php foreach ($productCategories as $cat) {?>
-						<a href=""> <?php echo $cat['cat'.strtoupper($this->session->userdata('lang'))]; ?></a> <br>
+						<?php
+						$productCategories = $this->home_model->getProductType();
+						foreach ($productCategories as $cat) {?>
+						<a href=""> <?php echo $cat['type_'.$this->session->userdata('lang')]; ?></a> <br>
 						<?php } ?>
 					</p>
 				</div>
@@ -72,8 +74,7 @@
 <script src="<?php echo base_url();?>assets/js/vendor/wow.min.js"></script>
 <script src="<?php echo base_url();?>assets/js/vendor/jquery.ajaxchimp.js"></script>
 <!-- Google Maps -->
-<script src="<?php echo base_url();?>assets/js/gmap.js"></script>
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXHAy5xIYio_eQEBTyXYR9c06xJjPT_5E"></script>
+
 <script src="<?php echo base_url();?>assets/js/main.js"></script>
 </body>
 </html>

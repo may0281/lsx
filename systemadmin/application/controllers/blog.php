@@ -177,7 +177,7 @@ class blog extends CI_Controller {
         unset($data["my_file"]);
 
 
-		if (isset($_FILES['my_file'])) {
+		if ($_FILES['my_file']['name'][0]) {
                 $myFile = $_FILES['my_file'];
                 $fileCount = count($myFile["name"]);
 

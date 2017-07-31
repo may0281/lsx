@@ -116,7 +116,7 @@ class portfolio extends CI_Controller {
         unset($data["coverimg_old"]);
         unset($data["del"]);
 
-        if (isset($_FILES['my_file'])) {
+        if ($_FILES['my_file']['name'][0]) {
             $myFile = $_FILES['my_file'];
             $fileCount = count($myFile["name"]);
 

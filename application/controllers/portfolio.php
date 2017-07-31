@@ -37,7 +37,7 @@ class portfolio extends CI_Controller {
 		$this->load->view("template/header",array('lang'=>$this->session->userdata("lang")));
         $this->load->view('portfolio/page-title',array('menu'=>'Portfolio','header'=>'LATEST BLOG POSTS'));
 		$this->load->view("portfolio/index", $data);
-		$this->load->view("template/footer-2",array('productCategories' => $this->home_model->getProductCategories()));
+		$this->load->view("template/footer-2");
 
 	}
 

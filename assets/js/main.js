@@ -827,20 +827,20 @@ $( '.form-ajax' ).on( 'keyup', 'input.validate-locally', function() {
 });
 
 //	AJAX call
-$( '.form-ajax' ).submit(function(e) {
-	e.preventDefault();
-	var $this = $( this ),
-			action = $this.attr( 'action' );
-
-	// The AJAX requrest
-	$.post(
-			action,
-			$this.serialize(),
-			function( data ) {
-				$( '.ajax-message' ).html( data );
-			}
-	);
-});
+// $( '.form-ajax' ).submit(function(e) {
+// 	e.preventDefault();
+// 	var $this = $( this ),
+// 			action = $this.attr( 'action' );
+//
+// 	// The AJAX requrest
+// 	$.post(
+// 			action,
+// 			$this.serialize(),
+// 			function( data ) {
+// 				$( '.ajax-message' ).html( data );
+// 			}
+// 	);
+// });
 
 //	Validates the fileds
 function validateField ( field ) {

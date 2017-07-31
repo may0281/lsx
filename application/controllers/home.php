@@ -27,6 +27,7 @@ class home extends CI_Controller {
             'lang' => $this->session->userdata("lang"),
             'slides' => $this->home_model->getContentSlide(),
             'product_type' => $this->home_model->getProductType(),
+            'product_list' => $this->home_model->getProductList(),
             'client_list' => $this->home_model->getClientList(),
             'companyDesc' => $this->home_model->getCompanyDesc('address'),
             'ourPromise' => $this->home_model->getCompanyDesc('our_promise'),

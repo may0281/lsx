@@ -18,7 +18,6 @@
 
 
 </style>
-<!-- ========== Page Title ========== -->
 
 <!-- ========== Blog - 2 Columns ========== -->
 <div id="blog" class="section container blog-columns blog-masonry">

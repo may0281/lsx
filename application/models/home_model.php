@@ -22,9 +22,20 @@ class home_model extends  ci_model
     public function getProductType()
     {
         $this->db->select('*');
-        $this->db->from('product_category');
+        $this->db->from('product_type');
         $this->db->where('enable',1);
         $this->db->order_by('id','desc');
+        $query = $this->db->get();
+        return $query->result_array();
+    }
+
+    public function getProductList()
+    {
+        $this->db->select('*');
+        $this->db->from('product');
+        $this->db->where('enable',1);
+        $this->db->order_by('id','desc');
+        $this->db->limit(8);
         $query = $this->db->get();
         return $query->result_array();
     }
@@ -77,15 +88,6 @@ class home_model extends  ci_model
         return $query->result_array();
     }
 
-    public function getProductCategories()
-    {
-        $this->db->select('*');
-        $this->db->from('product_category');
-        $this->db->where('Enable',1);
-        $this->db->order_by('id','desc');
-        $query = $this->db->get();
-        return $query->result_array();
-    }
 
     public function getProject()
     {
@@ -93,6 +95,39 @@ class home_model extends  ci_model
         $this->db->from('portfolio');
         $this->db->where('enable',1);
         $this->db->order_by('id','desc');
+        $this->db->limit(6);
+        $query = $this->db->get();
+        return $query->result_array();
+    }
+
+    public function getCountProductOnProductType()
+    {
+        $sql = "select a.type_th,a.type_en,a.url, a.type_code, count(b.ID) as total ";
+        $sql .= " from product_type a ";
+        $sql .= " left join product b on a.type_code = b.type_code ";
+        $sql .= " where a.enable = 1";
+        $sql .= " GROUP BY a.type_code";
+        $query = $this->db->query($sql);
+        return $query->result_array();
+    }
+
+    public function getRecentProduct()
+    {
+        $this->db->select('*');
+        $this->db->from('product');
+        $this->db->where('enable',1);
+        $this->db->order_by('create_date','desc');
+        $this->db->limit(6);
+        $query = $this->db->get();
+        return $query->result_array();
+    }
+
+    public function getRecentBlog()
+    {
+        $this->db->select('*');
+        $this->db->from('blog');
+        $this->db->where('Enable',1);
+        $this->db->order_by('SaveDate','desc');
         $this->db->limit(6);
         $query = $this->db->get();
         return $query->result_array();

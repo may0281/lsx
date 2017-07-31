@@ -1,33 +1,5 @@
 <aside class="col-md-offset-1 col-md-3 sidebar">
-    <div class="col-md-12 ws-s tags-widget">
-        <h5 class="header-widget">Tags</h5>
-        <ul class="tag-list">
-            <li><a href="#">CERARL</a></li>
-            <li><a href="#">Decor Surfaces</a></li>
-            <li><a href="#">Altyno [Film] </a></li>
-            <li><a href="#">Jolypate </a></li>
-            <li><a href="#">Build In</a></li>
-            <li><a href="#">Laminate</a></li>
-            <li><a href="#">AICA</a></li>
-            <li><a href="#">LSX</a></li>
-            <li><a href="#">Wall Panel</a></li>
-        </ul>
-    </div>
-    <div class="col-md-12 ws-s recent-posts-widget">
-        <h5 class="header-widget">Recent Posts</h5>
-        <div class="widget-item">
-            <a href="#"><h6 class="h-alt">Blog Post Example</h6></a>
-            <span>by <a href="#">Joel Fischer</a> / <a href="#">June 23</a></span>
-        </div>
-        <div class="widget-item">
-            <a href="#"><h6 class="h-alt">Another Blog Post Example</h6></a>
-            <span>by <a href="#">Joel Fischer</a> / <a href="#">June 23</a></span>
-        </div>
-        <div class="widget-item">
-            <a href="#"><h6 class="h-alt">Blog Post Example</h6></a>
-            <span>by <a href="#">Joel Fischer</a> / <a href="#">June 23</a></span>
-        </div>
-    </div>
+    <?php $this->load->view('template/tags'); ?>
     <div class="col-md-12 ws-s categories-widget">
         <h5 class="header-widget">Categories</h5>
         <?php
@@ -45,23 +17,50 @@
 
         <?php } ?>
     </div>
-    <div class="col-md-12 ws-s comments-widget">
-        <h5 class="header-widget">Comments</h5>
-        <div class="widget-item">
-            <span><a href="#">Jon Doe</a> on <a href="#" class="widget-comm-title">Lorem ipsum dolor sit amet</a></span>
-        </div>
-        <div class="widget-item">
-            <span><a href="#">Jon Doe</a> on <a href="#" class="widget-comm-title">Sed do eiusmod</a></span>
-        </div>
-        <div class="widget-item">
-            <span><a href="#">Jon Doe</a> on <a href="#" class="widget-comm-title">Lorem ipsum dolor sit amet</a></span>
-        </div>
-        <div class="widget-item">
-            <span><a href="#">Jon Doe</a> on <a href="#" class="widget-comm-title">Sed do eiusmod</a></span>
-        </div>
+    <div class="col-md-12 ws-s categories-widget">
+        <h5 class="header-widget">Product Type</h5>
+        <?php
+        $productType = $this->home_model->getCountProductOnProductType();
+        foreach ($productType as $pType){
+            ?>
+            <div class="widget-item">
+                <a href="<?php echo base_url($pType['url']);?>"><?php echo $pType['type_'.$this->session->userdata('lang')]; ?> <span> - <?php echo $pType['total']; ?></span></a>
+            </div>
+        <?php } ?>
     </div>
-    <div class="col-md-12 text-widget">
-        <h5 class="header-widget">Text Widget</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae qui error, incidunt quia pariatur facere quasi totam inventore amet rerum.</p>
-    </div>
+    <!-- Recent Posts - Widget -->
+    <div class="col-md-12 ws-s recent-posts-widget">
+        <h5 class="header-widget">Recent Product</h5>
+        <?php
+        $recentProduct = $this->home_model->getRecentProduct();
+        foreach ($recentProduct as $product){
+
+            $productUri = str_replace($find,"-",$product['name_'.$this->session->userdata('lang')]);
+            $productUrl =  base_url('blog/'.$product['ID'].'/'.$productUri);
+            ?>
+            <!-- Item 1 -->
+            <div class="widget-item">
+                <img src="<?php echo base_url('images/product/'.$product['cover_img']) ?>" >
+                <a href="<?php echo $productUrl; ?>"><h6 class="h-alt"><?php echo $product['name_'.$this->session->userdata('lang')] ?></h6></a>
+                <span><?php echo date('M  d,Y',strtotime($product['create_date'])) ?></span>
+            </div>
+        <?php  } ?>
+    </div><!-- / .recent-posts-widget -->
+
+    <div class="col-md-12 ws-s recent-posts-widget">
+        <h5 class="header-widget">Recent Blog</h5>
+        <?php
+        $recentBlog = $this->home_model->getRecentBlog();
+        foreach ($recentBlog as $blog){
+
+            $blogUri = str_replace($find,"-",$blog['Name'.strtoupper($this->session->userdata('lang'))]);
+            $blogUrl =  base_url('blog/'.$blog['ID'].'/'.$blogUri);
+            ?>
+            <!-- Item 1 -->
+            <div class="widget-item">
+                <a href="<?php echo $blogUrl; ?>"><h6 class="h-alt"><?php echo $blog['Name'.strtoupper($this->session->userdata('lang'))] ?></h6></a>
+                <span><?php echo date('M  d,Y',strtotime($blog['SaveDate'])) ?></span>
+            </div>
+        <?php  } ?>
+    </div><!-- / .recent-posts-widget -->
 </aside>

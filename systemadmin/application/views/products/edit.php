@@ -55,6 +55,8 @@
 	<script src="<?php echo base_url();?>assets/sample.js"></script>
 	<link rel="stylesheet" href="<?php echo base_url();?>assets/ckeditor/toolbarconfigurator/lib/codemirror/neo.css">
 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="<?php echo base_url(); ?>plugins/tagsinput/jquery.tagsinput.min.js"></script>
 
 	<script>
 	$(document).ready(function(){
@@ -79,7 +81,7 @@
                             <a href="<?php echo base_url();?>dashboard">DASHBOARD</a>
                         </li>
                         <li>
-                            <a href="<?php echo base_url();?>products" title=""><?php echo strtoupper($menu); ?></a>
+                            <a href="<?php echo base_url();?>product" title=""><?php echo strtoupper($menu); ?></a>
                         </li>
                         <li class="current">
                             <a href="#" title=""><?php echo strtoupper($subMenu) ?></a>
@@ -91,12 +93,12 @@
 				<!--=== Page Header ===-->
 				<div class="page-header">
 					<div class="page-title">
-						<h3>Edit Product</h3>
+						<h3><?php echo strtoupper($subMenu) ?> : <?php echo strtoupper($productCode) ?></h3>
 						<span></span>
 					</div>
 				</div>
 				<!-- /Page Header -->
-
+				<?php $r = $product[0]; ?>
 				<!--=== Page Content ===-->
 				<div class="row">
 					<!--=== Validation Example 1 ===-->
@@ -105,86 +107,122 @@
 							<div class="widget-header">
 								<h4><i class="icon-reorder"></i></h4>
 							</div>
-                            <?php $value = $product[0] ?>
 							<div class="widget-content">
-								<form class="form-horizontal row-border" method="post" enctype="multipart/form-data" id="validate-1" action="<?php echo base_url();?>product/edit_action">
+								<form class="form-horizontal row-border" method="post" enctype="multipart/form-data" id="validate-1" name="validate-1" action="<?php echo base_url();?>product/edit_action">
 									<div class="form-group">
-										<label class="col-md-3 control-label">Category <span class="required">*</span></label>
+										<label class="col-md-3 control-label">Product Type <span class="required">*</span></label>
 										<div class="col-md-9">
-											<select name="CatID" class="form-control required">
-												<option value=""></option>
-												<?php foreach ($category as $r) {?>
-												<option value="<?php echo $r['id']; ?>" <?php echo ($r['id']==$value['CatID']) ? 'selected="selected" ' : ''   ?> ><?php echo $r['catEN']; ?></option>
+											<select name="type_code" id="type_code" class="form-control required">
+												<option value="">Please select one.</option>
+												<?php foreach ($type as $t) {?>
+												<option value="<?php echo $t['type_code']; ?>"  <?php if($r['type_code'] == $t['type_code']){ echo 'selected';} ?>>
+													<?php echo $t['type_en']; ?>
+												</option>
 												<?php } ?>
 											</select>
 										</div>
 									</div>
 									<div class="form-group">
-										<label class="col-md-3 control-label">Cover Image <span class="required">*</span></label>
+										<label class="col-md-3 control-label">Category
+											<i id="cat_spin" class="fa fa-spinner fa-spin hide"  style="font-size:24px"></i>
+										</label>
 										<div class="col-md-9">
-                                            <img src="../../../images/product/<?php echo $value['CoverImage']?>" style="max-width: 300px">
-											<br><br>
-                                            <input type="file" name="coverimg" class="" accept="image/*" data-style="fileinput" data-inputsize="medium">
-											<p class="help-block">Images only (image/*)</p>
-											<label for="coverimg" class="has-error help-block" generated="true" style="display:none;"></label>
-                                            <input type="hidden" name="coverimg_old" value="<?php echo $value['CoverImage']?>">
+											<select name="cat_code" id="cat_code" class="form-control" cat-values="<?php echo $r['cat_code'];?>"></select>
 										</div>
 									</div>
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label">Gallery </label>
-                                        <div class="col-md-9">
-                                            <?php $i=1;foreach ($gallery as $g) { ?>
-                                                <div class="col-md-3">
-                                                    <img src="../../../images/product/<?php echo $g['Image'];?>" width='200'>
-                                                    <label class="checkbox"><input type="checkbox" name="del[]" value="<?php echo $g['ID']."&".$g['Image'];?>" class=""> Delete </label>
-                                                </div>
-                                                <?php if($i==4 or $i==8 or $i==12 or $i==16){?><div style="clear:both"></div><?php } ?>
-                                                <?php $i++; } ?>
-                                        </div>
-                                        <div style="clear:both;height:20px;"></div>
-                                        <label class="col-md-3 control-label">Add more </label>
-                                        <!-- ..........1.......... -->
-                                        <div class="col-md-9">
-                                            <input type="file" name="my_file[]" multiple  class="form-control" accept="image/*" data-inputsize="medium">
-                                            <p class="help-block">Images only (image/*)</p>
-                                            <label for="gal1" class="has-error help-block" generated="true" style="display:none;"></label>
-                                        </div>
-                                    </div>
-									
+									<div class="form-group">
+										<label class="col-md-3 control-label">Sub Category
+											<i id="sub_cat_spin" class="fa fa-spinner fa-spin hide"  style="font-size:24px"></i>
+										</label>
+										<div class="col-md-9">
+											<select name="sub_cat_code" id="sub_cat_code" class="form-control" sub-cat-values="<?php echo $r['sub_cat_code'];?>"></select>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-md-3 control-label">SKU <span class="required">*</span></label>
+										<div class="col-md-9">
+											<input type="text" name="sku" class="form-control required" value="<?php echo $r['sku']?>" placeholder="AS11111AA22">
+										</div>
+									</div>
+
 									<div class="form-group">
 										<label class="col-md-3 control-label">Product Name [TH] <span class="required">*</span></label>
 										<div class="col-md-9">
-											<input type="text" name="NameTH" class="form-control required" value="<?php echo $value['NameTH'] ?>">
+											<input type="text" name="name_th" class="form-control required" value="<?php echo $r['name_th']?>">
 										</div>
 									</div>
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label">Description [TH] :</label>
-                                        <div class="col-md-9"><textarea  name="DescriptionTH" id="editor1"><?php echo $value['DescriptionTH'] ?></textarea></div>
-                                    </div>
-
-                                    <div class="form-group">
+									<div class="form-group">
+										<label class="col-md-3 control-label">Description [TH] :</label>
+										<div class="col-md-9"><textarea class="required"  name="desc_th" id="editor1"><?php echo $r['desc_th']?></textarea></div>
+									</div>
+									<div class="form-group">
 										<label class="col-md-3 control-label">Product Name [EN] <span class="required">*</span></label>
 										<div class="col-md-9">
-											<input type="text" name="NameEN" class="form-control required" value="<?php echo $value['NameEN'] ?>">
+											<input type="text" name="name_en" class="form-control required" value="<?php echo $r['name_en']?>">
 										</div>
 									</div>
-                                    <div class="form-group">
-                                        <label class="col-md-3 control-label">Description [EN] :</label>
-                                        <div class="col-md-9"><textarea rows="10" name="DescriptionEN" id="editor2"><?php echo $value['DescriptionEN'] ?></textarea></div>
-                                    </div>
+									<div class="form-group">
+										<label class="col-md-3 control-label">Description [EN] :</label>
+										<div class="col-md-9"><textarea class="required"  name="desc_en" id="editor2"><?php echo $r['desc_th']?></textarea></div>
+									</div>
 
                                     <div class="form-group">
-                                        <label class="col-md-3 control-label">PDF <span class="required">*</span></label>
-                                        <div class="col-md-9">
-                                            <?php echo $value['pdf'] ?>
-                                            <input type="hidden" name="pdf_old" value="<?php echo $value['pdf'] ?>">
-                                            <input type="file" name="pdf" class=""  data-style="fileinput" data-inputsize="medium">
-                                            <p class="help-block">Images only (image/*)</p>
-                                            <label for="pdf" class="has-error help-block" generated="true" style="display:none;"></label>
-                                        </div>
-                                    </div>
+										<label class="col-md-3 control-label">Price <span class="required">*</span></label>
+										<div class="col-md-4">
+											<input type="text" name="price" class="form-control required" placeholder="Price" value="<?php echo $r['price']?>">
+										</div>
+										<div class="col-md-4">
+											<input type="text" name="sale_price" class="form-control required" placeholder="Sale Price" value="<?php echo $r['sale_price']?>">
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-md-3 control-label">Tags:</label>
+										<div class="col-md-9"><input type="text" id="tags2"  name="tags" class="tags" value="<?php echo $r['tags']?>"></div>
+									</div>
+									<div class="form-group">
+										<label class="col-md-3 control-label">Cover Image <span class="required">*</span></label>
+										<div class="col-md-5">
+											<img src="../../../images/product/<?php echo $r['cover_img']; ?>">
+											<input type="hidden" name="old_img" value="<?php echo $r['cover_img']; ?>">
+											<input type="file" name="coverimg"  accept="image/*" data-style="fileinput" data-inputsize="medium">
+											<p class="help-block">Change Image (image/*)</p>
+											<label for="coverimg" class="has-error help-block" generated="true" style="display:none;"></label>
+										</div>
+									</div>
+									<div class="form-group">
+
+										<label class="col-md-3 control-label">Original Size </label>
+										<div class="col-md-9">
+											<?php $i=1;foreach ($gallery as $g) { ?>
+												<div class="col-md-3">
+													<img src="../../../images/product/<?php echo $g['Image'];?>" width='200'>
+													<label class="checkbox"><input type="checkbox" name="del[]" value="<?php echo $g['ID']."&".$g['Image'];?>" class=""> Delete </label>
+												</div>
+												<?php if($i==4 or $i==8 or $i==12 or $i==16){?><div style="clear:both"></div><?php } ?>
+												<?php $i++; } ?>
+										</div>
+									</div>
+									<div class="form-group">
+
+										<label class="col-md-3 control-label">Change Image <span class="required">*</span></label>
+										<div class="col-md-4">
+											<input type="file" name="my_file[]" multiple  class="form-control" accept="image/*" data-inputsize="medium">
+											<p class="help-block">Images only (image/*)</p>
+											<label for="gal1" class="has-error help-block" generated="true" style="display:none;"></label>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-md-3 control-label">PDF <span class="required">*</span></label>
+										<div class="col-md-4">
+											<?php echo $r['pdf']; ?> <br><br>
+											<input type="hidden" name="old_pdf" value="<?php echo $r['pdf']; ?>">
+											<input type="file" name="pdf" class=""  data-style="fileinput" data-inputsize="medium">
+											<p class="help-block">Change File</p>
+											<label for="pdf" class="has-error help-block" generated="true" style="display:none;"></label>
+										</div>
+									</div>
 									<div class="form-actions">
-                                        <input type="hidden" name="ID" value="<?php echo $value['ID']; ?>">
+										<input type="hidden" name="id" value="<?php echo $r['ID']; ?>">
 										<input type="submit" value="SUBMIT" class="btn btn-primary pull-right">
 									</div>
 								</form>
@@ -203,4 +241,97 @@
 </html>
     <script>
 		initSample();
+
+		$(window).on('load', function(){
+			var type_code = document.forms["validate-1"]["type_code"].value;
+			var cat_code = $("#cat_code").attr("cat-values");
+
+			getCategory(type_code);
+			getSubCategory(type_code,cat_code);
+
+		});
+
+
+		$('#type_code').change(function () {
+			$('#warning-context').html('');
+			var typeCode = $('#type_code option:selected').val();
+			getCategory(typeCode)
+		});
+
+		$('#cat_code').change(function () {
+			$('#warning-context').html('');
+			var category = $('#cat_code option:selected').val();
+			getSubCategory(category);
+		});
+
+		function getCategory(value) {
+			var base_url = window.location.origin;
+			var i = 0;
+			$.ajax({
+				url: base_url + "/systemadmin/product/api-category/" + value,
+				dataType: "json",
+				beforeSend: function () {
+					$('#cat_spin').removeClass('hide');
+					i++;
+				},
+				success: function (result) {
+						var select = $('#cat_code');
+						var cat_values = $("#cat_code").attr("cat-values");
+						select.empty().append('<option value="" > Select All </option>');
+						for (var j = 0; j < result.length; j++) {
+							var data_obj = result[j];
+							var selected = null;
+							if(data_obj['cat_code'] == cat_values)
+							{
+								selected = 'selected';
+							}
+							select.append("<option value='" + data_obj['cat_code'] + "' " + selected + " >" +
+								data_obj['cat_en'] + "</option>");
+						}
+				},
+				complete: function () {
+					i--;
+					if (i <= 0) {
+						$('#cat_spin').addClass('hide');
+					}
+				}
+
+			});
+		}
+
+		function getSubCategory(typeCode,catCode) {
+			var base_url = window.location.origin;
+			var i = 0;
+			$.ajax({
+				url: base_url + "/systemadmin/product/api-sub-category/" + typeCode + '/' + catCode,
+				dataType: "json",
+				beforeSend: function () {
+					$('#sub-cat_spin').removeClass('hide');
+					i++;
+				},
+				success: function (result) {
+					console.log(result);
+					var select = $('#sub_cat_code');
+					var sub_cat_values = $("#sub_cat_code").attr("sub-cat-values");
+					select.empty().append('<option value="" > Select All </option>');
+					for (var j = 0; j < result.length; j++) {
+						var data_obj = result[j];
+						var selected = null;
+						if(data_obj['sub_cat_code'] == sub_cat_values)
+						{
+							selected = 'selected';
+						}
+						select.append("<option value='" + data_obj['sub_cat_code'] + "' " + selected + " >" +
+							data_obj['sub_en'] + "</option>");
+					}
+				},
+				complete: function () {
+					i--;
+					if (i <= 0) {
+						$('#sub-cat_spin').addClass('hide');
+					}
+				}
+
+			});
+		}
 	</script>

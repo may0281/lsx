@@ -12,19 +12,22 @@
                 $portUri = str_replace($find,"-",$project['name_'.$this->session->userdata('lang')]);
                 $portUrl =  base_url('portfolio/'.$project['id'].'/'.$portUri);
             ?>
-            <div class="col-md-4 portfolio-item print">
-                <div class="p-wrapper hover-default">
-                    <img src="<?php echo base_url('images/portfolio/'.$project['img']) ?>" alt="Project Example">
-                    <div class="p-hover">
-                        <div class="p-content">
-                            <h4><?php echo $project['name_'.$this->session->userdata('lang')] ?></h4>
-                            <h6 class="subheading"><?php echo $project['tags'] ?></h6>
-                        </div>
-                    </div>
-                    <a href="<?php echo $portUrl; ?>" class="open-btn"><i class="fa fa-expand"></i></a>
+                <div class="col-md-4 portfolio-item hover-side">
+                    <figure>
+                        <img src="<?php echo base_url('images/portfolio/'.$project['img']) ?>" alt="<?php echo $project['name_'.$this->session->userdata('lang')] ?>">
+                        <figcaption>
+                            <h5 class="hover-heading"><?php echo $project['name_'.$this->session->userdata('lang')] ?></h5>
+                            <p class="hover-text"><?php echo $project['tags'] ?></p>
+                            <a href="<?php echo $portUrl; ?>" class="hover-more-btn"><span class="linea-arrows-slim-right"></span></a>
+                            <ul class="hover-btns">
+                                <li><a href="<?php echo base_url('images/portfolio/'.$project['img']) ?>" class="open-gallery"><span class="linea-arrows-expand"></span></a></li>
+                                <li><a href="#"><span class="linea-basic-heart"></span></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
                 </div>
-            </div>
             <?php }?>
+
         </div>
     </div>
 </section>

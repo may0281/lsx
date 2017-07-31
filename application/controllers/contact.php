@@ -18,29 +18,75 @@ class contact extends CI_Controller {
 		$this->load->view("template/footer");
 
 	}
-	public function sendemail()
+	public function sendEmail()
 	{
-//		print_r($_POST);
-//		exit();
-		$name = $this->input->post('name');
-		$email = $this->input->post('email');
-		$message = $this->input->post('msg');
-		$subject = 'Message from ' . $name;
-		$data = 'Name: ' . $name . '
-		       Email: ' . $email . '		
-		       Message: ' . nl2br($message) . '';
-		$this->email->from($email ,$name);
+
+
+        $name = $this->input->post('name');
+        $email = $this->input->post('email');
+        $message = $this->input->post('message');
+        $tel = $this->input->post('tel');
+        $career = $this->input->post('career');
+
+//        if(!isset($name) ||
+//            !isset($email) ||
+//            !isset($tel) ||
+//            !isset($career) ||
+//            !isset($message)) {
+//
+//            echo '<div class="alert alert-danger alert-dismissible wow fadeInUp" role="alert">
+//                  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+//                  <strong>Something is wrong:</strong><br>';
+//            echo "We are sorry, but there appears to be a problem with the form you submitted.<br />";
+//            echo '</div>';
+//            exit();
+//        }
+//
+//
+//        echo $name;
+//        exit();
+
+		$subject = 'Message from ' . $name.' [' .$email.']';
+		$data = '
+		Name: ' . $name . '
+		Email : ' . $email . '		
+		Tel : ' . $tel . '		
+		Career : ' . $career . '		
+		Message: ' . nl2br($message) . '
+		
+		** email from contact us lsx.co.th **';
+		$this->email->from($email ,'Contact From LSX.CO.TH');
 		$this->email->to('maya.skyt@gmail.com');
 		$this->email->subject($subject);
 		$this->email->message($data);
 		$result = $this->email->send();
 
-		if ($result) {
-			echo "<script>alert('Success!!');window.location.assign('".base_url()."contact');</script>";
-		} else {
-			echo "<script>alert('Fail!!');window.location.assign('".base_url()."contact');</script>";
-			//echo $this->email->print_debugger();
-		}
+        $data = $_POST;
+        $data['send_datetime'] = date('Y-m-d H:i:s');
+        $data['status'] = 0;
+        if($result === true)
+        {
+            $data['status'] = 1;
+        }
+        $this->db->insert('contact', $data);
+
+        if($result === true)
+        {
+            $res = array(
+                'status' => 'success',
+                'code' => 200,
+            );
+
+        }
+        else{
+            $res = array(
+                'status' => 'Fail',
+                'code' => 400,
+            );
+
+        }
+        print_r($res);
+
 	}
 	
 }

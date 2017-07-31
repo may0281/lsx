@@ -113,15 +113,18 @@
 								</div>
 							</div>
 							<div class="widget-content">
-								<table class="table table-striped table-bordered table-hover table-checkable datatable" data-display-length="30">
+								<table class="table table-striped table-bordered table-hover table-checkable datatable" data-display-length="25">
 									<thead>
 										<tr>
 											<th>ID</th>
-											<th>Enable</th>
+
 											<th>Cover Img</th>
+											<th>Type</th>
 											<th>Category</th>
+											<th>SubCat</th>
 											<th>Name TH</th>
 											<th>Name EN</th>
+											<th>Enable</th>
 											<th data-hide="phone,tablet">Edit</th>
 											<th data-hide="phone,tablet">Del</th>
 										</tr>
@@ -134,19 +137,17 @@
 										
 										<tr>
 											<td><?php echo $i;?></td>
+											<td> <img src='../images/product/<?php echo $r['cover_img'];?>' width="50"></td>
+											<td><?php echo $r['type_code'];?></td>
+											<td><?php echo $r['cat_code'];?></td>
+											<td><?php echo $r['sub_cat_code'];?></td>
+											<td><?php echo $r['name_th'];?></td>
+											<td><?php echo $r['name_en'];?></td>
 											<td class="checkbox-column">
-												<input type="checkbox" class="uniform" onchange="OnChangeCheckbox (this)" id="myCheckbox" <?php if($r['Enable']==1){ echo "checked";}?>   value="<?php echo $r['ID'];?>" />	
-												</div>
+												<input type="checkbox" class="uniform" onchange="OnChangeCheckbox (this)" id="myCheckbox" <?php if($r['enable']==1){ echo "checked";}?>   value="<?php echo $r['ID'];?>" />
 											</td>
-											
-											<td>
-											<img src='../images/product/<?php echo $r['CoverImage'];?>' width="50"></td>
-											<td><?php echo $r['catEN'];?></td>
-											<td><?php echo $r['NameTH'];?></td>
-											<td><?php echo $r['NameEN'];?></td>
-
-											<td data-hide="phone,tablet"><a href="<?php echo base_url(); ?>product/edit/<?php echo $r['ID']; ?>" title="Edit product">Edit </a></td>
-											<td data-hide="phone,tablet"><a href="<?php echo base_url(); ?>product/del/<?php echo $r['ID']; ?>" title="Edit product">Del </a></td>
+											<td data-hide="phone,tablet"><a href="<?php echo base_url(); ?>product/edit/<?php echo $r['product_code']; ?>" title="Edit product">Edit </a></td>
+											<td data-hide="phone,tablet"><a href="<?php echo base_url(); ?>product/del/<?php echo $r['product_code']; ?>" title="Edit product">Del </a></td>
 										</tr>
 										<?php $i++; }?>
 									</tbody>
@@ -172,10 +173,10 @@
 		var productid = checkbox.value;
 		var base_url = "<?php echo base_url();?>";
 		if (checkbox.checked) {
-			window.location.href = base_url + "product/enable/1/" + productid;
+			window.location.href = base_url + "product/enable/product/1/" + productid;
 		}
 		else {
-			window.location.href = base_url + "product/enable/0/" + productid;
+			window.location.href = base_url + "product/enable/product/0/" + productid;
 		}
 	}
 </script>
