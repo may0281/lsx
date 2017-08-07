@@ -151,7 +151,7 @@
 }
 
 .pt-plax-md-light {
-	background: url(../../assets/images/shattered.gif) repeat;
+	background: url(../../assets/images/vintage-modern-decor.jpg) repeat;
 	background-size: cover;
 
 	&:before {
@@ -161,7 +161,7 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background: rgba(244,244,244, .85);
+		background: rgba(244,244,244, .15);
 	}
 }
 
@@ -181,7 +181,7 @@
 }
 
 .pt-plax-lg-light {
-	background: url(http://placehold.it/2440x1280);
+	background: url(../../assets/images/vintage-modern-decor.jpg);
 	background-size: cover;
 
 	&:before {
@@ -191,6 +191,6 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background: rgba(244,244,244, .83);
+		background: rgba(244,244,244, .73);
 	}
 }

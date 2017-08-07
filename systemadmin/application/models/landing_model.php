@@ -37,6 +37,15 @@ class landing_model extends ci_model
 		$this->db->where('ID', $id);
 		$this->db->update('landing', $data);
 	}
+    public function getReport($uri)
+    {
+        $this->db->select('*');
+        $this->db->from('register');
+        $this->db->where('project_code',$uri);
+        $this->db->order_by('id','desc');
+        $query = $this->db->get();
+        return $query->result_array();
+    }
 
 	
 }

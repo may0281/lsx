@@ -1,21 +1,24 @@
 <style>
     .pagi{
         display: inline-block;
-        margin: 0px auto;
+        padding-left: 0;
+        margin: 20px 0;
     }
 
     .pagi>li{
         display: inline-block;
-        padding: 0px 10px;
+        padding: 5px 10px;
         border: 1px solid #ccc;
-        margin: 20px 0;
+        margin: 0px -3px;
+        background: #ffffff;
     }
-    .stay{
+    .pagi>li.stay{
         background: #cf8137;
         color: #fff
     }
 
 </style>
+
 <section class="container section portfolio-layout portfolio-1col-boxed">
     <div class="row">
         <header class="sec-heading">
@@ -26,7 +29,7 @@
     <div class="row">
         <div id="pfolio">
             <?php $i=1; foreach ($portfolios as $portfolio) {
-                $find = array('!','+',' ');
+                $find = array('!','+',' ','(',')');
                 $portUri = str_replace($find,"-",$portfolio['name_'.$this->session->userdata('lang')]);
                 $portUrl =  base_url('portfolio/'.$portfolio['id'].'/'.$portUri);
             ?>

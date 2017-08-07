@@ -6,9 +6,15 @@ class contact extends CI_Controller {
 	public function __construct()
 	{
 		parent::__construct();
-		$lang = $this->session->userdata("lang")==null?"th":$this->session->userdata("lang");
-		$this->lang->load($lang,$lang);
+        $lang = $this->session->userdata("lang");
+        if($this->session->userdata("lang") == null)
+        {
+            $lang = 'th';
+            $this->session->set_userdata("lang","th");
+        }
+        $this->lang->load($lang,$lang);
 		date_default_timezone_set('Asia/Bangkok');
+        $this->load->model('home_model');
 	}
 	
 	public function index()
@@ -88,5 +94,18 @@ class contact extends CI_Controller {
         print_r($res);
 
 	}
+
+	public function ourCompany()
+    {
+        $data['about1'] = $this->home_model->getCompanyDesc('about_column_1');
+        $data['about2'] = $this->home_model->getCompanyDesc('about_column_2');
+        $data['ourPromise'] = $this->home_model->getCompanyDesc('our_promise');
+        $data['headOffice'] = $this->home_model->getCompanyDesc('address_head_office');
+        $data['wareHouse'] = $this->home_model->getCompanyDesc('address_ware_house');
+        $data['client_list'] = $this->home_model->getClientList();
+        $this->load->view('template/header');
+        $this->load->view('our-company',$data);
+        $this->load->view('template/footer-2');
+    }
 	
 }

@@ -115,8 +115,9 @@
 											<th>ID</th>
 											<th>Enable</th>
 											<th>URL</th>
-											<th data-hide="phone,tablet">Edit</th>
-											<th data-hide="phone,tablet">Del</th>
+											<th class="align-center">View</th>
+											<th class="align-center">Edit</th>
+											<th class="align-center">Del</th>
 										</tr>
 									</thead>
 									<tbody>
@@ -130,9 +131,14 @@
 											</td>
 											
 											<td><?php echo $r['url'];?></td>
+											<td class="align-center">
+												<?php if($r['use_form_rigister'] == 1) { ?>
+													<a href="<?php echo base_url('landing/report/'.$r['url'])?>"><i class="icon-search" style="font-size:20px;"></i></a>
+												<?php }  ?>
+											</td>
 
-											<td data-hide="phone,tablet"><a href="<?php echo base_url(); ?>landing/edit/<?php echo $r['ID']; ?>" title="Edit landing">Edit </a></td>
-											<td data-hide="phone,tablet"><a href="<?php echo base_url(); ?>landing/del/<?php echo $r['ID']; ?>" title="Edit landing">Del </a></td>
+											<td class="align-center"><a href="<?php echo base_url(); ?>landing/edit/<?php echo $r['ID']; ?>" title="Edit landing"><i class="icon-edit-sign" style="font-size:20px;"></i></a></td>
+											<td class="align-center"><a href="<?php echo base_url(); ?>landing/del/<?php echo $r['ID']; ?>" title="Edit landing"><i class="icon-remove-sign" style="font-size:20px;"></i> </a></td>
 										</tr>
 										<?php $i++; }?>
 									</tbody>

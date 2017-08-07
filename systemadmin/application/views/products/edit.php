@@ -185,7 +185,7 @@
 											<img src="../../../images/product/<?php echo $r['cover_img']; ?>">
 											<input type="hidden" name="old_img" value="<?php echo $r['cover_img']; ?>">
 											<input type="file" name="coverimg"  accept="image/*" data-style="fileinput" data-inputsize="medium">
-											<p class="help-block">Change Image (image/*)</p>
+											<p class="help-block">Change Image (image/*) Size 396X396 px</p>
 											<label for="coverimg" class="has-error help-block" generated="true" style="display:none;"></label>
 										</div>
 									</div>

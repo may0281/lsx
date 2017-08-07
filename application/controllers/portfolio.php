@@ -61,7 +61,10 @@ class portfolio extends CI_Controller {
         $this->load->view('template/header');
         if(empty($response))
         {
-            $this->load->view('template/404');
+            echo $this->load->view('template/header','',true);
+            echo $this->load->view('template/404','',true);
+            echo$this->load->view('template/footer-2','',true);
+            die();
         }
         $data['portfolio'] = $response[0];
         $data['portfolio_gallery'] = $gallery;

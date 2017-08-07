@@ -28,9 +28,10 @@
     <link rel="stylesheet" href="<?php echo base_url();?>assets/styles/responsive.css">
     <!-- JS -->
     <script src="<?php echo base_url();?>assets/js/vendor/modernizr-2.8.3.min.js"></script>
+
 </head>
 
-<body id="page-top">
+<body id="page-top"  data-spy="scroll" data-target=".navbar">
 
 <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -52,32 +53,36 @@
             </button>
 
             <!-- Logo -->
-            <a class="navbar-brand" href="index.html"><img class="navbar-logo" src="<?php echo base_url('assets/images/lsx-logo-1.png') ?>" alt="Definity - Logo"></a>
+            <a class="navbar-brand" href="<?php echo base_url() ?>"><img class="navbar-logo" src="<?php echo base_url('assets/images/lsx-logo-1.png') ?>" alt="Definity - Logo"></a>
         </div><!-- / .navbar-header -->
 
         <!-- Navbar Links -->
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li class="dropdown mega-fw"><a href="<?php echo base_url();?>" >Home</a></li><!-- / Home -->
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="350" role="button" aria-haspopup="true" aria-expanded="false">Product <span class="caret"></span></a>
-                    <ul class="dropdown-menu bg-solid">
+                <li class="dropdown mega-fw">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="350" role="button" aria-haspopup="true" aria-expanded="false">Product<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
                         <div class="row">
-                            <div class="col-lg-7">
-                                <li class="dropdown-header">Shop</li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="pages/shop/shop-right-sidebar.html">Shop Right Sidebar</a></li>
-                                <li><a href="pages/shop/shop-left-sidebar.html">Shop Left Sidebar</a></li>
-                                <li><a href="pages/shop/shop-4col.html">Shop 4 Columns</a></li>
-                                <li><a href="pages/shop/shop-single.html">Single Product</a></li>
-                                <li><a href="pages/shop/shop-checkout.html">Checkout Page</a></li>
-                            </div>
-                            <div class="col-lg-5 dropdown-banner">
-                                <img src="assets/images/shop/baner-shop-white.png" alt="Definity eCommerce update">
-                            </div>
-                        </div>
-                    </ul>
-                </li>
+                            <?php
+                            $productType = $this->home_model->getProductType();
+                            foreach ($productType as $type) {?>
+                                <div class="col-lg-3 mb-sm-30">
+                                    <li class="dropdown-header"><a style="font-size: 12px; color: #0d0d0d;padding-left: 5px" href="<?php echo base_url($type['type_code']) ?>"> <?php echo $type['type_en']; ?></a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <?php $cate = $this->home_model->getProductCategory($type['type_code']);
+                                          foreach ($cate as $ca){ ?>
+                                        <li><a href="<?php echo base_url($type['type_code'].'/'.$ca['cat_code'])?>"><?php echo $ca['cat_'.$this->session->userdata('lang')] ?></a></li>
+                                    <?php } ?>
+                                </div>
+
+                            <?php } ?>
+                            <!-- Multi Page -->
+
+
+                        </div><!-- / .row -->
+                    </ul><!-- / .dropdown-menu -->
+                </li><!-- / Home -->
                 <li class="dropdown mega-fw">
                     <a href="<?php echo base_url('promotion')?>">Promotion </a>
                 </li>
@@ -86,25 +91,29 @@
                 </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="350" role="button" aria-haspopup="true" aria-expanded="false">Blog <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="<?php echo base_url('blog')?>">ALL</a></li>
-                        <?php
-                            $this->db->select('*');
-                            $this->db->from('blog_category');
-                            $this->db->where('Enable',1);
-                            $query = $this->db->get();
-                            foreach ($query->result_array() as $blog){
-                        ?>
-                        <li><a href="<?php echo base_url('blog?categories='.$blog['url'])?>"><?php echo $blog['cat'.strtoupper($this->session->userdata('lang'))]?></a></li>
-                        <?php }?>
+                    <ul class="dropdown-menu bg-solid">
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <li class="dropdown-header">BLOG</li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="<?php echo base_url('blog')?>">ALL</a></li>
+                                <?php
+                                $this->db->select('*');
+                                $this->db->from('blog_category');
+                                $this->db->where('Enable',1);
+                                $query = $this->db->get();
+                                foreach ($query->result_array() as $blog){ ?>
+                                    <li><a href="<?php echo base_url('blog?categories='.$blog['url'])?>"><?php echo $blog['cat'.strtoupper($this->session->userdata('lang'))]?></a></li>
+                                <?php }?>
 
+                            </div>
+                            <div class="col-lg-5 dropdown-banner">
+                                <img src="<?php echo base_url()?>assets/images/shop/baner-shop-white.png" alt="Definity eCommerce update">
+                            </div>
+                        </div>
                     </ul>
                 </li>
-                <li class="dropdown mega-fw"><a href="<?php echo base_url();?>" >Company</a></li><!-- / Home -->
-
-
-
-
+                <li class="dropdown mega-fw"><a href="<?php echo base_url('our-company');?>" >Company</a></li>
             </ul><!-- / .nav .navbar-nav -->
 
 
@@ -146,10 +155,8 @@
 
                 <!-- Search -->
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-search"></i> Search</a>
-                    <ul class="dropdown-menu search-dropdown">
-                        <li><form action="post"><input type="search" class="form-control" placeholder="Search..."></form></li>
-                    </ul>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-key"></i> Login</a>
+
                 </li><!-- / Search -->
 
                 <!-- Languages -->

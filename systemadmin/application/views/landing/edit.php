@@ -116,6 +116,13 @@
 											<input type="text" name="url" class="form-control required" value="<?php echo $value['url'] ?>" placeholder="Example : landing-1">
 										</div>
 									</div>
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <label class="checkbox-inline">
+                                                <div class="checker"><span><input type="checkbox" class="uniform" name="use_form_rigister" <?php echo ($value['use_form_rigister'] == 1)? 'checked' : '' ?> value="1"></span></div> Form Register.
+                                            </label>
+                                        </div>
+                                    </div>
 
 									<div class="form-group">
 										<label class="col-md-12 ">Description [TH] : <span class="required">*</span></label>

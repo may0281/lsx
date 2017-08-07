@@ -182,7 +182,7 @@
 										<label class="col-md-3 control-label">Cover Image <span class="required">*</span></label>
 										<div class="col-md-4">
 											<input type="file" name="coverimg" class="required" accept="image/*" data-style="fileinput" data-inputsize="medium">
-											<p class="help-block">Images only (image/*)</p>
+											<p class="help-block">Images only (image/*) Size 396X396 px</p>
 											<label for="coverimg" class="has-error help-block" generated="true" style="display:none;"></label>
 										</div>
 									</div>

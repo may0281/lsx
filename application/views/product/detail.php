@@ -1,25 +1,5 @@
 <script src='<?php echo base_url()?>assets/js/elevate/jquery-1.8.3.min.js'></script>
 <script src='<?php echo base_url()?>assets/js/elevate/jquery.elevatezoom.js'></script>
-<header class="page-title pt-light pt-plax-md-dark" data-stellar-background-ratio="0.4">
-    <div class="bg-overlay">
-        <div class="container">
-            <div class="row" style="padding-top: 20px">
-
-                <div class="col-sm-6">
-                    <h1 style="color: #ffffff">Product</h1>
-                    <span class="subheading"><?php echo $q['name_'.$this->session->userdata('lang')];?></span>
-                </div>
-                <ol class="col-sm-6 text-right breadcrumb">
-                    <li><a href="<?php echo base_url() ?>">Home</a></li>
-                    <li><a href="<?php echo base_url('product') ?>">Product</a></li>
-                    <li class="active"><?php echo strtoupper($productCode); ?></li>
-                </ol>
-
-            </div>
-        </div>
-    </div>
-</header>
-
 <div class="container section">
     <div class="row ws-m">
 
@@ -44,7 +24,6 @@
             <span class="prod-cat"><?php echo $q['type_'.$this->session->userdata('lang')]; ?></span>
             <h1 class="prod-name"><?php echo $q['name_'.$this->session->userdata('lang')]; ?></h1>
 <!--            <h3 class="prod-price">$357.99 <span class="price-cut">$457.99</span></h3>-->
-
             <p class="prod-desc">
                 <strong>Category : </strong><?php echo strtoupper($q['cat_'.$this->session->userdata('lang')]); ?> <?php echo strtoupper($q['sub_'.$this->session->userdata('lang')]); ?>
             </p>
@@ -56,9 +35,7 @@
             <p class="prod-desc">
                 <strong>Note : </strong><?php echo $q['note_'.$this->session->userdata('lang')]; ?>
             </p>
-
 <!--            <a href="#" class="btn btn-large">Add to cart</a>-->
-
             <a href="<?php echo base_url('images/product/'.$ga['Image']) ?>" target="_blank" > <button class="btn btn-ghost btn-small">Download Originals Size</button></a>
 
         </div><!-- / .col-md-5 -->

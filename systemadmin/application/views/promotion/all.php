@@ -119,8 +119,8 @@
 											<th>Name EN</th>
 											<th>Start Date</th>
 											<th>End Date</th>
-											<th data-hide="phone,tablet">Edit</th>
-											<th data-hide="phone,tablet">Del</th>
+											<th class="align-center">Edit</th>
+											<th class="align-center">Del</th>
 										</tr>
 									</thead>
 
@@ -143,8 +143,8 @@
                                             <td><?php echo date('Y-m-d',strtotime($r['StartDate']));?></td>
                                             <td><?php echo date('Y-m-d',strtotime($r['EndDate']));?></td>
 
-											<td data-hide="phone,tablet"><a href="<?php echo base_url(); ?>promotion/edit/<?php echo $r['ID']; ?>" title="Edit promotion">Edit </a></td>
-											<td data-hide="phone,tablet"><a href="<?php echo base_url(); ?>promotion/del/<?php echo $r['ID']; ?>" title="Edit promotion">Del </a></td>
+											<td class="align-center"><a href="<?php echo base_url(); ?>promotion/edit/<?php echo $r['ID']; ?>" title="Edit promotion"><i class="icon-edit-sign" style="font-size:20px;"></i></a></td>
+											<td class="align-center"><a href="<?php echo base_url(); ?>promotion/del/<?php echo $r['ID']; ?>" title="Edit promotion"><i class="icon-remove-sign" style="font-size:20px;"></i> </a></td>
 										</tr>
 										<?php $i++; }?>
 									</tbody>

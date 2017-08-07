@@ -139,7 +139,7 @@
 												</div>
 											</td>
 											<td style="text-align: center">
-												<a data-toggle="modal" href="#editCat<?php echo $i;?>" ><i class="icon-edit" style="font-size: 20px"></i><span></span></a>
+												<a data-toggle="modal" href="#editCat<?php echo $i;?>" ><i class="icon-edit-sign" style="font-size: 20px"></i><span></span></a>
 												<div class="modal fade" id="editCat<?php echo $i;?>">
 													<div class="modal-dialog modal-lg">
 														<div class="modal-content">

@@ -4,24 +4,28 @@
         padding-left: 0;
         margin: 20px 0;
     }
+
     .pagi>li{
         display: inline-block;
-        padding: 0px 10px;
+        padding: 5px 10px;
         border: 1px solid #ccc;
-        margin: 20px 0;
+        margin: 0px -3px;
+        background: #ffffff;
     }
-    .stay{
+    .pagi>li.stay{
         background: #cf8137;
         color: #fff
     }
+
 </style>
+
 <div id="blog" class="section container blog-classic">
     <div class="row">
 
         <?php $this->load->view('promotion/sidebar'); ?>
         <div class="col-md-8">
             <?php foreach ($promotions as $promotion){
-                $find = array('!','+');
+                $find = array('!','+',' ','(',')');
                 $uri = str_replace($find,"",$promotion['Name'.strtoupper($this->session->userdata('lang'))]);
                 $url = base_url('promotion/'.$promotion['ID'].'/'.$uri);
             ?>

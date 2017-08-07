@@ -149,7 +149,7 @@
 												</div>
 											</td>
 											<td>
-												<a href="<?php echo base_url('product/type/update/'.$r['type_code'])?>" ><i class="icon-edit" style="font-size: 20px"></i><span></span></a>
+												<a href="<?php echo base_url('product/type/update/'.$r['type_code'])?>" ><i class="icon-edit-sign" style="font-size: 20px"></i><span></span></a>
 											</td>
 											<td>
 												<div class="make-switch switch-mini" data-on="success" data-off="danger">

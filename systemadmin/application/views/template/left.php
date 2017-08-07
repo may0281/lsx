@@ -185,18 +185,6 @@
                         </li>
 
 
-						<li class="<?php if($path[2]=='about'){echo "current";} ?>">
-							<a href="<?php echo base_url();?>about">
-								<i class="icon-fighter-jet"></i>
-								About Lsx.
-							</a>
-						</li>
-						<li class="<?php if($path[2]=='user'){echo "current";} ?>">
-							<a href="<?php echo base_url();?>user">
-								<i class="icon-user"></i>
-								User.
-							</a>
-						</li>
 						<li class="<?php if($path[2]=='client'){echo "current";} ?>">
 							<a href="<?php echo base_url();?>client">
 								<i class="icon-user-md"></i>
@@ -216,6 +204,26 @@
 									</a>
 								</li>
 							</ul>
+						</li>
+
+						<li class="<?php if($path[2]=='about'){echo "current";} ?>">
+							<a href="<?php echo base_url();?>about">
+								<i class="icon-fighter-jet"></i>
+								About Lsx.
+							</a>
+						</li>
+
+						<li class="<?php if($path[2]=='file'){echo "current";} ?>">
+							<a href="<?php echo base_url();?>file">
+								<i class="icon-upload-alt"></i>
+								File Upload.
+							</a>
+						</li>
+						<li class="<?php if($path[2]=='user'){echo "current";} ?>">
+							<a href="<?php echo base_url();?>user">
+								<i class="icon-user"></i>
+								User.
+							</a>
 						</li>
                     <?php } ?>
 

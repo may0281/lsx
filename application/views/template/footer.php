@@ -1,33 +1,29 @@
 <footer id="contact" class="footer-contact">
 	<div class="container-fluid">
 		<div class="row">
-
-			<!-- Map and address -->
+			<?php
+				$headOffice = $this->home_model->getCompanyDesc('address_head_office');
+				$wareHouse = $this->home_model->getCompanyDesc('address_ware_house');
+			?>
 			<div class="col-lg-6 no-gap contact-info">
-
-				<!-- Show Info Button -->
 				<a href="#" class="show-info-link"><i class="fa fa-info"></i>Show info</a>
-
 				<div id="map-canvas" class="footer-map"></div>
-
 				<address class="contact-info-wrapper">
-
 					<ul>
-						<!-- Address -->
 						<li class="contact-group">
-							<span class="adr-heading"><?php echo $companyDesc['content_'.$this->session->userdata('lang')]; ?></span>
-							<span class="adr-info"></span>
+							<span class="adr-heading"><?php echo $this->lang->line('head_office_address_h5');?></span>
+							<span class="adr-info"><?php echo $headOffice['content_'.$this->session->userdata('lang')] ?></span>
 						</li>
-
 					</ul>
-
+					<ul>
+						<li class="contact-group">
+							<span class="adr-heading"><?php echo $this->lang->line('warehouse_address_h5');?></span>
+							<span class="adr-info"><?php echo $wareHouse['content_'.$this->session->userdata('lang')] ?></span>
+						</li>
+					</ul>
 					<a href="#" class="show-map"><span class="linea-basic-geolocalize-05"></span>show on map</a>
 				</address>
-
-			</div><!-- / .col-lg-6 -->
-
-
-			<!-- Contact Form -->
+			</div>
 			<div class="col-lg-6 no-gap section contact-form" style="padding-top:50px">
 				<header class="sec-heading">
 					<h2>Contact</h2>
@@ -122,7 +118,6 @@
 	</div><!-- / .copyright -->
 </footer><!-- / .footer-contact -->
 <!-- ========== Scripts ========== -->
-
 <script src="<?php echo base_url();?>assets/js/vendor/jquery-2.1.4.min.js"></script>
 <script src="<?php echo base_url();?>assets/js/vendor/google-fonts.js"></script>
 <script src="<?php echo base_url();?>assets/js/vendor/jquery.easing.js"></script>

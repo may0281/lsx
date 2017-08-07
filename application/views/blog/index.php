@@ -7,17 +7,18 @@
 
     .pagi>li{
         display: inline-block;
-        padding: 0px 10px;
+        padding: 5px 10px;
         border: 1px solid #ccc;
-        margin: 20px 0;
+        margin: 0px -3px;
+        background: #ffffff;
     }
-    .stay{
+    .pagi>li.stay{
         background: #cf8137;
         color: #fff
     }
 
-
 </style>
+
 
 <!-- ========== Blog - 2 Columns ========== -->
 <div id="blog" class="section container blog-columns blog-masonry">
@@ -26,7 +27,7 @@
         <div class="col-md-8">
             <?php foreach ($blogs as $blog){
 
-                $find = array('!','+');
+                $find = array('!','+',' ','(',')');
                 $uri = str_replace($find,"",$blog['Name'.strtoupper($this->session->userdata('lang'))]);
 
                 $url = base_url('blog/'.$blog['ID'].'/'.$uri); ?>

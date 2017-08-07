@@ -51,7 +51,6 @@ class landing extends CI_Controller {
 
 	public function add_action()
 	{
-
 		$data = $this->input->post();
 		$moreData = array(
 		    'SaveDate' => date('Y-m-d H:i:s'),
@@ -77,9 +76,14 @@ class landing extends CI_Controller {
 
 	public function edit_action()
 	{
-
+        $useFormRegister = 0;
+        if($this->input->post('use_form_rigister'))
+        {
+            $useFormRegister = 1;
+        }
         $data = $this->input->post();
         $moreData = array(
+            'use_form_rigister' => $useFormRegister,
             'SaveDate' => date('Y-m-d H:i:s'),
         );
         $data = array_merge($data,$moreData);
@@ -110,6 +114,18 @@ class landing extends CI_Controller {
 			return  array('upload_data' => $this->upload->data());
 		}
 		$this->image_lib->clear();
+    }
+    public function report($project)
+    {
+        $result = $this->landing_model->getReport($project);
+        $data = array(
+            'q' => $result,
+            'subMenu' => 'Register : ',
+            'project' => $project
+        );
+        $this->load->view('template/left');
+        $this->load->view('landing/register',$data);
+
     }
 
 

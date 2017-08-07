@@ -13,7 +13,7 @@
                     <div class="ft-content">
                         <h5><?php echo $type['type_'.$this->session->userdata('lang')]; ?></h5>
                         <p><?php echo $type['short_description_'.$this->session->userdata('lang')]; ?></p>
-                        <a href="#" class="link-btn">View Product List <span class="linea-arrows-slim-right"></span></a>
+                        <a href="<?php echo base_url($type['type_code']) ?>" class="link-btn">View Product List <span class="linea-arrows-slim-right"></span></a>
                     </div>
                 </div><!-- / .ft-card-item -->
             </div><!-- / .col-md-6 -->

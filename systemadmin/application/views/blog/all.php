@@ -118,8 +118,8 @@
 											<th>Category</th>
 											<th>Name TH</th>
 											<th>Name EN</th>
-											<th data-hide="phone,tablet">Edit</th>
-											<th data-hide="phone,tablet">Del</th>
+											<th class="align-center">Edit</th>
+											<th class="align-center">Del</th>
 										</tr>
 									</thead>
 
@@ -141,8 +141,8 @@
 											<td><?php echo $r['NameTH'];?></td>
 											<td><?php echo $r['NameEN'];?></td>
 
-											<td data-hide="phone,tablet"><a href="<?php echo base_url(); ?>blog/edit/<?php echo $r['ID']; ?>" title="Edit blog">Edit </a></td>
-											<td data-hide="phone,tablet"><a href="<?php echo base_url(); ?>blog/del/<?php echo $r['ID']; ?>" title="Edit blog">Del </a></td>
+											<td class="align-center"><a href="<?php echo base_url(); ?>blog/edit/<?php echo $r['ID']; ?>" title="Edit blog"><i class="icon-edit-sign" style="font-size:20px;"></i></a></td>
+											<td class="align-center"><a href="<?php echo base_url(); ?>blog/del/<?php echo $r['ID']; ?>" title="Edit blog"><i class="icon-remove-sign" style="font-size:20px;"></i> </a></td>
 										</tr>
 										<?php $i++; }?>
 									</tbody>

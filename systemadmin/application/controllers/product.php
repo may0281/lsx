@@ -433,4 +433,6 @@ class product extends CI_Controller {
 
         return $fileType;
     }
+
+
 }

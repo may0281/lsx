@@ -13,3 +13,4 @@ $route['product/api-category/(:any)'] = 'product/apiCategory/$1';
 $route['product/api-sub-category/(:any)/(:any)'] = 'product/apiSubCategory/$1/$2';
 
 
+

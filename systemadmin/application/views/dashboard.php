@@ -132,8 +132,8 @@
                                     <td><?php echo $r['text_h1_th'];?></td>
                                     <td><?php echo $r['text_h1_en'];?></td>
                                     <td><?php echo $r['url'];?></td>
-                                    <td><a href="<?php echo base_url(); ?>dashboard/edit/<?php echo $r['id']; ?>" title="Edit product">Edit </a></td>
-                                    <td><a href="<?php echo base_url(); ?>dashboard/del/<?php echo $r['id']; ?>" title="Edit product">Del </a></td>
+                                    <td><a href="<?php echo base_url(); ?>dashboard/edit/<?php echo $r['id']; ?>" title="Edit product"><i class="icon-edit-sign" style="font-size:20px;"></i></a></td>
+                                    <td><a href="<?php echo base_url(); ?>dashboard/del/<?php echo $r['id']; ?>" title="Edit product"><i class="icon-remove-sign" style="font-size:20px;"></i> </a></td>
                                     </tr>
                         <?php $i++; }?>
                         </tbody>

@@ -116,13 +116,13 @@
 									<div class="col-md-12">
 										<div class="widget box">
 											<div class="widget-header">
-												<h4><i class="icon-reorder"></i> Address</h4>
+												<h4><i class="icon-reorder"></i> Address Head Office</h4>
 											</div>
 											<div class="widget-content">
 												<form class="form-horizontal row-border"  method="post" action='<?php echo base_url();?>about/updateAddress'>
 													<div class="form-group">
 														<?php
-														$sql ="select * from company_description where types = 'address'  limit 1";
+														$sql ="select * from company_description where types = 'address_head_office'  limit 1";
 														$query = $this->db->query($sql);
 														$result = $query->result_array();
 														foreach($result as $value){ ?>
@@ -138,6 +138,7 @@
 													</div>
 
 													<div class="form-actions">
+														<input type="hidden" name="types" value="address_head_office">
 														<input type="submit" value="UPDATE" class="btn btn-primary pull-right">
 													</div>
 												</form>
@@ -147,23 +148,117 @@
 									</div>
 								</div>
 
-                                <div class="row">
-                                    <form method="post" action='<?php echo base_url();?>about/UpdateAboutUs'>
-                                        <div class="form-group">
-                                            <label class="col-md-1 control-label">About Us</label>
-                                            <?php
-                                            $sql ="select * from about_us where 1 ";
-                                            $query = $this->db->query($sql);
-                                            $result = $query->result_array();
-                                            foreach($result as $r){ } ?>
-                                            <div class="col-md-8">
-                                                <textarea rows="10" name="data" class="form-control wysiwyg"><?php echo $r['data'];?></textarea>
-                                                <input type="submit" value="UPDATE" class="btn btn-primary pull-right">
-                                            </div>
-                                            <div class="col-md-2"></div>
-                                        </div>
-                                    </form>
-                                </div>
+								<div class="row">
+									<!--=== Validation Example 1 ===-->
+									<div class="col-md-12">
+										<div class="widget box">
+											<div class="widget-header">
+												<h4><i class="icon-reorder"></i> Address Warehouse</h4>
+											</div>
+											<div class="widget-content">
+												<form class="form-horizontal row-border"  method="post" action='<?php echo base_url();?>about/updateAddress'>
+													<div class="form-group">
+														<?php
+														$sql ="select * from company_description where types = 'address_ware_house'  limit 1";
+														$query = $this->db->query($sql);
+														$result = $query->result_array();
+														foreach($result as $value){ ?>
+															<label class="col-md-1 control-label">Address <br>[ TH ]</label>
+															<div class="col-md-5">
+																<textarea rows="10" name="content_th" class="form-control wysiwyg"><?php echo $value['content_th'];?></textarea>
+															</div>
+															<label class="col-md-1 control-label">Address <br>[ EN ]</label>
+															<div class="col-md-5">
+																<textarea rows="10" name="content_en" class="form-control wysiwyg"><?php echo $value['content_en'];?></textarea>
+															</div>
+														<?php } ?>
+													</div>
+
+													<div class="form-actions">
+														<input type="hidden" name="types" value="address_ware_house">
+														<input type="submit" value="UPDATE" class="btn btn-primary pull-right">
+													</div>
+												</form>
+											</div>
+										</div>
+										<!-- /Validation Example 1 -->
+									</div>
+								</div>
+
+								<div class="row">
+									<!--=== Validation Example 1 ===-->
+									<div class="col-md-12">
+										<div class="widget box">
+											<div class="widget-header">
+												<h4><i class="icon-reorder"></i> About Us Column 1</h4>
+											</div>
+											<div class="widget-content">
+												<form class="form-horizontal row-border"  method="post" action='<?php echo base_url();?>about/updateAddress'>
+													<div class="form-group">
+														<?php
+														$sql ="select * from company_description where types = 'about_column_1'  limit 1";
+														$query = $this->db->query($sql);
+														$result = $query->result_array();
+														foreach($result as $value){ ?>
+															<label class="col-md-1 control-label">Column 1 <br>[ TH ]</label>
+															<div class="col-md-5">
+																<textarea rows="10" name="content_th" class="form-control wysiwyg"><?php echo $value['content_th'];?></textarea>
+															</div>
+															<label class="col-md-1 control-label"> Column 1 <br>[ EN ]</label>
+															<div class="col-md-5">
+																<textarea rows="10" name="content_en" class="form-control wysiwyg"><?php echo $value['content_en'];?></textarea>
+															</div>
+														<?php } ?>
+													</div>
+
+													<div class="form-actions">
+														<input type="hidden" name="types" value="about_column_1">
+														<input type="submit" value="UPDATE" class="btn btn-primary pull-right">
+													</div>
+												</form>
+											</div>
+										</div>
+										<!-- /Validation Example 1 -->
+									</div>
+								</div>
+
+								<div class="row">
+									<!--=== Validation Example 1 ===-->
+									<div class="col-md-12">
+										<div class="widget box">
+											<div class="widget-header">
+												<h4><i class="icon-reorder"></i> About Us Column 2</h4>
+											</div>
+											<div class="widget-content">
+												<form class="form-horizontal row-border"  method="post" action='<?php echo base_url();?>about/updateAddress'>
+													<div class="form-group">
+														<?php
+														$sql ="select * from company_description where types = 'about_column_2'  limit 1";
+														$query = $this->db->query($sql);
+														$result = $query->result_array();
+														foreach($result as $value){ ?>
+															<label class="col-md-1 control-label">Column 1 <br>[ TH ]</label>
+															<div class="col-md-5">
+																<textarea rows="10" name="content_th" class="form-control wysiwyg"><?php echo $value['content_th'];?></textarea>
+															</div>
+															<label class="col-md-1 control-label"> Column 1 <br>[ EN ]</label>
+															<div class="col-md-5">
+																<textarea rows="10" name="content_en" class="form-control wysiwyg"><?php echo $value['content_en'];?></textarea>
+															</div>
+														<?php } ?>
+													</div>
+
+													<div class="form-actions">
+														<input type="hidden" name="types" value="about_column_2">
+														<input type="submit" value="UPDATE" class="btn btn-primary pull-right">
+													</div>
+												</form>
+											</div>
+										</div>
+										<!-- /Validation Example 1 -->
+									</div>
+								</div>
+
 								<div class="row">
 									<!--=== Validation Example 1 ===-->
 									<div class="col-md-12">

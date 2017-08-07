@@ -30,7 +30,8 @@ class about extends CI_Controller {
             'content_th' => $this->input->post('content_th'),
             'content_en' => $this->input->post('content_en'),
         );
-		$this->db->update('company_description', $data, array('types'=>'address'));
+
+		$this->db->update('company_description', $data, array('types'=>$this->input->post('types')));
 		echo "<script>window.location.assign('".base_url()."about');</script>";
 	}
 

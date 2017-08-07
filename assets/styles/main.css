@@ -2517,7 +2517,7 @@ fieldset[disabled] .form-control {
     background: rgba(17, 17, 17, 0.55); }
 
 .pt-plax-md-light {
-  background: url(../../assets/images/shattered.gif) repeat;
+  background: url(../../assets/images/vintage-modern-decor.jpg) repeat;
   background-size: cover; }
   .pt-plax-md-light:before {
     content: '';
@@ -2526,7 +2526,7 @@ fieldset[disabled] .form-control {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(244, 244, 244, 0.85); }
+    background: rgba(244, 244, 244, 0.15); }
 
 .pt-plax-lg-dark {
   background: url(../../assets/images/shattered.gif) repeat;
@@ -2541,7 +2541,7 @@ fieldset[disabled] .form-control {
     background: rgba(17, 17, 17, 0.83); }
 
 .pt-plax-lg-light {
-  background: url(http://placehold.it/2440x1280);
+  background: url(../../assets/images/vintage-modern-decor.jpg);
   background-size: cover; }
   .pt-plax-lg-light:before {
     content: '';
@@ -2550,7 +2550,7 @@ fieldset[disabled] .form-control {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(244, 244, 244, 0.83); }
+    background: rgba(244, 244, 244, 0.73); }
 
 /* --------------------------------------------------
 	7.0 Footers
@@ -4101,7 +4101,7 @@ fieldset[disabled] .form-control {
 /* ---- 10.1 Circle Counters ---- */
 .circles-counters, .circles-counters-dark-bg {
   position: relative;
-  background: #ccc url(http://placehold.it/2440x1578);
+  background: #ccc url(../../assets/images/Fujigaoka-M.jpg);
   background-size: cover;
   background-attachment: fixed; }
   .circles-counters:before, .circles-counters-dark-bg:before {
@@ -4111,7 +4111,7 @@ fieldset[disabled] .form-control {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(17, 17, 17, 0.55); }
+    background: rgba(17, 17, 17, 0.75); }
   .circles-counters .circle-item, .circles-counters-dark-bg .circle-item {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -7595,7 +7595,7 @@ form .input-error-2 {
   background: url(http://placehold.it/2440x1578);
   background-size: cover; }
   .fs-slide-2 .bg-overlay {
-    background: rgba(17, 17, 17, 0.7); }
+    background: rgba(17, 17, 17, 0.1); }
   .fs-slide-2 .hero-content {
     padding-left: 10%;
     text-align: left; }
@@ -7615,7 +7615,7 @@ form .input-error-2 {
   background: url(http://placehold.it/2440x1578);
   background-size: cover; }
   .fs-slide-3 .bg-overlay {
-    background: rgba(17, 17, 17, 0.7); }
+    background: rgba(17, 17, 17, 0.1); }
   .fs-slide-3 .hero-content {
     text-align: center; }
     .fs-slide-3 .hero-content .hero-lead {
@@ -9226,7 +9226,6 @@ form .input-error-2 {
 
 /* ---- 27.4 Shop Sidebar - (vertical) ---- */
 .shop-sidebar-vertical {
-  margin-top: 90px;
   padding: 30px 20px;
   border-top: 1px solid #f8f8f8;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);

@@ -29,12 +29,23 @@ class home_model extends  ci_model
         return $query->result_array();
     }
 
+    public function getProductCategory($typeCode)
+    {
+        $this->db->select('*');
+        $this->db->from('product_categories');
+        $this->db->where('type_code',$typeCode);
+        $this->db->where('enable',1);
+        $this->db->order_by('id','desc');
+        $query = $this->db->get();
+        return $query->result_array();
+    }
+
     public function getProductList()
     {
         $this->db->select('*');
         $this->db->from('product');
         $this->db->where('enable',1);
-        $this->db->order_by('id','desc');
+        $this->db->order_by('update_date','desc');
         $this->db->limit(8);
         $query = $this->db->get();
         return $query->result_array();
@@ -111,6 +122,7 @@ class home_model extends  ci_model
         return $query->result_array();
     }
 
+
     public function getRecentProduct()
     {
         $this->db->select('*');
@@ -132,5 +144,6 @@ class home_model extends  ci_model
         $query = $this->db->get();
         return $query->result_array();
     }
+
 
 }

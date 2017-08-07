@@ -1,31 +1,22 @@
 <div id="skillsCircles" class="circles-counters" >
     <div class="container" >
-        <div id="counters" class="row count-wrapper">
+        <div class="row section" style="color: #ffffff">
 
-            <!-- Item 1 -->
-            <div class="col-sm-6 col-lg-3 circle-item wow zoomIn" data-wow-duration=".6s" data-wow-delay=".3s">
-                <div class="chart" data-percent="75"><span class="circle-icon linea-basic-gear"></span></div>
-                <span class="circle-text">Web Development</span>
+            <div class="col-md-12" style="margin-bottom: 50px;text-align: center;">
+                <h2 style="color: #ffffff"><?php echo $this->lang->line('about'); ?> </h2>
             </div>
-
-            <!-- Item 2 -->
-            <div class="col-sm-6 col-lg-3 circle-item wow zoomIn" data-wow-duration=".6s">
-                <div class="chart" data-percent="75"><span class="circle-icon linea-basic-display"></span></div>
-                <span class="circle-text">Web Design</span>
+            <div class="col-md-6">
+                <p><?php echo $about1['content_'.$this->session->userdata('lang')] ?></p>
             </div>
-
-            <!-- Item 3 -->
-            <div class="col-sm-6 col-lg-3 circle-item wow zoomIn" data-wow-duration=".6s">
-                <div class="chart" data-percent="75"><span class="circle-icon linea-basic-photo"></span></div>
-                <span class="circle-text">Photography</span>
-            </div>
-
-            <!-- Item 4 -->
-            <div class="col-sm-6 col-lg-3 circle-item wow zoomIn" data-wow-duration=".6s" data-wow-delay=".3s">
-                <div class="chart" data-percent="75"><span class="circle-icon linea-basic-star"></span></div>
-                <span class="circle-text">Marketing</span>
+            <div class="col-md-6">
+                <p><?php echo $about2['content_'.$this->session->userdata('lang')] ?></p>
             </div>
 
         </div><!-- / .row -->
+        <div class="row ws-m">
+            <div class="col-md-12 text-center">
+                <a href="<?php echo base_url('our-company') ?>" class=" btn-light"><?php echo $this->lang->line('about_btn'); ?></a>
+            </div>
+        </div>
     </div><!-- / .container -->
 </div><!-- / .circles-counters -->

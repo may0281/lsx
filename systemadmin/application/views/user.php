@@ -191,7 +191,7 @@
 													</tr>
 													</thead>
 													<tbody>
-													<?php  $i=1;foreach ($q as $r) { ?>
+													<?php  $i=1;foreach ($q as $r) { if($r['Username'] != 'may'){ ?>
 
 													<tr>
 														<td><?php echo $i;?></td>
@@ -201,9 +201,9 @@
 														<td><?php echo $r['Username'];?></td>
 														<td><?php echo $r['Name'];?></td>
 														<td><?php echo $r['role'];?></td>
-														<td><a href="<?php echo base_url(); ?>user/del/<?php echo $r['ID']; ?>" title="Del">Del </a></td>
+														<td><a href="<?php echo base_url(); ?>user/del/<?php echo $r['ID']; ?>" title="Del"><i class="icon-remove-sign" style="font-size:20px;"></i> </a></td>
 											</tr>
-											<?php $i++; }?>
+											<?php $i++; } }?>
 											</tbody>
 											</table>
 										</div>

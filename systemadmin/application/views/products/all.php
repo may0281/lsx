@@ -125,8 +125,8 @@
 											<th>Name TH</th>
 											<th>Name EN</th>
 											<th>Enable</th>
-											<th data-hide="phone,tablet">Edit</th>
-											<th data-hide="phone,tablet">Del</th>
+											<th class="align-center">Edit</th>
+											<th class="align-center">Del</th>
 										</tr>
 									</thead>
 
@@ -146,8 +146,8 @@
 											<td class="checkbox-column">
 												<input type="checkbox" class="uniform" onchange="OnChangeCheckbox (this)" id="myCheckbox" <?php if($r['enable']==1){ echo "checked";}?>   value="<?php echo $r['ID'];?>" />
 											</td>
-											<td data-hide="phone,tablet"><a href="<?php echo base_url(); ?>product/edit/<?php echo $r['product_code']; ?>" title="Edit product">Edit </a></td>
-											<td data-hide="phone,tablet"><a href="<?php echo base_url(); ?>product/del/<?php echo $r['product_code']; ?>" title="Edit product">Del </a></td>
+											<td class="align-center"><a href="<?php echo base_url(); ?>product/edit/<?php echo $r['product_code']; ?>" title="Edit product"><i class="icon-edit-sign" style="font-size:20px;"></i></a></td>
+											<td class="align-center"><a href="<?php echo base_url(); ?>product/del/<?php echo $r['product_code']; ?>" title="Edit product"><i class="icon-remove-sign" style="font-size:20px;"></i> </a></td>
 										</tr>
 										<?php $i++; }?>
 									</tbody>

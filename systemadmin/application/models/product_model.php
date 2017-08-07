@@ -104,5 +104,5 @@ class product_model extends ci_model
 
 	}
 
-	
+
 }

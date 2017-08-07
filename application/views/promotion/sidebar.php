@@ -1,4 +1,4 @@
-<?php $find = array('!','+',' '); ?>
+<?php $find = array('!','+',' ','(',')'); ?>
 <aside class="col-md-3 sidebar mb-sm-160">
     <!-- Search - Widget -->
     <form method="post" action="<?php echo base_url('promotion/search'); ?>">
@@ -22,22 +22,22 @@
         <?php } ?>
     </div>
     <!-- Recent Posts - Widget -->
-    <div class="col-md-12 ws-s recent-posts-widget">
+    <div class="shop-widget product-widget">
         <h5 class="header-widget">Recent Product</h5>
-        <?php
-            $recentProduct = $this->home_model->getRecentProduct();
-            foreach ($recentProduct as $product){
-            $productUri = str_replace($find,"-",$product['name_'.$this->session->userdata('lang')]);
-            $productUrl =  base_url('blog/'.$product['ID'].'/'.$productUri);
-        ?>
-        <!-- Item 1 -->
-        <div class="widget-item">
-            <img src="<?php echo base_url('images/product/'.$product['cover_img']) ?>" >
-            <a href="<?php echo $productUrl; ?>"><h6 class="h-alt"><?php echo $product['name_'.$this->session->userdata('lang')] ?></h6></a>
-            <span><?php echo date('M  d,Y',strtotime($product['create_date'])) ?></span>
-        </div>
-        <?php  } ?>
-    </div><!-- / .recent-posts-widget -->
+        <?php $products  = $this->home_model->getProductList();
+        foreach ($products as $pa){
+            $find = array('!','+',' ','(',')');
+            $uri = str_replace($find,"-",$pa['name_'.$this->session->userdata('lang')]);
+            $url = base_url('product/'.$pa['product_code'].'/'.$uri);
+            ?>
+            <div class="cart-item">
+                <a href="<?php echo $url ?>"><img src="<?php echo base_url('images/product/'.$pa['cover_img'])?>" alt="<?php echo $pa['name_'.$this->session->userdata('lang')];?>" width="50px" class="p-thumb"></a>
+                <a href="<?php echo $url ?>" class="cp-name"><?php echo $pa['name_'.$this->session->userdata('lang')] ?></a>
+            </div>
+            <div class="clear" style="height: 5px;"></div>
+        <?php }?>
+
+    </div><!-- / .cart-widget -->
 
     <div class="col-md-12 ws-s recent-posts-widget">
         <h5 class="header-widget">Recent Blog</h5>

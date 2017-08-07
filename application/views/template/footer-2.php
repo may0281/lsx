@@ -13,16 +13,20 @@
 					</p>
 				</div>
 			</div>
+			<?php
+			$headOffice = $this->home_model->getCompanyDesc('address_head_office');
+			$wareHouse = $this->home_model->getCompanyDesc('address_ware_house');
+			?>
 			<div class="col-md-3 col-sm-6 mb-sm-100">
 				<div class="widget about-widget">
 					<h5 class="header-widget"><?php echo $this->lang->line('head_office_address_h5');?></h5>
-					<p><?php echo $this->lang->line('head_office_address');?></php></p>
+					<p><?php echo $headOffice['content_'.$this->session->userdata('lang')] ?></p>
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-6 mb-sm-100">
 				<div class="widget about-widget">
 					<h5 class="header-widget"><?php echo $this->lang->line('warehouse_address_h5');?></h5>
-					<p><?php echo $this->lang->line('warehouse_address');?></php></p>
+					<p><?php echo $wareHouse['content_'.$this->session->userdata('lang')] ?></p>
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-6 mb-sm-100">
@@ -55,7 +59,18 @@
 		</div>
 	</div>
 </footer>
+<?php
+$serverUri =  explode('/',$_SERVER['REQUEST_URI']);
+if (in_array("altyno", $serverUri,true)
+	or in_array("jolypate", $serverUri,true)
+	or in_array("decor-surfaces", $serverUri,true)
+	or in_array("cerarl", $serverUri,true)
+	or in_array("search", $serverUri,true)
+	or in_array("our-company", $serverUri,true)
+){
+}else{ ?>
 <script src="<?php echo base_url();?>assets/js/vendor/jquery-2.1.4.min.js"></script>
+<?php }?>
 <script src="<?php echo base_url();?>assets/js/vendor/google-fonts.js"></script>
 <script src="<?php echo base_url();?>assets/js/vendor/jquery.easing.js"></script>
 <script src="<?php echo base_url();?>assets/js/vendor/jquery.waypoints.min.js"></script>
@@ -72,7 +87,7 @@
 <script src="<?php echo base_url();?>assets/js/vendor/isotope.min.js"></script>
 <script src="<?php echo base_url();?>assets/js/vendor/jquery.magnific-popup.min.js"></script>
 <script src="<?php echo base_url();?>assets/js/vendor/wow.min.js"></script>
-<script src="<?php echo base_url();?>assets/js/vendor/jquery.ajaxchimp.js"></script>
+<!--<script src="--><?php //echo base_url();?><!--assets/js/vendor/jquery.ajaxchimp.js"></script>-->
 <!-- Google Maps -->
 
 <script src="<?php echo base_url();?>assets/js/main.js"></script>
