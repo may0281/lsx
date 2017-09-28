@@ -95,7 +95,7 @@
 
                 <?php if($q['maintenance_th'] || $q['maintenance_en']){ ?>
                    <div role="tabpanel" class="tab-pane ft-steps-numbers" id="tab-help">
-                        <?php echo $q['installation_'.$this->session->userdata('lang')];?>
+                        <?php echo $q['maintenance_'.$this->session->userdata('lang')];?>
                     </div>
                 <?php } ?>
 

@@ -9,7 +9,6 @@ class underconstruction extends CI_Controller {
 	}
 	public function index()
 	{
-//        echo '<pre>';
         $xml=simplexml_load_file("lsx.wordpress.xml");
         $json = json_encode($xml);
         $array = json_decode($json,TRUE);
@@ -19,7 +18,6 @@ class underconstruction extends CI_Controller {
             foreach ($item as $r)
             {
                 $cat = $r['category'];
-//                print_r($cat);
                 $category = null;
                 $product_code = null;
                 $type_code = null;

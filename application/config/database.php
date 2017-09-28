@@ -6,10 +6,11 @@ $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'root';
-//$db['default']['username'] = 'pegasusa_autohaus';
 $db['default']['password'] = '';
-//$db['default']['password'] = 'scgautoimport';
 $db['default']['database'] = 'lsx';
+//$db['default']['username'] = 'premiumr_lsx';
+//$db['default']['password'] = 'lsx.co.th';
+//$db['default']['database'] = 'premiumr_lsx';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;

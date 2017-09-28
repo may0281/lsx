@@ -7478,7 +7478,7 @@ form .input-error-2 {
   font-size: 30px;
   color: #111;
   background: #ececec;
-  opacity: 0;
+  opacity: 0.3;
   transition: all .5s; }
   .fs-slider .slick-prev span,
   .fs-slider .slick-next span,

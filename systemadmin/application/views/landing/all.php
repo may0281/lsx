@@ -122,7 +122,6 @@
 									</thead>
 									<tbody>
 										<?php  $i=1;foreach ($q as $r) { ?>
-										
 										<tr>
 											<td><?php echo $i;?></td>
 											<td class="checkbox-column">
