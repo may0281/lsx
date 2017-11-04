@@ -1,4 +1,4 @@
-<?php $find = array('!','+',' ','(',')'); ?>
+<?php $find = array("!","+","?","'"," ","(",")");; ?>
 <style>
     .pagi{
         display: inline-block;

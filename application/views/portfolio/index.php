@@ -29,7 +29,7 @@
     <div class="row">
         <div id="pfolio">
             <?php $i=1; foreach ($portfolios as $portfolio) {
-                $find = array('!','+',' ','(',')');
+                $find = array("!","+","?","'"," ","(",")");;
                 $portUri = str_replace($find,"-",$portfolio['name_'.$this->session->userdata('lang')]);
                 $portUrl =  base_url('portfolio/'.$portfolio['id'].'/'.$portUri);
             ?>

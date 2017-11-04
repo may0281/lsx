@@ -8,7 +8,7 @@
 
             <!-- Shop Product -->
             <?php foreach ($product_list as $productList){
-                $find = array('!','+',' ','(',')');
+                $find = array("!","+","?","'"," ","(",")");;
                 $uri = str_replace($find,"-",$productList['name_'.$this->session->userdata('lang')]);
                 $url = base_url('product/'.$productList['product_code'].'/'.$uri);?>
             <div class="col-xs-12 col-sm-6 col-lg-3">

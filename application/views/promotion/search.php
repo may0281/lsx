@@ -9,7 +9,7 @@
                     <table class="table table-light">
                         <tbody>
                             <?php $i = 1; foreach ($search as $r){
-                                $find = array('!','+',' ','(',')');
+                                $find = array("!","+","?","'"," ","(",")");;
                                 $uri = str_replace($find,"",$r['Name'.strtoupper($this->session->userdata('lang'))]);
                                 $url = base_url('promotion/'.$r['ID'].'/'.$uri);
                             ?>

@@ -35,7 +35,7 @@ class file extends CI_Controller
     {
         if ($_FILES['file']['name']) //check file upload
         {
-            $find = array('!','+',' ','(',')');
+            $find = array("!","+","?","'"," ","(",")");;
             $name = str_replace($find,"-",$_FILES['file']['name']);
             $status = copy($_FILES['file']["tmp_name"], $this->dir.$name);
             if($status == 1)

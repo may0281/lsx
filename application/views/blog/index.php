@@ -27,7 +27,7 @@
         <div class="col-md-8">
             <?php foreach ($blogs as $blog){
 
-                $find = array('!','+',' ','(',')');
+                $find = array("!","+","?","'"," ","(",")");;
                 $uri = str_replace($find,"",$blog['Name'.strtoupper($this->session->userdata('lang'))]);
 
                 $url = base_url('blog/'.$blog['ID'].'/'.$uri); ?>

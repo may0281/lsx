@@ -25,7 +25,7 @@
         <?php $this->load->view('promotion/sidebar'); ?>
         <div class="col-md-8">
             <?php foreach ($promotions as $promotion){
-                $find = array('!','+',' ','(',')');
+                $find = array("!","+","?","'"," ","(",")");;
                 $uri = str_replace($find,"",$promotion['Name'.strtoupper($this->session->userdata('lang'))]);
                 $url = base_url('promotion/'.$promotion['ID'].'/'.$uri);
             ?>
