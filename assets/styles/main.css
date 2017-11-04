@@ -7506,7 +7506,7 @@ form .input-error-2 {
 .fw-slider .slick-prev,
 .text-slider .slick-prev {
   top: 50%;
-  right: 0; }
+  left: 0; }
 .fs-slider .slick-next,
 .fw-slider .slick-next,
 .text-slider .slick-next {
