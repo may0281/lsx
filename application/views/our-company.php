@@ -5,12 +5,10 @@
             <div class="col-md-12" style="margin-bottom: 50px;text-align: center;">
                 <h2 style="color: #ffffff"><?php echo $this->lang->line('about'); ?> </h2>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-12">
                 <p><?php echo $about1['content_'.$this->session->userdata('lang')] ?></p>
             </div>
-            <div class="col-md-6">
-                <p><?php echo $about2['content_'.$this->session->userdata('lang')] ?></p>
-            </div>
+
         </div>
     </div>
 </div>
@@ -47,6 +45,7 @@
                 <figcaption class="col-md-5 no-gap">
                     <h3><?php echo $this->lang->line('head_office_address_h5');?></h3>
                     <p><?php echo $headOffice['content_'.$this->session->userdata('lang')] ?></p>
+                    <a href="<?php echo base_url('assets/images/Map-Head-Office.jpg') ?>" download class="btn btn-block">Download Map</a>
                 </figcaption>
             </figure><!-- / .portfolio-item -->
             <figure class="portfolio-item webdesing">
@@ -56,6 +55,7 @@
                 <figcaption class="col-md-5 no-gap pull-left">
                     <h3><?php echo $this->lang->line('warehouse_address_h5');?></h3>
                     <p><?php echo $wareHouse['content_'.$this->session->userdata('lang')] ?></p>
+                    <a href="<?php echo base_url('assets/images/Map-Warehouse.jpg') ?>" download class="btn btn-block">Download Map</a>
                 </figcaption>
             </figure>
         </div>

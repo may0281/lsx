@@ -10,37 +10,40 @@
             </ul>
         </div>
 
-        <div class="col-md-6">
+        <div class="col-md-5">
             <ul class="prod_single_img_slider">
                 <?php foreach ($g as $ga){ ?>
-                <li ><img style="width: 100%;height: 500px;" data-zoom-image="<?php echo base_url('images/product/'.$ga['Image']) ?>"  class="img-responsive zoom" src="<?php echo base_url('images/product/'.$ga['Image']) ?>" alt="Product Image"></li>
+                <li >
+                    <img style="width: 90%;data-zoom-image="<?php echo base_url('images/product/'.$ga['Image']) ?>"  class="img-responsive zoom" src="<?php echo base_url('images/product/'.$ga['Image']) ?>" alt="Product Image">
+                </li>
                 <?php }?>
             </ul>
         </div><!-- / .col-md-6 -->
 
 
         <!-- Product Description -->
-        <div class="col-md-5 product-info">
+        <div class="col-md-7 product-info">
             <span class="prod-cat"><?php echo $q['type_'.$this->session->userdata('lang')]; ?></span>
             <h1 class="prod-name"><?php echo $q['name_'.$this->session->userdata('lang')]; ?></h1>
 <!--            <h3 class="prod-price">$357.99 <span class="price-cut">$457.99</span></h3>-->
-            <p class="prod-desc">
-                <strong>Category : </strong><?php echo strtoupper($q['cat_'.$this->session->userdata('lang')]); ?> <?php echo strtoupper($q['sub_'.$this->session->userdata('lang')]); ?>
+            <p class="prod-desc" style="line-height: 50px">
+                <strong>Category : </strong><?php echo strtoupper($q['cat_'.$this->session->userdata('lang')]); ?> <?php echo strtoupper($q['sub_'.$this->session->userdata('lang')]); ?> <br>
+                <strong>SKU : </strong><?php echo $q['sku']; ?>
             </p>
-            <p class="prod-desc">
+            <p class="prod-desc" style="line-height: 50px">
                 <?php echo $q['desc_'.$this->session->userdata('lang')]; ?>
             </p>
 
 
-            <p class="prod-desc">
+            <p class="prod-desc" style="line-height: 40px">
                 <strong>Note : </strong><?php echo $q['note_'.$this->session->userdata('lang')]; ?>
             </p>
-<!--            <a href="#" class="btn btn-large">Add to cart</a>-->
-            <a href="<?php echo base_url('images/product/'.$ga['Image']) ?>" target="_blank" > <button class="btn btn-ghost btn-small">Download Originals Size</button></a>
+
+            <a href="<?php echo base_url('images/product/'.$ga['Image']) ?>" download> <button class="btn btn-ghost btn-small">Download Originals Size</button></a>
 
         </div><!-- / .col-md-5 -->
     </div><!-- / .row -->
-    <!-- Product Info - (tabs) -->
+    <div style="clear: both;height: 20px"></div>
     <div class="row">
         <div class="col-md-12">
             <!-- Nav tabs -->
@@ -94,25 +97,26 @@
                 <?php } ?>
 
                 <?php if($q['maintenance_th'] || $q['maintenance_en']){ ?>
-                   <div role="tabpanel" class="tab-pane ft-steps-numbers" id="tab-help">
+                    <div role="tabpanel" class="tab-pane ft-steps-numbers" id="tab-help">
                         <?php echo $q['maintenance_'.$this->session->userdata('lang')];?>
                     </div>
                 <?php } ?>
 
                 <?php if($q['caution_th'] || $q['caution_en']){ ?>
-                   <div role="tabpanel" class="tab-pane ft-steps-numbers" id="tab-caution">
+                    <div role="tabpanel" class="tab-pane ft-steps-numbers" id="tab-caution">
                         <?php echo $q['caution_'.$this->session->userdata('lang')];?>
                     </div>
                 <?php } ?>
 
                 <?php if($q['certificate_th'] || $q['certificate_en']){ ?>
-                   <div role="tabpanel" class="tab-pane ft-steps-numbers" id="tab-certificate">
+                    <div role="tabpanel" class="tab-pane ft-steps-numbers" id="tab-certificate">
                         <?php echo $q['certificate_'.$this->session->userdata('lang')];?>
                     </div>
-               <?php } ?>
+                <?php } ?>
             </div>
         </div>
     </div>
+
 </div><!-- / .container -->
 <script>
     $('.zoom').elevateZoom({

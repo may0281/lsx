@@ -24,7 +24,7 @@ class home_model extends  ci_model
         $this->db->select('*');
         $this->db->from('product_type');
         $this->db->where('enable',1);
-        $this->db->order_by('id','desc');
+        $this->db->order_by('sort','asc');
         $query = $this->db->get();
         return $query->result_array();
     }
@@ -35,7 +35,7 @@ class home_model extends  ci_model
         $this->db->from('product_categories');
         $this->db->where('type_code',$typeCode);
         $this->db->where('enable',1);
-        $this->db->order_by('id','desc');
+        $this->db->order_by('sort','asc');
         $query = $this->db->get();
         return $query->result_array();
     }
