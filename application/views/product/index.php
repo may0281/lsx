@@ -39,7 +39,9 @@
                             <div class="product-image-wrapper">
                                 <a href="<?php echo $url;?>" class="buy-btn"><span class="linea-ecommerce-bag"></span></a>
                                 <div class="shop-p-slider">
-                                    <a href="<?php echo $url;?>"><img src="<?php echo base_url('images/product/'.$pr['cover_img']) ?>" alt="<?php echo $pr['name_'.$this->session->userdata('lang')] ?>"></a>
+                                    <a href="<?php echo $url;?>">
+                                        <img src="<?php echo base_url('images/product/'.$pr['cover_img']) ?>" alt="<?php echo $pr['name_'.$this->session->userdata('lang')] ?>">
+                                    </a>
                                 </div>
                             </div>
 

@@ -5,7 +5,7 @@
 
         <?php foreach($slides as $slide){ ?>
             <!-- Slide 1 -->
-            <div class="fs-slider-item <?php echo $slide['type'];?>" style="background: url(<?php echo base_url().'images/content/'.$slide['img'];?>)">
+            <div class="fs-slider-item <?php echo $slide['type'];?>" style="background: url(<?php echo base_url().'images/content/'.$slide['img'];?>);">
                 <div class="bg-overlay">
 
                     <!-- Hero Content -->

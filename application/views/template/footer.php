@@ -12,13 +12,15 @@
 					<ul>
 						<li class="contact-group">
 							<span class="adr-heading"><?php echo $this->lang->line('head_office_address_h5');?></span>
-							<span class="adr-info"><?php echo $headOffice['content_'.$this->session->userdata('lang')] ?></span>
+							<span class="adr-info"><?php echo $headOffice['content_'.$this->session->userdata('lang')] ?>
+							<a href="<?php echo base_url('assets/images/Map-Head-Office.jpg') ?>" download class="btn btn-light btn-small">Download Map</a></span>
 						</li>
 					</ul>
 					<ul>
 						<li class="contact-group">
 							<span class="adr-heading"><?php echo $this->lang->line('warehouse_address_h5');?></span>
-							<span class="adr-info"><?php echo $wareHouse['content_'.$this->session->userdata('lang')] ?></span>
+							<span class="adr-info"><?php echo $wareHouse['content_'.$this->session->userdata('lang')] ?>
+								<a href="<?php echo base_url('assets/images/Map-Warehouse.jpg') ?>" download class="btn btn-light btn-small">Download Map</a></span>
 						</li>
 					</ul>
 					<a href="#" class="show-map"><span class="linea-basic-geolocalize-05"></span>show on map</a>
