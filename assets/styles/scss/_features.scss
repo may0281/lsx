@@ -1101,14 +1101,14 @@
 /* ---- 9.15 Tabs ---- */
 .nav-tabs {
 	border-top: 1px solid #c1c1c1;
-	border-bottom: none;
+	border-bottom: 1px solid #c1c1c1;
 
 	li {
 		margin-top: -1px;
 		margin-bottom: 0;
 
 		a {
-			padding: 20px 25px 30px 25px;
+			padding: 20px 25px 25px 25px;
 			border-radius: 0;
 			border: none;
 			border-top: 1px solid rgba(0,0,0, 0);
@@ -1134,9 +1134,10 @@
 	  .active {
 
 		 a {
-			border: none !important;
-			border-top: 1px solid $dark !important;
-			color: $dark;
+			 	background: #f1f1f1;
+			 	border-top: 1px solid #c1c1c1;
+				border-bottom: 1px solid $dark !important;
+				color: $dark;
 		}
 	}
 }
