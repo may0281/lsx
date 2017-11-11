@@ -112,28 +112,28 @@ class blog extends CI_Controller {
 		$moreData = array(
 		    'CoverImage' => $CoverImage,
 		    'SaveDate' => date('Y-m-d H:i:s'),
-		    'Enable' => 1,
+		    'Enable' => 0,
         );
 		$data = array_merge($data,$moreData);
         unset($data["_wysihtml5_mode"]);
 		$id = $this->blog_model->insertBlog($data);
 
 		if ($_FILES['my_file']) {
-                $myFile = $_FILES['my_file'];
-                $fileCount = count($myFile["name"]);
-                for ($j = 0; $j < $fileCount; $j++) {
-                		$array_last=explode(".",$myFile["name"][$j]);
-						$c=count($array_last)-1; 
-						$lastname=strtolower($array_last[$c]) ;
-						$img =  $j.strtotime(date("Y-m-d H:i:s")).".".$lastname;
-						$fileupload=$myFile["tmp_name"][$j];
-						if ($lastname=="jpg" or $lastname=="png" or $lastname=="gif")
-						{
-							copy($fileupload,"../images/blog/".$img);
-						}
-						$this->blog_model->insertGallery($id,$img);
+            $myFile = $_FILES['my_file'];
+            $fileCount = count($myFile["name"]);
+            for ($j = 0; $j < $fileCount; $j++) {
+                $array_last=explode(".",$myFile["name"][$j]);
+                $c=count($array_last)-1;
+                $lastname=strtolower($array_last[$c]) ;
+                $img =  $j.strtotime(date("Y-m-d H:i:s")).".".$lastname;
+                $fileupload=$myFile["tmp_name"][$j];
+                if ($lastname=="jpg" or $lastname=="png" or $lastname=="gif")
+                {
+                    copy($fileupload,"../images/blog/".$img);
                 }
+                $this->blog_model->insertGallery($id,$img);
             }
+        }
 		
 		echo "<script>alert('Success!!');window.location.assign('".base_url()."blog');</script>";
 

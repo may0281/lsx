@@ -1,4 +1,4 @@
-<script src='<?php echo base_url()?>assets/js/elevate/jquery-1.8.3.min.js'></script>
+<!--<script src='--><?php //echo base_url()?><!--assets/js/elevate/jquery-1.8.3.min.js'></script>-->
 <script src='<?php echo base_url()?>assets/js/elevate/jquery.elevatezoom.js'></script>
 <div class="container section">
     <div class="row ws-m">

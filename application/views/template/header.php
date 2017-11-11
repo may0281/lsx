@@ -28,6 +28,80 @@
     <link rel="stylesheet" href="<?php echo base_url();?>assets/styles/responsive.css">
     <!-- JS -->
     <script src="<?php echo base_url();?>assets/js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="<?php echo base_url();?>assets/js/vendor/jquery-2.1.4.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <style>
+        .ui-autocomplete {
+            background: #ebebeb ;
+            opacity: .8;
+            border-radius: 5px;
+            border: none;
+            width: 50px;
+            font-size: 12px;
+
+        }
+
+        .search-box {
+            transition: width 0.6s, border-radius 0.6s, background 0.6s, box-shadow 0.6s;
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            border: none;
+            cursor: pointer;
+            background: transparent;
+            margin-top: 5px;
+        }
+        .search-box + label .search-icon {
+            color: #999;
+        }
+        .search-box:hover {
+            color: white;
+            background: #c8c8c8;
+            box-shadow: 0 0 0 5px #3d4752;
+        }
+        .search-box:hover + label .search-icon {
+            color: white;
+        }
+        .search-box:focus {
+            transition: width 0.6s cubic-bezier(0, 1.22, 0.66, 1.39), border-radius 0.6s, background 0.6s;
+            border: none;
+            outline: none;
+            box-shadow: none;
+            padding-left: 15px;
+            cursor: text;
+            width: 180px;
+            border-radius: auto;
+            background: #ebebeb;
+            color: black;
+            font-size: 12px;
+        }
+        .search-box:focus + label .search-icon {
+            color: black;
+        }
+        .search-box:not(:focus) {
+            text-indent: -5000px;
+        }
+
+        #search-submit {
+            position: relative;
+            left: -5000px;
+        }
+
+        .search-icon {
+            position: relative;
+            left: -30px;
+            color: white;
+            cursor: pointer;
+        }
+
+
+
+    </style>
+    <script>
+        document.addEventListener("touchstart", function(){}, true);
+    </script>
 
 </head>
 
@@ -120,45 +194,17 @@
             <!-- Navbar Links Right -->
             <ul class="nav navbar-nav navbar-right">
 
-                <!-- Cart -->
-                <li class="dropdown cart-nav">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-shopping-cart"></i> Cart</a>
-                    <ul class="dropdown-menu cart-dropdown">
-                        <li class="dropdown-header">Cart</li>
-                        <li role="separator" class="divider cart-sep-top"></li>
-                        <li>
-                            <div class="cart-item">
-                                <a href="pages/shop/shop-single.html"><img src="assets/images/shop/p-thumb-1.jpg" alt="Product Name" class="p-thumb"></a>
-                                <a href="#" class="cart-remove-btn"><span class="linea-arrows-square-remove"></span></a>
-                                <a href="pages/shop/shop-single.html" class="cp-name">Light Blue Suit</a>
-                                <p class="cp-price">1 x $359.99</p>
-                            </div>
-
-                            <div class="cart-item">
-                                <a href="pages/shop/shop-single.html"><img src="assets/images/shop/p-thumb-2.jpg" alt="Product Name" class="p-thumb"></a>
-                                <a href="#" class="cart-remove-btn"><span class="linea-arrows-square-remove"></span></a>
-                                <a href="pages/shop/shop-single.html" class="cp-name">Dark Blue Suit</a>
-                                <p class="cp-price">1 x $459.99</p>
-                            </div>
-                        </li>
-                        <li role="separator" class="divider cart-sep-bot"></li>
-                        <li>
-                            <h6 class="item-totals">Items Total: <span>$718.98</span></h6>
-                        </li>
-                        <li class="cart-btns">
-                            <a href="pages/shop/shop-checkout.html" class="btn-ghost btn-block">View Cart</a>
-                            <a href="pages/shop/shop-checkout.html" class="btn btn-block">Checkout</a>
-                        </li>
-
-                    </ul>
-                </li><!-- / Cart -->
-
-                <!-- Search -->
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-key"></i> Login</a>
-
-                </li><!-- / Search -->
-
+                <li>
+                    <form action="<?php echo base_url('product/search'); ?>">
+                        <input id="search-box" type="text" class="search-box" name="keyword" />
+                        <label for="search-box">
+                            <i class="fa fa-search search-icon"></i></label>
+                    </form>
+                </li>
+<!--                <li class="dropdown">-->
+<!--                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-key"></i> Login</a>-->
+<!---->
+<!--                </li>-->
                 <!-- Languages -->
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="350" role="button" aria-haspopup="true" aria-expanded="false"><?php echo strtoupper($this->session->userdata('lang'));?> <span class="caret"></span></a>
@@ -202,3 +248,37 @@
     }
 
 </script>
+
+<script>
+    $( function() {
+        var base_url = window.location.origin;
+        var url = base_url + '/product/api-product';
+        $.ajax({
+            url: url,
+            type: 'GET',
+            contentType: false,
+            processData: false,
+            success: function (result) {
+                var availableTags = [];
+                for (var j = 0; j < result.length; j++) {
+                    availableTags.push(result[j]);
+                }
+                $("#tags_search").autocomplete({
+                    source: availableTags
+                });
+                $("#search-box").autocomplete({
+                    source: availableTags
+                });
+
+            },
+            error: function(result){
+                console.log(result);
+            }
+        });
+
+
+    } );
+</script>
+
+
+

@@ -74,34 +74,3 @@
         </div><!-- / .recent-posts-widget -->
     </aside><!-- / .shop-sidebar-vertical -->
 </div><!-- / .col-md-3 -->
-<script src="<?php echo base_url();?>assets/js/vendor/jquery-2.1.4.min.js"></script>
-<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-<script src="//code.jquery.com/jquery-1.12.4.js"></script>
-<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script>
-    $( function() {
-        var base_url = window.location.origin;
-        var url = base_url + '/product/api-product';
-        $.ajax({
-            url: url,
-            type: 'GET',
-            contentType: false,
-            processData: false,
-            success: function (result) {
-                var availableTags = [];
-                for (var j = 0; j < result.length; j++) {
-                    availableTags.push(result[j]);
-                }
-                $("#tags_search").autocomplete({
-                    source: availableTags
-                });
-
-            },
-            error: function(result){
-                console.log(result);
-            }
-        });
-
-
-    } );
-</script>

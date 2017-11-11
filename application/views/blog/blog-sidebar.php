@@ -1,4 +1,4 @@
-<aside class="col-md-offset-1 col-md-3 sidebar">
+<aside class="col-md-offset-1 col-md-2 sidebar">
     <?php $this->load->view('template/tags'); ?>
     <div class="col-md-12 ws-s categories-widget">
         <h5 class="header-widget">Categories</h5>

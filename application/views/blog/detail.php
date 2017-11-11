@@ -1,13 +1,10 @@
 <div id="blog" class="section container blog-classic">
     <div class="row">
-        <div class="col-md-8 mb-sm-160">
-
+        <div class="col-md-12 mb-sm-160">
             <!-- Blog Post -->
             <div class="col-md-12 blog-post-single wow fadeIn" data-wow-delay=".1s" data-wow-duration="2s">
-
                 <!-- Image -->
                 <img class="img-responsive post-img"  src="<?php echo base_url('images/blog/'.$blog['CoverImage']);?>" alt="<?php echo $blog['Name'.strtoupper($this->session->userdata('lang'))] ?>">
-
                 <!-- Meta data -->
                 <div class="post-meta">
                     <a href="#" class="post-date">
@@ -24,7 +21,7 @@
                 <h2 class="post-title"><?php echo $blog['Name'.strtoupper($this->session->userdata('lang'))] ?></h2>
 
 
-                <div class="blog-post-content" style="overflow: scroll">
+                <div class="blog-post-content">
                     <!-- Intro -->
                     <p><?php echo $blog['Description'.strtoupper($this->session->userdata('lang'))] ?></p>
                     <?php if($blog['Video']){
@@ -35,6 +32,5 @@
                 </div>
             </div>
         </div>
-        <?php  $this->load->view('blog/blog-sidebar')?>
     </div>
 </div>

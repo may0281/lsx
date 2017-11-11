@@ -59,18 +59,7 @@
 		</div>
 	</div>
 </footer>
-<?php
-$serverUri =  explode('/',$_SERVER['REQUEST_URI']);
-if (in_array("altyno", $serverUri,true)
-	or in_array("jolypate", $serverUri,true)
-	or in_array("decor-surfaces", $serverUri,true)
-	or in_array("cerarl", $serverUri,true)
-	or in_array("search", $serverUri,true)
-	or in_array("our-company", $serverUri,true)
-){
-}else{ ?>
-<script src="<?php echo base_url();?>assets/js/vendor/jquery-2.1.4.min.js"></script>
-<?php }?>
+
 <script src="<?php echo base_url();?>assets/js/vendor/google-fonts.js"></script>
 <script src="<?php echo base_url();?>assets/js/vendor/jquery.easing.js"></script>
 <script src="<?php echo base_url();?>assets/js/vendor/jquery.waypoints.min.js"></script>
