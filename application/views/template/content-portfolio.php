@@ -8,7 +8,7 @@
     <div class="row ws-m">
         <div id="pfolio">
             <?php foreach ($projects as $project) {
-                $find = array("!","+","?","'"," ","(",")");;
+                $find = array("!","+","?","'"," ","(",")","&");;
                 $portUri = str_replace($find,"-",$project['name_'.$this->session->userdata('lang')]);
                 $portUrl =  base_url('portfolio/'.$project['id'].'/'.$portUri);
             ?>

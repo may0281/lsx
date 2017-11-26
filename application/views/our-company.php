@@ -34,44 +34,12 @@
         </div>
     </div>
 </div>
-
-<section class="container section portfolio-layout portfolio-1col-boxed">
-    <div class="row">
-        <div id="pfolio">
-            <figure class="portfolio-item print">
-                <div class="col-md-7 no-gap img-wrapper">
-                    <img src="<?php echo base_url('assets/images/Map-Head-Office.jpg') ?>" alt="Project Example">
-                </div>
-                <figcaption class="col-md-5 no-gap">
-                    <h3><?php echo $this->lang->line('head_office_address_h5');?></h3>
-                    <p><?php echo $headOffice['content_'.$this->session->userdata('lang')] ?></p>
-                    <a href="<?php echo base_url('assets/images/Map-Head-Office.jpg') ?>" download class="btn btn-block">Download Map</a>
-                </figcaption>
-            </figure><!-- / .portfolio-item -->
-            <figure class="portfolio-item webdesing">
-                <div class="col-md-7 no-gap img-wrapper pull-right">
-                    <img src="<?php echo base_url('assets/images/Map-Warehouse.jpg') ?>" style="width: 865px;height: 615px" alt="Project Example">
-                </div>
-                <figcaption class="col-md-5 no-gap pull-left">
-                    <h3><?php echo $this->lang->line('warehouse_address_h5');?></h3>
-                    <p><?php echo $wareHouse['content_'.$this->session->userdata('lang')] ?></p>
-                    <a href="<?php echo base_url('assets/images/Map-Warehouse.jpg') ?>" download class="btn btn-block">Download Map</a>
-                </figcaption>
-            </figure>
-        </div>
-    </div>
-</section>
-
-<section class="section contact-1">
+<section class="section contact-1 gray-bg">
     <header class="sec-heading">
         <h2>Contact Us</h2>
         <span class="subheading">We love to hear from you</span>
     </header>
     <div class="contact-wrapper">
-        <div id="map-canvas" class="gmap map-boxed"></div>
-        <div class="show-info-link">
-            <a href="#" class="show-info"><i class="fa fa-info"></i><h6>Show info</h6></a>
-        </div>
         <div class="container">
             <div class="row ws-m">
             </div>
@@ -121,6 +89,34 @@
         </div>
     </div>
 </section>
+<section class="container section portfolio-layout portfolio-1col-boxed">
+    <div class="row">
+        <div id="pfolio">
+            <figure class="portfolio-item print">
+                <div class="col-md-7 no-gap img-wrapper">
+                    <img src="<?php echo base_url('assets/images/Map-Head-Office.jpg') ?>" alt="Project Example">
+                </div>
+                <figcaption class="col-md-5 no-gap">
+                    <h3><?php echo $this->lang->line('head_office_address_h5');?></h3>
+                    <p><?php echo $headOffice['content_'.$this->session->userdata('lang')] ?></p>
+                    <a href="<?php echo base_url('assets/images/Map-Head-Office.jpg') ?>" download class="btn btn-block">Download Map</a>
+                </figcaption>
+            </figure><!-- / .portfolio-item -->
+            <figure class="portfolio-item webdesing">
+                <div class="col-md-7 no-gap img-wrapper pull-right">
+                    <img src="<?php echo base_url('assets/images/Map-Warehouse.jpg') ?>" style="width: 865px;height: 615px" alt="Project Example">
+                </div>
+                <figcaption class="col-md-5 no-gap pull-left">
+                    <h3><?php echo $this->lang->line('warehouse_address_h5');?></h3>
+                    <p><?php echo $wareHouse['content_'.$this->session->userdata('lang')] ?></p>
+                    <a href="<?php echo base_url('assets/images/Map-Warehouse.jpg') ?>" download class="btn btn-block">Download Map</a>
+                </figcaption>
+            </figure>
+        </div>
+    </div>
+</section>
+
+
 
 <!-- ========== Scripts ========== -->
 <script src="<?php echo base_url();?>assets/js/vendor/jquery.ajaxchimp.js"></script>

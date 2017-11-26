@@ -6,7 +6,7 @@
                 <h2>Related Products</h2>
             </header>
             <?php foreach ($relates as $relate){
-                $find = array("!","+","?","'"," ","(",")");;
+                $find = array("!","+","?","'"," ","(",")","&");;
                 $uri = str_replace($find,"-",$relate['name_'.$this->session->userdata('lang')]);
                 $url = base_url('product/'.$relate['product_code'].'/'.$uri);
                 ?>

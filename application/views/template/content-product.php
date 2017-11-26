@@ -1,9 +1,5 @@
 <div id="products" class="gray-bg">
     <section class="container section ft-cards-2">
-        <header class="sec-heading">
-            <h2><?php echo $this->lang->line('product_type'); ?></h2>
-            <a href="#"> <?php echo $this->lang->line('all_product'); ?></a>
-        </header>
         <div class="row">
             <?php foreach($product_type as $type){ ?>
             <div class="col-md-6">

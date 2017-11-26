@@ -91,10 +91,11 @@
 			<div class="row">
 
 				<ul>
-					<li><a href="#">facebook</a></li>
-					<li><a href="#">Twitter</a></li>
-					<li><a href="#">Dribbble</a></li>
-					<li><a href="#">Behance</a></li>
+					<li><a href="https://www.facebook.com/lsxthailand/" target="_blank">facebook</a></li>
+					<li><a href="https://www.pinterest.com/Lsx_Thailand/" target="_blank">Pinterest</a></li>
+					<li><a href="https://www.youtube.com/channel/UCXh_gkduYHrdGaQkzEsScdg" target="_blank">YouTube</a></li>
+					<li><a href="https://www.instagram.com/lsx_thailand/" target="_blank">Instagram</a></li>
+					<li><a href="https://page.line.me/aicabylsx" target="_blank">Line</a></li>
 				</ul>
 
 			</div>

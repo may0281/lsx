@@ -195,7 +195,7 @@
             <ul class="nav navbar-nav navbar-right">
 
                 <li>
-                    <form action="<?php echo base_url('product/search'); ?>">
+                    <form action="<?php echo base_url('product/search'); ?>" method="post">
                         <input id="search-box" type="text" class="search-box" name="keyword" />
                         <label for="search-box">
                             <i class="fa fa-search search-icon"></i></label>

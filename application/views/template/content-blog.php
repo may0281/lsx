@@ -6,7 +6,7 @@
                 <span class="subheading"><?php echo $this->lang->line('blog_subheading'); ?></span>
             </header>
             <?php foreach ($blogs as $blog){
-                $find = array("!","+","?","'"," ","(",")");;
+                $find = array("!","+","?","'"," ","(",")","&");;
                 $blogUri = str_replace($find,"-",$blog['Name'.strtoupper($this->session->userdata('lang'))]);
                 $blogUrl =  base_url('blog/'.$blog['ID'].'/'.$blogUri);
             ?>

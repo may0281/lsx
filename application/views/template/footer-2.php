@@ -33,11 +33,11 @@
 				<div class="widget about-widget">
 					<h5 class="header-widget"><?php echo $this->lang->line('social');?></h5>
 					<ul class="social-links">
-						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-						<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-						<li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+						<li><a href="https://www.facebook.com/lsxthailand/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://www.pinterest.com/Lsx_Thailand/" target="_blank"><i class="fa fa-pinterest"></i></a></li>
+						<li><a href="https://www.youtube.com/channel/UCXh_gkduYHrdGaQkzEsScdg" target="_blank"><i class="fa fa-youtube"></i></a></li>
+						<li><a href="https://www.instagram.com/lsx_thailand/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="https://page.line.me/aicabylsx" target="_blank"><img src="<?php echo base_url('assets/images/icon-line.svg')?>" width="25px"></a></li>
 					</ul>
 				</div>
 			</div>

@@ -1,4 +1,4 @@
-<?php $find = array("!","+","?","'"," ","(",")");; ?>
+<?php $find = array("!","+","?","'"," ","(",")","&");; ?>
 <aside class="col-md-3 sidebar mb-sm-160">
     <!-- Search - Widget -->
     <form method="post" action="<?php echo base_url('promotion/search'); ?>">
@@ -26,7 +26,7 @@
         <h5 class="header-widget">Recent Product</h5>
         <?php $products  = $this->home_model->getProductList();
         foreach ($products as $pa){
-            $find = array("!","+","?","'"," ","(",")");;
+            $find = array("!","+","?","'"," ","(",")","&");;
             $uri = str_replace($find,"-",$pa['name_'.$this->session->userdata('lang')]);
             $url = base_url('product/'.$pa['product_code'].'/'.$uri);
             ?>
